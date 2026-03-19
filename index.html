@@ -920,12 +920,23 @@
         if (href.endsWith('.md')) {
           a.addEventListener('click', e => {
             e.preventDefault();
-            let route = href
-              .replace(/^(\.\.\/)+/, '')
+            const stripped = href.replace(/^(\.\.\/)+/, '');
+            // Detect language from link path and switch if needed
+            const langMatch = stripped.match(/^(en|ko)\//);
+            if (langMatch && langMatch[1] !== lang) {
+              setLang(langMatch[1]);
+            }
+            let route = stripped
               .replace(/^(en|ko)\//, '')
               .replace(/\.md$/, '');
             if (route === 'README') { route = 'home'; }
-            window.location.hash = route === 'home' ? '/' : '/' + route;
+            const newHash = route === 'home' ? '/' : '/' + route;
+            if (window.location.hash === '#' + newHash || window.location.hash === '#/' + route) {
+              // Same route, just re-render (lang already switched above)
+              navigate();
+            } else {
+              window.location.hash = newHash;
+            }
           });
         }
       });
