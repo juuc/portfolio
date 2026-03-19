@@ -9,11 +9,10 @@
 **Expo 프레임워크 마이그레이션**을 주도 — `ios/`와 `android/` 네이티브 폴더를 제거하고, EAS를 통한 OTA 업데이트를 가능하게 하며, 전체 앱 아키텍처를 현대화한 7단계 마이그레이션 계획을 설계 및 실행.
 
 > **에픽 참고:**
-> - [Issue #84 — Expo 단계적 전환 Milestone 제안](https://github.com/uitiorg/bootalk_app/issues/84) (7단계 마이그레이션 계획)
-> - [Discussion #35 — React Native 버전업 및 Expo 도입에 관하여](https://github.com/uitiorg/team-discussions/discussions/35) (타당성 분석)
-> - [Discussion #45 — App Expo 도입기](https://github.com/uitiorg/team-discussions/discussions/45) (도입 보고서)
+> - Issue #84 — Expo 단계적 전환 Milestone 제안 (7단계 마이그레이션 계획)
+> - Discussion #35 — React Native 버전업 및 Expo 도입에 관하여 (타당성 분석)
+> - Discussion #45 — App Expo 도입기 (도입 보고서)
 
-**레포:** [uitiorg/bootalk_app](https://github.com/uitiorg/bootalk_app)
 
 ## 지표
 
@@ -31,7 +30,7 @@
 
 **문제:** 앱이 bare React Native로 동작하며 분산된 네이티브 의존성, 수동 iOS/Android 설정, OTA 업데이트 불가, 느린 CI/CD (모든 변경에 네이티브 빌드 필요).
 
-**해결:** 7단계 마이그레이션 계획을 설계하고 실행 ([Issue #84](https://github.com/uitiorg/bootalk_app/issues/84)):
+**해결:** 7단계 마이그레이션 계획을 설계하고 실행 (Issue #84):
 1. **Expo Dev Client** — 코드 변경 없이 Expo 생태계 진입
 2. **React Navigation v6** — v4/v5/v6 혼재를 네이티브 스택 네비게이션으로 통일
 3. **유틸리티 라이브러리** — clipboard, netinfo, secure-store, status-bar를 expo-* 모듈로 교체
@@ -45,7 +44,7 @@
 - **CI/CD** — EAS 클라우드 빌드, 로컬 네이티브 툴체인 불필요
 - **개발자 경험** — CNG로 `app.json`이 모든 네이티브 설정 제어
 
-> **Expo SDK 54 마이그레이션:** [Issue #7](https://github.com/uitiorg/frontend-monorepo/issues/7)
+> **Expo SDK 54 마이그레이션:** Issue #7
 
 ### 2. 테스트 커버리지 90% — 제로에서 마일스톤까지
 
@@ -71,7 +70,7 @@
 
 [모노레포 타입 안전성 캠페인](frontend-monorepo.md)의 일환으로 앱 모듈의 122개 `any` 타입 전체 제거 — **100% ANY-FREE** 달성, **99.19% 타입 커버리지**. 전 과정에서 1,184건 테스트 통과 유지.
 
-> [완료 보고서 #219](https://github.com/uitiorg/frontend-monorepo/issues/219), [품질 보고서 #540](https://github.com/uitiorg/frontend-monorepo/issues/540) 참고.
+> 완료 보고서 #219, 품질 보고서 #540 참고.
 
 ### 5. 릴리스 관리 — v3.0.0부터 v3.5.0까지
 

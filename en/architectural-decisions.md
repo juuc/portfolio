@@ -37,7 +37,7 @@ frontend-monorepo/
 
 **Impact:** 594 PRs of systematic migration. Unified type system enabled the type safety campaign. Single CI/CD pipeline for all apps. Partner webview integrations went from days to hours.
 
-> References: [Discussion #27](https://github.com/uitiorg/team-discussions/discussions/27) (monorepo milestone proposal), PRs [#737](https://github.com/uitiorg/frontend-monorepo/pull/737) (Lotte Card webview), [#753](https://github.com/uitiorg/frontend-monorepo/pull/753) (Nonghyup webview)
+> References: Discussion #27 (monorepo milestone proposal), PRs #737 (Lotte Card webview), #753 (Nonghyup webview)
 
 ---
 
@@ -70,7 +70,7 @@ frontend-monorepo/
 
 **Impact:** JS-only changes deploy in minutes via OTA. Critical bug fix (v3.4.15 contract report calculation) reached users same-day while store review was pending. No more local native toolchain required.
 
-> References: [Issue #84](https://github.com/uitiorg/bootalk_app/issues/84) (7-stage plan), [Discussion #35](https://github.com/uitiorg/team-discussions/discussions/35) (feasibility analysis), [Discussion #45](https://github.com/uitiorg/team-discussions/discussions/45) (adoption report)
+> References: Issue #84 (7-stage plan), Discussion #35 (feasibility analysis), Discussion #45 (adoption report)
 
 ---
 
@@ -102,7 +102,7 @@ frontend-monorepo/
 
 **Impact:** PageSpeed 20 → 80 (4x). Google Search Console warnings resolved. Users perceive instant loading.
 
-> References: [Issue #635](https://github.com/uitiorg/frontend-monorepo/issues/635) (epic), PRs #639, #641, #663, #678, #690-701, #718
+> References: Issue #635 (epic), PRs #639, #641, #663, #678, #690-701, #718
 
 ---
 
@@ -126,11 +126,11 @@ frontend-monorepo/
 - GCP Cloud Run deployment with Docker containers
 - Environment separation (dev/staging/prod)
 - Structured data injection for SEO and GEO (AI search engines)
-- Later: migrated 30 CSR-only pages to SSR/SSG ([PR #704](https://github.com/uitiorg/frontend-monorepo/pull/704))
+- Later: migrated 30 CSR-only pages to SSR/SSG (PR #704)
 
 **Impact:** Search engine indexing restored. Dynamic sitemaps ensure new listings are crawled within hours. GEO structured data makes content visible to ChatGPT, Perplexity, Gemini.
 
-> References: [PR #173](https://github.com/uitiorg/bootalk_web/pull/173) (SSR + GCP deployment), [Issue #703](https://github.com/uitiorg/frontend-monorepo/issues/703) (CSR → SSR migration), [Issue #547](https://github.com/uitiorg/frontend-monorepo/issues/547) (SSR anti-pattern removal)
+> References: PR #173 (SSR + GCP deployment), Issue #703 (CSR → SSR migration), Issue #547 (SSR anti-pattern removal)
 
 ---
 
@@ -150,7 +150,7 @@ frontend-monorepo/
 - ✅ **Phase-based campaign** — each phase targets one module, each PR is independently shippable and testable
 
 **How it worked:**
-1. Audit: identify all `any` types per module ([Issues #538-540](https://github.com/uitiorg/frontend-monorepo/issues/538))
+1. Audit: identify all `any` types per module (Issues #538-540)
 2. Prioritize: fix GraphQL API types first (highest blast radius)
 3. Phase execution: 4-8 Claude Code agents working overnight on non-overlapping file sets
 4. Verification: all 1,184 tests must pass after each phase
@@ -166,7 +166,7 @@ frontend-monorepo/
 
 **Impact:** Compile-time error detection replaced runtime crashes. IDE autocomplete works everywhere. Safe refactoring at scale. The monorepo decision (Decision #1) made this possible — shared types meant fixing once fixed everywhere.
 
-> References: Issues [#218](https://github.com/uitiorg/frontend-monorepo/issues/218), [#219](https://github.com/uitiorg/frontend-monorepo/issues/219), [#538-540](https://github.com/uitiorg/frontend-monorepo/issues/538), [#25](https://github.com/uitiorg/frontend-monorepo/issues/25) (@ts-ignore removal)
+> References: Issues #218, #219, #538-540, #25 (@ts-ignore removal)
 
 ---
 

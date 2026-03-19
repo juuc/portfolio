@@ -23,7 +23,7 @@
 
 **임팩트:** 594개 PR의 체계적 마이그레이션. 통합 타입 시스템으로 타입 안전성 캠페인 가능. 모든 앱의 단일 CI/CD 파이프라인. 파트너 웹뷰 통합이 수일에서 수시간으로.
 
-> 참고: [Discussion #27](https://github.com/uitiorg/team-discussions/discussions/27) (모노레포 마일스톤 제안), PR [#737](https://github.com/uitiorg/frontend-monorepo/pull/737) (롯데카드 웹뷰), [#753](https://github.com/uitiorg/frontend-monorepo/pull/753) (농협 웹뷰)
+> 참고: Discussion #27 (모노레포 마일스톤 제안), PR #737 (롯데카드 웹뷰), #753 (농협 웹뷰)
 
 ---
 
@@ -56,7 +56,7 @@
 
 **임팩트:** JS 변경사항 OTA로 분 단위 배포. 계약보고서 계산 버그(v3.4.15) 당일 수정. 로컬 네이티브 툴체인 불필요.
 
-> 참고: [Issue #84](https://github.com/uitiorg/bootalk_app/issues/84) (7단계 계획), [Discussion #35](https://github.com/uitiorg/team-discussions/discussions/35) (타당성 분석), [Discussion #45](https://github.com/uitiorg/team-discussions/discussions/45) (도입 보고서)
+> 참고: Issue #84 (7단계 계획), Discussion #35 (타당성 분석), Discussion #45 (도입 보고서)
 
 ---
 
@@ -88,7 +88,7 @@
 
 **임팩트:** PageSpeed 20 → 80 (4배). 구글 Search Console 경고 해소. 사용자 체감 즉시 로딩.
 
-> 참고: [Issue #635](https://github.com/uitiorg/frontend-monorepo/issues/635) (에픽), PR #639, #641, #663, #678, #690-701, #718
+> 참고: Issue #635 (에픽), PR #639, #641, #663, #678, #690-701, #718
 
 ---
 
@@ -109,7 +109,7 @@
 
 **임팩트:** 검색엔진 인덱싱 복원. 동적 사이트맵으로 새 매물 수시간 내 크롤링. GEO 구조화 데이터로 ChatGPT, Perplexity, Gemini에 콘텐츠 노출.
 
-> 참고: [PR #173](https://github.com/uitiorg/bootalk_web/pull/173) (SSR + GCP 배포), [Issue #703](https://github.com/uitiorg/frontend-monorepo/issues/703) (CSR → SSR 마이그레이션)
+> 참고: PR #173 (SSR + GCP 배포), Issue #703 (CSR → SSR 마이그레이션)
 
 ---
 
@@ -138,7 +138,7 @@
 
 **임팩트:** 컴파일 타임 에러 탐지가 런타임 크래시를 대체. IDE 자동완성 전면 활성화. 대규모 안전한 리팩토링. 모노레포 결정(#1)이 이것을 가능하게 함 — 공유 타입으로 한 번 수정이 모든 곳에 적용.
 
-> 참고: Issue [#218](https://github.com/uitiorg/frontend-monorepo/issues/218), [#219](https://github.com/uitiorg/frontend-monorepo/issues/219), [#538-540](https://github.com/uitiorg/frontend-monorepo/issues/538)
+> 참고: Issue #218, #219, #538-540
 
 ---
 

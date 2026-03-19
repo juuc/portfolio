@@ -6,7 +6,6 @@
 
 아파트 데이터를 관리하는 Dagster 기반 ETL 인프라 — 데이터 보강, 평면도, 일별 매물 통계, 저장 프로시저 현대화.
 
-**레포:** [uitiorg/data](https://github.com/uitiorg/data)
 
 ## 지표
 

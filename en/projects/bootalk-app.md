@@ -9,11 +9,10 @@ React Native mobile application for Bootalk — serving home buyers and renters 
 Led the **Expo framework migration** — a 7-stage migration plan that eliminated the `ios/` and `android/` native folders, enabled OTA updates via EAS, and modernized the entire app architecture.
 
 > **Epic References:**
-> - [Issue #84 — Expo 단계적 전환 Milestone 제안](https://github.com/uitiorg/bootalk_app/issues/84) (7-stage migration plan)
-> - [Discussion #35 — React Native 버전업 및 Expo 도입에 관하여](https://github.com/uitiorg/team-discussions/discussions/35) (feasibility analysis)
-> - [Discussion #45 — App Expo 도입기](https://github.com/uitiorg/team-discussions/discussions/45) (adoption report)
+> - Issue #84 — Expo 단계적 전환 Milestone 제안 (7-stage migration plan)
+> - Discussion #35 — React Native 버전업 및 Expo 도입에 관하여 (feasibility analysis)
+> - Discussion #45 — App Expo 도입기 (adoption report)
 
-**Repo:** [uitiorg/bootalk_app](https://github.com/uitiorg/bootalk_app)
 
 ## Metrics
 
@@ -31,7 +30,7 @@ Led the **Expo framework migration** — a 7-stage migration plan that eliminate
 
 **Problem:** The app ran on bare React Native with scattered native dependencies, manual iOS/Android configuration, no OTA updates, and slow CI/CD (native builds required for every change).
 
-**Solution:** Designed and executed a 7-stage migration plan ([Issue #84](https://github.com/uitiorg/bootalk_app/issues/84)):
+**Solution:** Designed and executed a 7-stage migration plan (Issue #84):
 1. **Expo Dev Client** — entered Expo ecosystem without code changes
 2. **React Navigation v6** — unified v4/v5/v6 fragmentation into native stack navigation
 3. **Utility libraries** — replaced clipboard, netinfo, secure-store, status-bar with expo-* modules
@@ -45,7 +44,7 @@ Led the **Expo framework migration** — a 7-stage migration plan that eliminate
 - **CI/CD** — cloud builds via EAS, no local native toolchain required
 - **Developer experience** — CNG means `app.json` controls all native config
 
-> **Expo SDK 54 migration:** [Issue #7](https://github.com/uitiorg/frontend-monorepo/issues/7)
+> **Expo SDK 54 migration:** Issue #7
 
 ### 2. 90% Test Coverage — From Zero to Milestone
 
@@ -71,7 +70,7 @@ Led the **Expo framework migration** — a 7-stage migration plan that eliminate
 
 As part of the [monorepo-wide type safety campaign](frontend-monorepo.md), eliminated all 122 `any` types in the app module — achieving **100% ANY-FREE** status and **99.19% type coverage**. All 1,184 tests maintained passing throughout.
 
-> See [Completion Report #219](https://github.com/uitiorg/frontend-monorepo/issues/219) and [Quality Report #540](https://github.com/uitiorg/frontend-monorepo/issues/540).
+> See Completion Report #219 and Quality Report #540.
 
 ### 5. Release Management — v3.0.0 to v3.5.0
 

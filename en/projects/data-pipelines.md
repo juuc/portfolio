@@ -6,7 +6,6 @@
 
 Dagster-based ETL infrastructure managing apartment data — enrichment, floor plans, daily listing statistics, and stored procedure modernization.
 
-**Repo:** [uitiorg/data](https://github.com/uitiorg/data)
 
 ## Metrics
 

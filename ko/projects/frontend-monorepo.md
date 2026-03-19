@@ -6,7 +6,7 @@
 
 부톡의 모든 클라이언트 애플리케이션을 통합하는 중앙 프론트엔드 모노레포. **2025년 11월에 생성** — 기존에 분산되어 있던 레포지토리(웹, 모바일 앱, 어드민)를 단일 코드베이스로 통합하여 크로스 레포 의존성 문제를 해결하고 공유 인프라를 가능하게 한 전략적 이니셔티브.
 
-> **에픽 참고:** [Discussion #27 — Frontend 프로젝트 통합을 위한 모노레포 도입 마일스톤](https://github.com/uitiorg/team-discussions/discussions/27)
+> **에픽 참고:** Discussion #27 — Frontend 프로젝트 통합을 위한 모노레포 도입 마일스톤
 
 - **apps/web** — Next.js 공개 웹사이트 (bootalk.co.kr)
 - **apps/app** — React Native 모바일 앱 컴포넌트
@@ -15,7 +15,6 @@
 - **롯데카드** 파트너 웹뷰
 - **packages/** — 공유 타입, API 클라이언트, 유틸리티
 
-**레포:** [uitiorg/frontend-monorepo](https://github.com/uitiorg/frontend-monorepo)
 
 ## 지표
 
@@ -33,14 +32,14 @@
 
 **문제:** 코드베이스 전반의 `any` 사용으로 런타임 에러가 조용히 발생. 사용자는 UI 깨짐과 데이터 불일치를 경험.
 
-**해결:** 웹, 앱, 어드민 모듈 전반에 걸친 페이즈 기반 타입 마이그레이션 주도 — **50+ PR, 30+ 페이즈**. `any` 타입을 적절한 TypeScript 인터페이스로 체계적으로 교체. **AI 기반 tmux 멀티 페인 터미널**을 야간 실행하여 페이즈를 병렬 처리, 1인 엔지니어가 풀팀 규모의 작업을 수행. `@ts-ignore` 어노테이션 전체 제거 병행 ([Issue #25](https://github.com/uitiorg/frontend-monorepo/issues/25)).
+**해결:** 웹, 앱, 어드민 모듈 전반에 걸친 페이즈 기반 타입 마이그레이션 주도 — **50+ PR, 30+ 페이즈**. `any` 타입을 적절한 TypeScript 인터페이스로 체계적으로 교체. **AI 기반 tmux 멀티 페인 터미널**을 야간 실행하여 페이즈를 병렬 처리, 1인 엔지니어가 풀팀 규모의 작업을 수행. `@ts-ignore` 어노테이션 전체 제거 병행 (Issue #25).
 
 **성과:**
 | 모듈 | 이전 | 이후 | 커버리지 | 보고서 |
 |------|------|------|----------|--------|
-| App | 122개 `any` | **0개** (100% ANY-FREE) | **99.19%** | [#219](https://github.com/uitiorg/frontend-monorepo/issues/219), [#540](https://github.com/uitiorg/frontend-monorepo/issues/540) |
-| Admin | 246개 `any` | **~2개** (~99%, 15 PR/~20시간) | **97.87%** | [#218](https://github.com/uitiorg/frontend-monorepo/issues/218), [#539](https://github.com/uitiorg/frontend-monorepo/issues/539) |
-| Web | 수백 개 | **< 90개** (진행 중) | **98.84%** | [#538](https://github.com/uitiorg/frontend-monorepo/issues/538) |
+| App | 122개 `any` | **0개** (100% ANY-FREE) | **99.19%** | #219, #540 |
+| Admin | 246개 `any` | **~2개** (~99%, 15 PR/~20시간) | **97.87%** | #218, #539 |
+| Web | 수백 개 | **< 90개** (진행 중) | **98.84%** | #538 |
 
 **임팩트:** 타입 관련 Sentry 에러 감소. 안전한 리팩토링 가능. 명시적 타입을 통한 코드 자기 문서화. 마이그레이션 전 과정에서 1,184건 전체 테스트 통과 유지.
 
@@ -102,7 +101,7 @@
 
 **임팩트:** PageSpeed 점수 **~20 → ~80** — **4배 향상**. 구글 Search Console 성능 경고 전체 해결. Core Web Vitals (LCP, FID, CLS) 대폭 개선.
 
-> **에픽 이슈:** [#635 — React Best Practices 적용 - Vercel Engineering 45 Rules 기반 최적화](https://github.com/uitiorg/frontend-monorepo/issues/635)
+> **에픽 이슈:** #635 — React Best Practices 적용 - Vercel Engineering 45 Rules 기반 최적화
 
 ## 기술 결정
 

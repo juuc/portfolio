@@ -10,7 +10,6 @@
 
 > *"현재 Amplify는 부톡의 큰 기술부채 중 하나"* — 프로젝트 README에서. 이 기술부채를 물려받아 관리 가능하게 만들었습니다.
 
-**Repo:** [uitiorg/bootalk-amplify](https://github.com/uitiorg/bootalk-amplify)
 
 ## 지표
 

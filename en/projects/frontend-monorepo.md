@@ -6,7 +6,7 @@
 
 The central frontend monorepo unifying all client-facing applications for Bootalk. **Created in November 2025** as a strategic initiative to consolidate previously scattered repositories (web, mobile app, admin) into a single, unified codebase — reducing cross-repo dependency issues and enabling shared infrastructure.
 
-> **Epic Reference:** [Discussion #27 — Frontend 프로젝트 통합을 위한 모노레포 도입 마일스톤](https://github.com/uitiorg/team-discussions/discussions/27)
+> **Epic Reference:** Discussion #27 — Frontend 프로젝트 통합을 위한 모노레포 도입 마일스톤
 
 - **apps/web** — Next.js public website (bootalk.co.kr)
 - **apps/app** — React Native mobile app components
@@ -15,7 +15,6 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 - **Lotte Card** partner webview
 - **packages/** — Shared types, API clients, utilities
 
-**Repo:** [uitiorg/frontend-monorepo](https://github.com/uitiorg/frontend-monorepo)
 
 ## Metrics
 
@@ -33,14 +32,14 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 
 **Problem:** The codebase had widespread `any` usage causing silent runtime errors in production. Users experienced broken UI states and data inconsistencies.
 
-**Solution:** Led a phase-based type migration across web, app, and admin modules — **50+ PRs across 30+ phases**. Systematically replaced `any` types with proper TypeScript interfaces. Used **AI-powered tmux multi-pane terminals** running overnight to process phases in parallel, enabling a single engineer to execute work that would typically require a full team. Also conducted cross-monorepo `@ts-ignore` removal ([Issue #25](https://github.com/uitiorg/frontend-monorepo/issues/25)).
+**Solution:** Led a phase-based type migration across web, app, and admin modules — **50+ PRs across 30+ phases**. Systematically replaced `any` types with proper TypeScript interfaces. Used **AI-powered tmux multi-pane terminals** running overnight to process phases in parallel, enabling a single engineer to execute work that would typically require a full team. Also conducted cross-monorepo `@ts-ignore` removal (Issue #25).
 
 **Results:**
 | Module | Before | After | Coverage | Report |
 |--------|--------|-------|----------|--------|
-| App | 122 `any` | **0** (100% ANY-FREE) | **99.19%** | [#219](https://github.com/uitiorg/frontend-monorepo/issues/219), [#540](https://github.com/uitiorg/frontend-monorepo/issues/540) |
-| Admin | 246 `any` | **~2** (~99%, 15 PRs in ~20h) | **97.87%** | [#218](https://github.com/uitiorg/frontend-monorepo/issues/218), [#539](https://github.com/uitiorg/frontend-monorepo/issues/539) |
-| Web | Hundreds | **< 90** (ongoing) | **98.84%** | [#538](https://github.com/uitiorg/frontend-monorepo/issues/538) |
+| App | 122 `any` | **0** (100% ANY-FREE) | **99.19%** | #219, #540 |
+| Admin | 246 `any` | **~2** (~99%, 15 PRs in ~20h) | **97.87%** | #218, #539 |
+| Web | Hundreds | **< 90** (ongoing) | **98.84%** | #538 |
 
 **Impact:** Reduced type-related Sentry errors. Enabled safe refactoring. Code became self-documenting through explicit types. All 1,184 tests maintained passing throughout the migration.
 
@@ -122,16 +121,16 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 
 **Impact:** PageSpeed score improved from **~20 → ~80** — a **4x improvement**. Resolved all critical Google Search Console performance warnings. Significantly improved Core Web Vitals (LCP, FID, CLS).
 
-> **Epic Issue:** [#635 — React Best Practices 적용 - Vercel Engineering 45 Rules 기반 최적화](https://github.com/uitiorg/frontend-monorepo/issues/635)
+> **Epic Issue:** #635 — React Best Practices 적용 - Vercel Engineering 45 Rules 기반 최적화
 
 ## Technical Decisions
 
 | Decision | Rationale |
 |----------|-----------|
 | Monorepo creation (Nov 2025) | Consolidate 3 repos → 1, eliminating cross-repo dependency issues |
-| @bootalk/common package | Shared API infrastructure — factory pattern for axios instances, adapter pattern for Sentry/Logger ([Issue #1](https://github.com/uitiorg/frontend-monorepo/issues/1)) |
+| @bootalk/common package | Shared API infrastructure — factory pattern for axios instances, adapter pattern for Sentry/Logger (Issue #1) |
 | Full nohoist strategy | Complete workspace isolation for maximum stability over disk savings |
-| Circular dependency resolution | Used madge to detect and resolve all circular dependencies ([PR #535](https://github.com/uitiorg/frontend-monorepo/pull/535)) |
+| Circular dependency resolution | Used madge to detect and resolve all circular dependencies (PR #535) |
 | Monorepo with shared packages | Unified types, consistent API clients, single CI/CD |
 | Phase-based type migration | Minimize risk of large-scale changes |
 | Sentry per-app configuration | Different error severity per platform |

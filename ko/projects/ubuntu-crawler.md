@@ -6,7 +6,6 @@
 
 한국 부동산 시장을 위한 포괄적 데이터 수집 시스템 — 정부 API 크롤링, 아파트 데이터 집계, 부톡 플랫폼의 데이터 레이어 공급.
 
-**레포:** [uitiorg/ubuntu-crawler](https://github.com/uitiorg/ubuntu-crawler)
 
 ## 지표
 

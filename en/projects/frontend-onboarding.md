@@ -6,7 +6,6 @@
 
 Comprehensive developer documentation platform for the Bootalk frontend team, built on Mintlify. Serves as the single source of truth for architecture, features, APIs, and development workflows.
 
-**Repo:** [uitiorg/frontend_onboarding](https://github.com/uitiorg/frontend_onboarding)
 
 ## Metrics
 

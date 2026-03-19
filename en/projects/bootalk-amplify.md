@@ -10,7 +10,6 @@ This was **legacy infrastructure that couldn't be thrown away**. The backend was
 
 > *"현재 Amplify는 부톡의 큰 기술부채 중 하나"* — from the project README. I inherited this debt and made it manageable.
 
-**Repo:** [uitiorg/bootalk-amplify](https://github.com/uitiorg/bootalk-amplify)
 
 ## Metrics
 

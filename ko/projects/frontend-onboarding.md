@@ -6,7 +6,6 @@
 
 Mintlify 기반의 부톡 프론트엔드 팀 포괄적 개발자 문서 플랫폼. 아키텍처, 기능, API, 개발 워크플로우의 단일 진실 공급원(Single Source of Truth).
 
-**레포:** [uitiorg/frontend_onboarding](https://github.com/uitiorg/frontend_onboarding)
 
 ## 지표
 
