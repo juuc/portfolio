@@ -77,7 +77,17 @@ The AI Transformation section is a key differentiator. Protect its quality:
 - **Keep the 5 principles section.** It distinguishes "AI user" from "AI-powered engineer"
 - **Update the commit numbers** when adding new work — the monthly table and totals must stay accurate
 
-## 7. Accuracy
+## 7. UI Effects Philosophy
+
+The portfolio site (`index.html`) may incorporate interactive effects from the `../ui-practice` repo. Follow these principles:
+
+- **One strong accent > three competing ones.** A single well-placed effect demonstrates frontend taste. Multiple effects turn the portfolio into a demo page.
+- **Effect must serve the content.** The portfolio's job: "I built impressive things." The effect's job: "...and I have excellent frontend taste." Never let the effect compete with the message.
+- **Good fits:** Card-swap on project cards (interactive, keeps metrics visible), electric-border as subtle section accents
+- **Skip:** Effects that don't serve the portfolio's purpose (page-curl, grid-focus), auto-playing animations that distract from reading
+- **Keep it vanilla.** No frameworks, no build step — match the `ui-practice` philosophy of raw browser APIs in a single file.
+
+## 8. Accuracy
 
 - Commit counts, PR counts, dates MUST match real GitHub data
 - When updating metrics, verify with `gh` CLI against the actual repos
