@@ -198,7 +198,7 @@
       align-self: flex-start;
     }
     .lang-btn {
-      padding: 4px 14px;
+      padding: 6px 16px;
       font-size: 13px; font-weight: 500;
       background: transparent;
       border: none;
@@ -206,6 +206,14 @@
       cursor: pointer;
       transition: background 0.15s, color 0.15s;
       font-family: var(--font-sans);
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
+    .lang-btn:hover:not(.active) {
+      background: rgba(255,255,255,0.06);
+      color: var(--text-secondary);
     }
     .lang-btn.active {
       background: var(--accent);
@@ -779,18 +787,11 @@
           <a href="https://github.com/jwc-bootalk" target="_blank" rel="noopener" class="sidebar-link">${GH_ICON} @jwc-bootalk</a>
         </div>
       `;
-      // Lang button events
-      $sidebar.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', () => setLang(btn.dataset.lang));
-      });
       // Mobile lang
       $mobileLang.innerHTML = `
         <button class="lang-btn ${lang === 'en' ? 'active' : ''}" data-lang="en">EN</button>
         <button class="lang-btn ${lang === 'ko' ? 'active' : ''}" data-lang="ko">KO</button>
       `;
-      $mobileLang.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', () => setLang(btn.dataset.lang));
-      });
       updateActiveNav();
     }
 
@@ -988,6 +989,17 @@
     $hamburger.addEventListener('click', toggleMenu);
     $overlay.addEventListener('click', closeMenu);
     window.addEventListener('hashchange', navigate);
+
+    // Event delegation for lang buttons — survives re-renders
+    document.addEventListener('click', e => {
+      const btn = e.target.closest('.lang-btn');
+      if (btn && btn.dataset.lang) {
+        e.preventDefault();
+        e.stopPropagation();
+        setLang(btn.dataset.lang);
+      }
+    });
+
     renderSidebar();
     navigate();
   </script>
