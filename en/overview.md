@@ -6,7 +6,7 @@
 
 Joined Bootalk as **Chief Data Officer (CDO)** in March 2025, rapidly expanding scope beyond data to lead the entire engineering organization. After the CTO's departure in August 2025, assumed **Technical Lead / Product Owner** responsibilities — managing a 4-person development team, owning all platform deployments, and driving product decisions across web, mobile, backend, and data.
 
-Contributed **3,203 commits** and **754+ pull requests** across **28 repositories** in 11 months — an unusually broad scope reflecting an engineer who operated as both builder and leader.
+Contributed **3,775 commits** and **1,000+ pull requests** across **28 repositories** in 12 months — an unusually broad scope reflecting an engineer who operated as both builder and leader.
 
 ## Role & Leadership
 
@@ -72,7 +72,7 @@ From ~65 commits/month with Cline to **838 commits in December** with Claude Cod
 - Distribute phases across concurrent agent sessions
 - Coordinate via shared `CLAUDE.md` instructions and issue tracking
 
-This methodology enabled a single engineer to produce output comparable to a team of 5+ — directly responsible for the 3,203 commits and 754+ PRs across 28 repositories in 11 months.
+This methodology enabled a single engineer to produce output comparable to a team of 5+ — directly responsible for the 3,775 commits and 1,000+ PRs across 28 repositories in 12 months.
 
 ### What Makes AI-Powered Engineering Work
 
@@ -101,8 +101,8 @@ Led frontend architecture across web (Next.js), mobile (React Native/Expo), and 
 
 | Metric | Value |
 |--------|-------|
-| Total Commits | **3,203** |
-| Pull Requests | **754+** (564 merged in monorepo alone) |
+| Total Commits | **3,775** |
+| Pull Requests | **1,000+** (762 merged in monorepo alone) |
 | Active Repositories | **28** |
 | Peak Month | Dec 2025 — **838 commits** |
 | Active Days | ~220 (7 days/week including weekends) |

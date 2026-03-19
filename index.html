@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ju Woocheol — Portfolio</title>
+  <meta name="description" content="Engineering portfolio — 3,571 commits, 754+ PRs across 34 repositories">
+  <meta property="og:title" content="Ju Woocheol — Engineering Portfolio">
+  <meta property="og:description" content="CDO / Tech Lead — fullstack engineering with AI-augmented workflows">
+  <meta property="og:url" content="https://juuc.github.io/portfolio">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><rect fill=%27%233b82f6%27 rx=%2714%27 width=%27100%27 height=%27100%27/><text x=%2750%27 y=%2752%27 font-size=%2738%27 fill=%27white%27 text-anchor=%27middle%27 dominant-baseline=%27central%27 font-family=%27system-ui%27 font-weight=%27700%27>JW</text></svg>">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    :root {
+      --bg: #09090b;
+      --bg-sidebar: #0c0c0f;
+      --surface: #18181b;
+      --surface-hover: #1f1f23;
+      --border: #27272a;
+      --border-subtle: #1c1c1f;
+      --text: #fafafa;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --accent-subtle: rgba(59,130,246,0.08);
+      --success: #10b981;
+      --radius: 8px;
+      --radius-lg: 12px;
+      --sidebar-w: 260px;
+      --mobile-header-h: 56px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    /* ==================== Layout ==================== */
+    .sidebar {
+      position: fixed; left: 0; top: 0; bottom: 0;
+      width: var(--sidebar-w);
+      background: var(--bg-sidebar);
+      border-right: 1px solid var(--border);
+      display: flex; flex-direction: column;
+      z-index: 50;
+      transition: transform 0.3s ease;
+    }
+    .main {
+      margin-left: var(--sidebar-w);
+      min-height: 100vh;
+    }
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 32px 80px;
+    }
+
+    /* ==================== Mobile Header ==================== */
+    .mobile-bar {
+      display: none;
+      position: fixed; top: 0; left: 0; right: 0;
+      height: var(--mobile-header-h);
+      background: rgba(9,9,11,0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      z-index: 40;
+    }
+    .hamburger {
+      background: none; border: none; cursor: pointer;
+      width: 36px; height: 36px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 5px;
+    }
+    .hamburger span {
+      display: block; width: 20px; height: 2px;
+      background: var(--text-secondary);
+      border-radius: 1px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(2.5px, 2.5px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(2.5px, -2.5px); }
+    .mobile-title {
+      font-weight: 700; font-size: 15px; color: var(--text);
+      letter-spacing: -0.01em;
+    }
+    .overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 45;
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .overlay.visible { display: block; opacity: 1; }
+
+    /* ==================== Sidebar ==================== */
+    .sidebar-profile {
+      padding: 24px 20px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .avatar {
+      width: 44px; height: 44px;
+      background: var(--accent);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 16px; color: #fff;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .profile-name {
+      font-weight: 700; font-size: 16px; color: var(--text);
+      letter-spacing: -0.02em;
+    }
+    .profile-name-alt {
+      font-size: 13px; color: var(--text-muted);
+      margin-top: 1px;
+    }
+    .profile-title {
+      font-size: 13px; color: var(--text-secondary);
+      margin-top: 4px;
+    }
+
+    .sidebar-nav {
+      flex: 1; overflow-y: auto;
+      padding: 8px 10px;
+    }
+    .nav-item {
+      display: block;
+      padding: 7px 10px;
+      border-radius: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.15s, color 0.15s;
+      cursor: pointer;
+    }
+    .nav-item:hover {
+      background: var(--surface);
+      color: var(--text);
+    }
+    .nav-item.active {
+      background: var(--accent-subtle);
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .nav-sub { padding-left: 22px; font-size: 13px; }
+    .nav-group-label {
+      padding: 16px 10px 4px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+    .nav-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 8px 10px;
+    }
+    .nav-sub-divider {
+      height: 1px;
+      background: var(--border-subtle);
+      margin: 4px 22px;
+    }
+
+    .sidebar-footer {
+      padding: 16px 20px;
+      border-top: 1px solid var(--border);
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .lang-toggle {
+      display: inline-flex;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      align-self: flex-start;
+    }
+    .lang-btn {
+      padding: 4px 14px;
+      font-size: 13px; font-weight: 500;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      font-family: var(--font-sans);
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      color: #fff;
+    }
+    .sidebar-link {
+      display: flex; align-items: center; gap: 8px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.15s;
+    }
+    .sidebar-link:hover { color: var(--text-secondary); }
+    .sidebar-link svg { flex-shrink: 0; }
+
+    /* ==================== Home: Hero ==================== */
+    .hero { margin-bottom: 40px; }
+    .hero-name {
+      font-size: 2.25rem; font-weight: 700;
+      letter-spacing: -0.03em; line-height: 1.15;
+      margin-bottom: 4px;
+    }
+    .hero-title {
+      font-size: 1.1rem; color: var(--accent);
+      font-weight: 500; margin-bottom: 6px;
+    }
+    .hero-edu {
+      font-size: 14px; color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .hero-intro {
+      font-size: 15px; color: var(--text-secondary);
+      max-width: 560px; line-height: 1.65;
+      margin-bottom: 20px;
+    }
+    .hero-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px; font-weight: 500;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .hero-link:hover {
+      border-color: var(--text-muted);
+      color: var(--text);
+    }
+
+    /* ==================== Home: Stats ==================== */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 48px;
+    }
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 1.5rem; font-weight: 700;
+      letter-spacing: -0.02em;
+      font-family: var(--font-mono);
+      color: var(--text);
+    }
+    .stat-label {
+      font-size: 12px; color: var(--text-muted);
+      margin-top: 4px; text-transform: uppercase;
+      letter-spacing: 0.03em; font-weight: 500;
+    }
+
+    /* ==================== Home: Career ==================== */
+    .section-title {
+      font-size: 1.1rem; font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    .career-list {
+      display: flex; flex-direction: column; gap: 12px;
+      margin-bottom: 48px;
+    }
+    .career-item {
+      display: flex; gap: 16px; align-items: flex-start;
+      padding: 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .career-period {
+      font-size: 13px; color: var(--text-muted);
+      font-family: var(--font-mono);
+      white-space: nowrap;
+      padding-top: 1px;
+    }
+    .career-company {
+      font-weight: 600; font-size: 15px; color: var(--text);
+    }
+    .career-type {
+      font-weight: 400; font-size: 13px; color: var(--text-muted);
+      margin-left: 4px;
+    }
+    .career-role {
+      font-size: 14px; color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    /* ==================== Home: Projects ==================== */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 48px;
+    }
+    .project-card {
+      display: block;
+      padding: 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .project-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(59,130,246,0.08);
+    }
+    .project-metric {
+      display: inline-block;
+      font-size: 12px; font-weight: 600;
+      font-family: var(--font-mono);
+      color: var(--accent);
+      background: var(--accent-subtle);
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .project-name {
+      font-size: 16px; font-weight: 600; color: var(--text);
+      margin-bottom: 6px;
+    }
+    .project-impact {
+      font-size: 13px; color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* ==================== Home: Other Projects ==================== */
+    .other-projects {
+      display: flex; flex-direction: column;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 48px;
+    }
+    .other-project-item {
+      display: flex; align-items: center; gap: 12px;
+      padding: 14px 16px;
+      background: var(--surface);
+      text-decoration: none;
+      transition: background 0.15s;
+      border-bottom: 1px solid var(--border);
+    }
+    .other-project-item:last-child { border-bottom: none; }
+    .other-project-item:hover { background: var(--surface-hover); }
+    .other-project-name {
+      font-size: 14px; font-weight: 500; color: var(--text);
+      min-width: 140px;
+    }
+    .other-project-commits {
+      font-size: 12px; font-family: var(--font-mono);
+      color: var(--text-muted);
+      min-width: 80px;
+    }
+    .other-project-desc {
+      font-size: 13px; color: var(--text-secondary);
+    }
+
+    /* ==================== Home: Nav Cards ==================== */
+    .nav-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .nav-card {
+      display: block;
+      padding: 18px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: border-color 0.2s;
+    }
+    .nav-card:hover { border-color: var(--text-muted); }
+    .nav-card-label {
+      font-size: 14px; font-weight: 600; color: var(--text);
+      margin-bottom: 4px;
+    }
+    .nav-card-desc {
+      font-size: 12px; color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* ==================== Markdown Prose ==================== */
+    .prose { animation: fadeIn 0.25s ease; }
+    .prose h1 {
+      font-size: 1.75rem; font-weight: 700;
+      letter-spacing: -0.02em; line-height: 1.2;
+      margin: 0 0 8px; padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .prose h2 {
+      font-size: 1.25rem; font-weight: 600;
+      letter-spacing: -0.01em;
+      margin: 36px 0 12px;
+      color: var(--text);
+    }
+    .prose h3 {
+      font-size: 1.05rem; font-weight: 600;
+      margin: 28px 0 8px;
+      color: var(--text);
+    }
+    .prose h4 {
+      font-size: 0.95rem; font-weight: 600;
+      margin: 24px 0 8px;
+      color: var(--text-secondary);
+    }
+    .prose p {
+      margin: 0 0 16px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .prose a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .prose a:hover { text-decoration: underline; }
+    .prose strong { color: var(--text); font-weight: 600; }
+    .prose em { color: var(--text-secondary); }
+    .prose ul, .prose ol {
+      padding-left: 20px;
+      margin: 0 0 16px;
+      color: var(--text-secondary);
+    }
+    .prose li {
+      margin-bottom: 6px;
+      line-height: 1.6;
+    }
+    .prose li::marker { color: var(--text-muted); }
+    .prose blockquote {
+      border-left: 3px solid var(--accent);
+      padding: 8px 16px;
+      margin: 0 0 16px;
+      background: var(--accent-subtle);
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .prose blockquote p {
+      color: var(--text-secondary);
+      margin: 0;
+      font-size: 14px;
+    }
+    .prose code {
+      font-family: var(--font-mono);
+      font-size: 0.88em;
+      background: var(--surface);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--accent);
+    }
+    .prose pre {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      overflow-x: auto;
+      margin: 0 0 16px;
+    }
+    .prose pre code {
+      background: none;
+      padding: 0;
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .prose hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    .prose img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+      margin: 8px 0;
+    }
+    .prose table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 0 20px;
+      font-size: 14px;
+    }
+    .prose thead th {
+      text-align: left;
+      padding: 10px 14px;
+      border-bottom: 2px solid var(--border);
+      font-weight: 600;
+      color: var(--text);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .prose tbody td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+    .prose tbody tr:last-child td { border-bottom: none; }
+    .prose tbody tr:hover { background: rgba(255,255,255,0.02); }
+    .prose .table-wrap {
+      overflow-x: auto;
+      margin: 0 0 20px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .prose .table-wrap table { margin: 0; }
+    .prose .table-wrap th:first-child,
+    .prose .table-wrap td:first-child { padding-left: 16px; }
+
+    /* ==================== Back Link ==================== */
+    .back-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px; font-weight: 500;
+      margin-bottom: 24px;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: var(--text); }
+
+    /* ==================== Loading / Error ==================== */
+    .loading, .error-state {
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      min-height: 300px;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    .loading-spinner {
+      width: 24px; height: 24px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      margin-bottom: 12px;
+    }
+    .error-state h2 {
+      font-size: 18px; color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    /* ==================== Animations ==================== */
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .fade-in { animation: fadeIn 0.25s ease; }
+
+    /* ==================== Responsive ==================== */
+    @media (max-width: 900px) {
+      .projects-grid { grid-template-columns: 1fr; }
+      .nav-cards-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .mobile-bar { display: flex; }
+      .sidebar {
+        transform: translateX(-100%);
+        width: 280px;
+        top: 0;
+      }
+      .sidebar.open { transform: translateX(0); }
+      .main {
+        margin-left: 0;
+        padding-top: var(--mobile-header-h);
+      }
+      .content { padding: 24px 16px 60px; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero-name { font-size: 1.75rem; }
+      .career-item { flex-direction: column; gap: 4px; }
+      .other-project-item { flex-wrap: wrap; }
+      .other-project-name { min-width: auto; }
+      .other-project-desc { width: 100%; }
+      .nav-cards-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="mobile-bar" id="mobileBar">
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <span class="mobile-title">JW Portfolio</span>
+    <div class="lang-toggle" id="mobileLang"></div>
+  </header>
+  <div class="overlay" id="overlay"></div>
+  <aside class="sidebar" id="sidebar"></aside>
+  <main class="main">
+    <div class="content" id="content"></div>
+  </main>
+
+  <script>
+    // ==================== Icons ====================
+    const GH_ICON = '<svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>';
+
+    // ==================== Bilingual Data ====================
+    const DATA = {
+      en: {
+        name: 'Ju Woocheol',
+        nameAlt: '\uc8fc\uc6b0\ucca0',
+        title: 'CDO \u2192 Tech Lead / Product Owner',
+        education: 'Seoul National University \u2014 Civil Engineering (2025.07)',
+        intro: '4+ years building fullstack products \u2014 from mobile apps and data pipelines to AI services. Managed a 4-person dev team, shipping 3,203 commits across 28 repositories in 11 months, powered by AI-augmented workflows.',
+        stats: [
+          { value: '3,571', label: 'Commits' },
+          { value: '754+', label: 'Pull Requests' },
+          { value: '34', label: 'Repositories' },
+          { value: '4+', label: 'Years' },
+        ],
+        career: [
+          { period: '2025.03 \u2014 2026.02', company: 'Bootalk', type: 'PropTech', role: 'CDO \u2192 Tech Lead / PO' },
+          { period: '2022.02 \u2014 2025.08', company: 'Intelz / YouBook', type: 'EdTech', role: 'App Developer & Data Manager' },
+        ],
+        flagship: [
+          { id: 'frontend-monorepo', name: 'Frontend Monorepo', metric: '594 PRs', impact: '3 repos \u2192 1 monorepo. PageSpeed 20\u219280, type safety 98%+' },
+          { id: 'bootalk-app', name: 'Bootalk App', metric: '90% coverage', impact: 'Bare RN \u2192 Expo managed. 7-stage migration, OTA updates' },
+          { id: 'bootalk-amplify', name: 'Bootalk Amplify', metric: '29 Lambdas', impact: 'Legacy backend. Environment separation, Sentry, auth fixes' },
+          { id: 'bootalk-web', name: 'Bootalk Web', metric: '48K URLs', impact: 'CSR\u2192SSR, sitemap 5\u219248K, PageSpeed 20\u219280, AI search GEO' },
+        ],
+        other: [
+          { id: 'ubuntu-crawler', name: 'Ubuntu Crawler', commits: 420, desc: 'Real estate data collection' },
+          { id: 'data-pipelines', name: 'Data Pipelines', commits: 109, desc: 'Dagster-based ETL infrastructure' },
+          { id: 'frontend-onboarding', name: 'Frontend Onboarding', commits: 342, desc: 'Developer docs (Mintlify)' },
+          { id: 'other-projects', name: 'Other Projects', commits: 219, desc: 'Admin, Backend, AI/ML, and more' },
+        ],
+        sections: { career: 'Career', flagship: 'Flagship Projects', otherProjects: 'Other Projects', explore: 'Explore More' },
+        nav: { home: 'Home', overview: 'Overview', projects: 'Projects', flagship: 'Flagship', otherNav: 'Other', timeline: 'Timeline', skills: 'Skills', architecture: 'Architecture', intelz: 'Previous: Intelz' },
+        navDesc: {
+          overview: 'Role narrative, AI transformation, key metrics',
+          timeline: 'Monthly activity and growth phases',
+          skills: 'Technical stack breakdown',
+          architecture: '7 platform-shaping technical decisions',
+          intelz: '3.5 years of UX, content, and app development',
+        },
+        labels: { commits: 'commits', back: 'Back to Home' },
+      },
+      ko: {
+        name: '\uc8fc\uc6b0\ucca0',
+        nameAlt: 'Ju Woocheol',
+        title: 'CDO \u2192 Tech Lead / Product Owner',
+        education: '\uc11c\uc6b8\ub300\ud559\uad50 \u2014 \ud1a0\ubaa9\uacf5\ud559\uacfc (2025.07 \uc878\uc5c5)',
+        intro: '4\ub144 \uc774\uc0c1\uc758 \ud480\uc2a4\ud0dd \ud504\ub85c\ub355\ud2b8 \uac1c\ubc1c \u2014 \ubaa8\ubc14\uc77c \uc571, \ub370\uc774\ud130 \ud30c\uc774\ud504\ub77c\uc778\ubd80\ud130 AI \uc11c\ube44\uc2a4\uae4c\uc9c0. 4\uc778 \uac1c\ubc1c\ud300\uc744 \uc774\ub044\uba70 11\uac1c\uc6d4\uac04 28\uac1c \uc800\uc7a5\uc18c\uc5d0\uc11c 3,203 \ucee4\ubc0b \ub2ec\uc131.',
+        stats: [
+          { value: '3,571', label: '\ucee4\ubc0b' },
+          { value: '754+', label: 'PR' },
+          { value: '34', label: '\uc800\uc7a5\uc18c' },
+          { value: '4+', label: '\ub144\ucc28' },
+        ],
+        career: [
+          { period: '2025.03 \u2014 2026.02', company: '\ubd80\ud1a1 (Bootalk)', type: 'PropTech', role: 'CDO \u2192 Tech Lead / PO' },
+          { period: '2022.02 \u2014 2025.08', company: '\uc778\ud154\uc988 / \uc720\ubd81 (YouBook)', type: 'EdTech', role: '\uc571 \uac1c\ubc1c\uc790 & \ub370\uc774\ud130 \ub9e4\ub2c8\uc800' },
+        ],
+        flagship: [
+          { id: 'frontend-monorepo', name: '\ud504\ub860\ud2b8\uc5d4\ub4dc \ubaa8\ub178\ub808\ud3ec', metric: '594 PR', impact: '3\uac1c \ub808\ud3ec \u2192 1\uac1c \ubaa8\ub178\ub808\ud3ec. PageSpeed 20\u219280, \ud0c0\uc785 \uc548\uc804\uc131 98%+' },
+          { id: 'bootalk-app', name: '\ubd80\ud1a1 \uc571', metric: '90% \ucee4\ubc84\ub9ac\uc9c0', impact: 'Bare RN \u2192 Expo. 7\ub2e8\uacc4 \ub9c8\uc774\uadf8\ub808\uc774\uc158, OTA \uc5c5\ub370\uc774\ud2b8' },
+          { id: 'bootalk-amplify', name: 'Bootalk Amplify', metric: '29 Lambda', impact: '\ub808\uac70\uc2dc \ubc31\uc5d4\ub4dc. \ud658\uacbd \ubd84\ub9ac, Sentry, \uc778\uc99d \uc218\uc815' },
+          { id: 'bootalk-web', name: '\ubd80\ud1a1 \uc6f9', metric: '48K URL', impact: 'CSR\u2192SSR, \uc0ac\uc774\ud2b8\ub9f5 5\u219248K, PageSpeed 20\u219280, AI \uac80\uc0c9 GEO' },
+        ],
+        other: [
+          { id: 'ubuntu-crawler', name: '\ub370\uc774\ud130 \ud06c\ub864\ub7ec', commits: 420, desc: '\ubd80\ub3d9\uc0b0 \ub370\uc774\ud130 \uc218\uc9d1' },
+          { id: 'data-pipelines', name: '\ub370\uc774\ud130 \ud30c\uc774\ud504\ub77c\uc778', commits: 109, desc: 'Dagster \uae30\ubc18 ETL' },
+          { id: 'frontend-onboarding', name: '\ud504\ub860\ud2b8\uc5d4\ub4dc \uc628\ubcf4\ub529', commits: 342, desc: '\uac1c\ubc1c\uc790 \ubb38\uc11c (Mintlify)' },
+          { id: 'other-projects', name: '\uae30\ud0c0 \ud504\ub85c\uc81d\ud2b8', commits: 219, desc: 'Admin, Backend, AI/ML \ub4f1' },
+        ],
+        sections: { career: '\uacbd\ub825', flagship: '\uc8fc\uc694 \ud504\ub85c\uc81d\ud2b8', otherProjects: '\uae30\ud0c0 \ud504\ub85c\uc81d\ud2b8', explore: '\ub354 \uc54c\uc544\ubcf4\uae30' },
+        nav: { home: '\ud648', overview: '\uac1c\uc694', projects: '\ud504\ub85c\uc81d\ud2b8', flagship: '\uc8fc\uc694', otherNav: '\uae30\ud0c0', timeline: '\ud0c0\uc784\ub77c\uc778', skills: '\uae30\uc220 \uc2a4\ud0dd', architecture: '\uc544\ud0a4\ud14d\ucc98 \uacb0\uc815', intelz: '\uc774\uc804: \uc778\ud154\uc988' },
+        navDesc: {
+          overview: '\uc5ed\ud560 \ub0b4\ub7ec\ud2f0\ube0c, AX \ucca0\ud559, \uc8fc\uc694 \uc9c0\ud45c',
+          timeline: '\uc6d4\ubcc4 \ud65c\ub3d9\uacfc \uc131\uc7a5 \ub2e8\uacc4',
+          skills: '\uae30\uc220 \uc2a4\ud0dd \uc0c1\uc138',
+          architecture: '\ud50c\ub7ab\ud3fc\uc744 \ubc14\uafbc 7\uac00\uc9c0 \uae30\uc220\uc801 \uacb0\uc815',
+          intelz: '3.5\ub144\uc758 UX, \ucf58\ud150\uce20, \uc571 \uac1c\ubc1c',
+        },
+        labels: { commits: '\ucee4\ubc0b', back: '\ud648\uc73c\ub85c \ub3cc\uc544\uac00\uae30' },
+      },
+    };
+
+    // ==================== Route Map ====================
+    const ROUTES = {
+      overview:                     { en: 'en/overview.md',                    ko: 'ko/overview.md' },
+      timeline:                     { en: 'en/timeline.md',                    ko: 'ko/timeline.md' },
+      skills:                       { en: 'en/skills.md',                      ko: 'ko/skills.md' },
+      architecture:                 { en: 'en/architectural-decisions.md',     ko: 'ko/architectural-decisions.md' },
+      intelz:                       { en: 'en/intelz.md',                      ko: 'ko/intelz.md' },
+      'projects/frontend-monorepo': { en: 'en/projects/frontend-monorepo.md',  ko: 'ko/projects/frontend-monorepo.md' },
+      'projects/bootalk-app':       { en: 'en/projects/bootalk-app.md',        ko: 'ko/projects/bootalk-app.md' },
+      'projects/bootalk-amplify':   { en: 'en/projects/bootalk-amplify.md',    ko: 'ko/projects/bootalk-amplify.md' },
+      'projects/bootalk-web':       { en: 'en/projects/bootalk-web.md',        ko: 'ko/projects/bootalk-web.md' },
+      'projects/ubuntu-crawler':    { en: 'en/projects/ubuntu-crawler.md',     ko: 'ko/projects/ubuntu-crawler.md' },
+      'projects/data-pipelines':    { en: 'en/projects/data-pipelines.md',     ko: 'ko/projects/data-pipelines.md' },
+      'projects/frontend-onboarding':{ en: 'en/projects/frontend-onboarding.md', ko: 'ko/projects/frontend-onboarding.md' },
+      'projects/other-projects':    { en: 'en/projects/other-projects.md',     ko: 'ko/projects/other-projects.md' },
+    };
+
+    // ==================== State ====================
+    let lang = localStorage.getItem('portfolio-lang') || 'en';
+    const mdCache = {};
+    const $sidebar = document.getElementById('sidebar');
+    const $content = document.getElementById('content');
+    const $overlay = document.getElementById('overlay');
+    const $hamburger = document.getElementById('hamburger');
+    const $mobileLang = document.getElementById('mobileLang');
+
+    // ==================== Marked Config ====================
+    marked.setOptions({ gfm: true, breaks: false });
+
+    // Override table renderer to wrap in scrollable container
+    const renderer = new marked.Renderer();
+    const origTable = renderer.table;
+    renderer.table = function(token) {
+      const html = marked.Renderer.prototype.table.call(this, token);
+      return '<div class="table-wrap">' + html + '</div>';
+    };
+    marked.use({ renderer });
+
+    // ==================== Render Sidebar ====================
+    function renderSidebar() {
+      const d = DATA[lang];
+      const showAlt = lang === 'en';
+      $sidebar.innerHTML = `
+        <div class="sidebar-profile">
+          <div class="avatar">JW</div>
+          <div class="profile-name">${d.name}</div>
+          ${showAlt ? '<div class="profile-name-alt">' + d.nameAlt + '</div>' : ''}
+          <div class="profile-title">${d.title}</div>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="#/" class="nav-item" data-route="home">${d.nav.home}</a>
+          <a href="#/overview" class="nav-item" data-route="overview">${d.nav.overview}</a>
+          <div class="nav-group-label">${d.nav.flagship}</div>
+          ${d.flagship.map(p => `<a href="#/projects/${p.id}" class="nav-item nav-sub" data-route="projects/${p.id}">${p.name}</a>`).join('')}
+          <div class="nav-sub-divider"></div>
+          ${d.other.map(p => `<a href="#/projects/${p.id}" class="nav-item nav-sub" data-route="projects/${p.id}">${p.name}</a>`).join('')}
+          <div class="nav-divider"></div>
+          <a href="#/timeline" class="nav-item" data-route="timeline">${d.nav.timeline}</a>
+          <a href="#/skills" class="nav-item" data-route="skills">${d.nav.skills}</a>
+          <a href="#/architecture" class="nav-item" data-route="architecture">${d.nav.architecture}</a>
+          <div class="nav-divider"></div>
+          <a href="#/intelz" class="nav-item" data-route="intelz">${d.nav.intelz}</a>
+        </nav>
+        <div class="sidebar-footer">
+          <div class="lang-toggle" id="sidebarLang">
+            <button class="lang-btn ${lang === 'en' ? 'active' : ''}" data-lang="en">EN</button>
+            <button class="lang-btn ${lang === 'ko' ? 'active' : ''}" data-lang="ko">KO</button>
+          </div>
+          <a href="https://github.com/juuc" target="_blank" rel="noopener" class="sidebar-link">${GH_ICON} @juuc</a>
+          <a href="https://github.com/jwc-bootalk" target="_blank" rel="noopener" class="sidebar-link">${GH_ICON} @jwc-bootalk</a>
+        </div>
+      `;
+      // Lang button events
+      $sidebar.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => setLang(btn.dataset.lang));
+      });
+      // Mobile lang
+      $mobileLang.innerHTML = `
+        <button class="lang-btn ${lang === 'en' ? 'active' : ''}" data-lang="en">EN</button>
+        <button class="lang-btn ${lang === 'ko' ? 'active' : ''}" data-lang="ko">KO</button>
+      `;
+      $mobileLang.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => setLang(btn.dataset.lang));
+      });
+      updateActiveNav();
+    }
+
+    // ==================== Render Home ====================
+    function renderHome() {
+      const d = DATA[lang];
+      $content.innerHTML = `
+        <div class="fade-in">
+          <section class="hero">
+            <h1 class="hero-name">${d.name}</h1>
+            <p class="hero-title">${d.title}</p>
+            <p class="hero-edu">${d.education}</p>
+            <p class="hero-intro">${d.intro}</p>
+            <div class="hero-links">
+              <a href="https://github.com/juuc" target="_blank" rel="noopener" class="hero-link">${GH_ICON} @juuc</a>
+              <a href="https://github.com/jwc-bootalk" target="_blank" rel="noopener" class="hero-link">${GH_ICON} @jwc-bootalk</a>
+            </div>
+          </section>
+
+          <section class="stats-grid">
+            ${d.stats.map(s => `<div class="stat-card"><div class="stat-value">${s.value}</div><div class="stat-label">${s.label}</div></div>`).join('')}
+          </section>
+
+          <section>
+            <h2 class="section-title">${d.sections.career}</h2>
+            <div class="career-list">
+              ${d.career.map(c => `
+                <div class="career-item">
+                  <div class="career-period">${c.period}</div>
+                  <div>
+                    <div class="career-company">${c.company} <span class="career-type">${c.type}</span></div>
+                    <div class="career-role">${c.role}</div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </section>
+
+          <section>
+            <h2 class="section-title">${d.sections.flagship}</h2>
+            <div class="projects-grid">
+              ${d.flagship.map(p => `
+                <a href="#/projects/${p.id}" class="project-card">
+                  <div class="project-metric">${p.metric}</div>
+                  <h3 class="project-name">${p.name}</h3>
+                  <p class="project-impact">${p.impact}</p>
+                </a>
+              `).join('')}
+            </div>
+          </section>
+
+          <section>
+            <h2 class="section-title">${d.sections.otherProjects}</h2>
+            <div class="other-projects">
+              ${d.other.map(p => `
+                <a href="#/projects/${p.id}" class="other-project-item">
+                  <span class="other-project-name">${p.name}</span>
+                  <span class="other-project-commits">${p.commits} ${d.labels.commits}</span>
+                  <span class="other-project-desc">${p.desc}</span>
+                </a>
+              `).join('')}
+            </div>
+          </section>
+
+          <section>
+            <h2 class="section-title">${d.sections.explore}</h2>
+            <div class="nav-cards-grid">
+              ${['overview','timeline','skills','architecture','intelz'].map(key => `
+                <a href="#/${key}" class="nav-card">
+                  <div class="nav-card-label">${d.nav[key]}</div>
+                  <div class="nav-card-desc">${d.navDesc[key]}</div>
+                </a>
+              `).join('')}
+            </div>
+          </section>
+        </div>
+      `;
+    }
+
+    // ==================== Render Markdown Page ====================
+    async function renderMarkdownPage(route) {
+      const mdFile = ROUTES[route]?.[lang];
+      if (!mdFile) { render404(); return; }
+
+      $content.innerHTML = '<div class="loading"><div class="loading-spinner"></div>Loading\u2026</div>';
+
+      const cacheKey = lang + ':' + route;
+      let md = mdCache[cacheKey];
+      if (!md) {
+        try {
+          const res = await fetch(mdFile);
+          if (!res.ok) throw new Error(res.status);
+          md = await res.text();
+          mdCache[cacheKey] = md;
+        } catch {
+          $content.innerHTML = `<div class="error-state"><h2>Content not found</h2><p>Could not load this page.</p><a href="#/" class="back-link">\u2190 ${DATA[lang].labels.back}</a></div>`;
+          return;
+        }
+      }
+
+      const html = marked.parse(md);
+      $content.innerHTML = `
+        <div class="fade-in">
+          <a href="#/" class="back-link">\u2190 ${DATA[lang].labels.back}</a>
+          <article class="prose">${html}</article>
+        </div>
+      `;
+      handleInternalLinks();
+    }
+
+    // ==================== 404 ====================
+    function render404() {
+      $content.innerHTML = `<div class="error-state"><h2>Page not found</h2><a href="#/" class="back-link">\u2190 ${DATA[lang].labels.back}</a></div>`;
+    }
+
+    // ==================== Internal Link Handling ====================
+    function handleInternalLinks() {
+      $content.querySelectorAll('a').forEach(a => {
+        const href = a.getAttribute('href');
+        if (!href) return;
+        if (href.startsWith('http://') || href.startsWith('https://')) {
+          a.setAttribute('target', '_blank');
+          a.setAttribute('rel', 'noopener');
+          return;
+        }
+        if (href.endsWith('.md')) {
+          a.addEventListener('click', e => {
+            e.preventDefault();
+            let route = href
+              .replace(/^(\.\.\/)+/, '')
+              .replace(/^(en|ko)\//, '')
+              .replace(/\.md$/, '');
+            if (route === 'README') { route = 'home'; }
+            window.location.hash = route === 'home' ? '/' : '/' + route;
+          });
+        }
+      });
+    }
+
+    // ==================== Router ====================
+    function getRoute() {
+      const hash = window.location.hash.slice(1).replace(/^\//, '') || '';
+      return hash || 'home';
+    }
+
+    async function navigate() {
+      const route = getRoute();
+      if (route === 'home') {
+        renderHome();
+      } else if (ROUTES[route]) {
+        await renderMarkdownPage(route);
+      } else {
+        render404();
+      }
+      updateActiveNav();
+      closeMenu();
+      window.scrollTo(0, 0);
+    }
+
+    function updateActiveNav() {
+      const route = getRoute();
+      $sidebar.querySelectorAll('.nav-item').forEach(item => {
+        const r = item.dataset.route;
+        item.classList.toggle('active', r === route);
+      });
+    }
+
+    // ==================== Language ====================
+    function setLang(newLang) {
+      if (newLang === lang) return;
+      lang = newLang;
+      localStorage.setItem('portfolio-lang', lang);
+      document.documentElement.lang = lang;
+      // Clear cache to re-fetch in new language
+      renderSidebar();
+      navigate();
+    }
+
+    // ==================== Mobile Menu ====================
+    function toggleMenu() {
+      const open = $sidebar.classList.toggle('open');
+      $hamburger.classList.toggle('open', open);
+      $overlay.classList.toggle('visible', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    function closeMenu() {
+      $sidebar.classList.remove('open');
+      $hamburger.classList.remove('open');
+      $overlay.classList.remove('visible');
+      document.body.style.overflow = '';
+    }
+
+    // ==================== Init ====================
+    document.documentElement.lang = lang;
+    $hamburger.addEventListener('click', toggleMenu);
+    $overlay.addEventListener('click', closeMenu);
+    window.addEventListener('hashchange', navigate);
+    renderSidebar();
+    navigate();
+  </script>
+</body>
+</html>

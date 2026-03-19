@@ -16,7 +16,7 @@
 2025-11:  632 ███████████████████████████████████████████████████████████████
 2025-12:  838 ███████████████████████████████████████████████████████████████████████████████████
 2026-01:  290 █████████████████████████████
-2026-02:   47 ████ (in progress)
+2026-02:  619 █████████████████████████████████████████████████████████████
 ```
 
 ## Weekly Pattern
@@ -77,7 +77,7 @@ Active 7 days a week, with peak productivity on Tuesday-Wednesday.
 - **전세사기 detection** POC — automated registry document analysis
 
 ### Phase 5: AI Products & Maturity (Jan–Feb 2026)
-- **~337 commits** | Sustained high output, focus on AI products and refinement
+- **~909 commits** | Sustained high output — 619 in February alone, focus on AI products, platform stability, and new tooling
 - **SemuGPT (세무GPT)** — AI tax consulting service: built payment UI, law/precedent data pipeline, RAGAS evaluation, feedback system, category classification
 - **PageSpeed Phase 5-8** — SSR waterfall elimination, LCP/GTM optimization, skeleton loading, Zustand migration → **PageSpeed 20→80 (4x)**
 - **OG meta centralization** — unified 35+ routes into single utility, fixed SSR timeout with lightweight API
@@ -92,6 +92,13 @@ Active 7 days a week, with peak productivity on Tuesday-Wednesday.
 - **Openclaw** — automated Sentry error detection and PR generation bot
 - Privacy law compliance updates
 - AI-based agent response for user matching
+- **Sentry noise reduction campaign** — 130+ PRs in one week: systematic classification of expected errors across app and web, shipped as v3.5.0–v3.5.5
+- **bootalk-plane** — Built GitHub↔Plane bidirectional issue sync from scratch: webhook ingestion, BullMQ queue, loop prevention, bidirectional comment/label sync. 16 issues opened and closed in a single sprint
+- **SemuGPT RAG expansion** — GraphRAG for multi-hop legal search, unified IntentRouter, Langfuse prompt management, 7+ new data collectors
+- **Polygon-based school assignment** — End-to-end: geospatial polygon pipeline in backend through frontend badge rendering, delivered cross-repo in one day
+- **E2E test framework** — ADB + CDP-based Android automation covering core business UX flows
+- **IDOR security fix** — Migrated agent API endpoints to JWT-based `/me/` pattern
+- **v3.5.0–v3.5.5 releases** — 3 mobile app releases + 2 web releases in a single month
 - Hired AI developer to expand team capacity
 
 ## Key Milestones
@@ -122,4 +129,8 @@ Active 7 days a week, with peak productivity on Tuesday-Wednesday.
 | 2026-01 | AI developer hired to expand team |
 | 2026-02 | 50% discount coupon system and Lotte Card webview integration |
 | 2026-02 | GEO structured data for AI search engine optimization |
-| 2026-02 | v3.5.0 release preparation with test guidelines |
+| 2026-02 | **Sentry noise reduction** — 130+ PRs classifying expected errors across all platforms |
+| 2026-02 | **bootalk-plane** — GitHub↔Plane bidirectional sync service built from scratch |
+| 2026-02 | **SemuGPT RAG expansion** — GraphRAG, IntentRouter, Langfuse observability |
+| 2026-02 | **School assignment** — polygon-based geospatial district assignment (backend + frontend) |
+| 2026-02 | v3.5.0–v3.5.5 releases — 5 releases across mobile and web |
