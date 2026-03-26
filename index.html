@@ -379,7 +379,7 @@
     .cs-wrap {
       position: relative;
       perspective: 900px;
-      width: 380px; height: 260px;
+      width: 520px; height: 460px;
       margin: 0 auto;
       overflow: hidden;
     }
@@ -967,8 +967,7 @@
         const container = document.getElementById(containerId);
         if (!container) return;
         active = true;
-        container.style.width = W + 'px';
-        container.style.height = H + 'px';
+        // Container size set by CSS (.cs-wrap)
         cardEls = [];
         states = [];
         order = [];
