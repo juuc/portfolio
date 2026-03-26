@@ -93,6 +93,16 @@ AI writes the code. I own the architecture, the review, and the decision of what
 **5. Scale it to the team, not just yourself.**
 Buying Max 20x for every developer, establishing PR review workflows across 7 repos within 10 days, writing `CLAUDE.md` conventions that any team member can follow — this was an **organizational transformation**, not a personal productivity hack. The goal was never "I ship faster." It was "the team ships faster."
 
+### Beyond Code: AI-Operated Systems
+
+The 5 principles above accelerate *coding*. But the real AX frontier is building systems where AI operates autonomously — not writing code, but running production operations.
+
+**[Autonomous Sentry Triage Bot](projects/sentry-triage-bot.md)** is the clearest example: a pipeline where Sentry webhooks trigger AI-driven triage across 4 repositories, with environment-aware policy gates, read-only database verification, automatic PR creation for production issues, and Telegram reporting — all without human intervention.
+
+From alert to fix PR in minutes, not hours. No on-call engineer needed.
+
+This represents the evolution from "AI helps me code faster" to "AI handles production operations that previously required a dedicated on-call engineer." The Sentry bot doesn't just use the 5 principles — it *embodies* them: it's infrastructure (not a tool), it receives intent (not instructions), it coordinates across repos (not just speed), it produces PRs for human review (quality ownership), and it runs for the whole team (not just one person).
+
 ## What I Built
 
 Led frontend architecture across web (Next.js), mobile (React Native/Expo), and admin systems while simultaneously building data pipelines, backend services, and AI products. Drove major platform modernization initiatives including cloud migration, type safety campaigns, and comprehensive test coverage.

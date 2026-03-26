@@ -755,6 +755,7 @@
           { id: 'bootalk-web', name: 'Bootalk Web', metric: '48K URLs', impact: 'CSR\u2192SSR, sitemap 5\u219248K, PageSpeed 20\u219280, AI search GEO' },
         ],
         other: [
+          { id: 'sentry-triage-bot', name: 'Sentry Triage Bot', commits: null, desc: 'Autonomous error triage: webhook \u2192 AI diagnosis \u2192 fix PR' },
           { id: 'ubuntu-crawler', name: 'Ubuntu Crawler', commits: 420, desc: 'Real estate data collection' },
           { id: 'data-pipelines', name: 'Data Pipelines', commits: 109, desc: 'Dagster-based ETL infrastructure' },
           { id: 'frontend-onboarding', name: 'Frontend Onboarding', commits: 342, desc: 'Developer docs (Mintlify)' },
@@ -794,6 +795,7 @@
           { id: 'bootalk-web', name: '\ubd80\ud1a1 \uc6f9', metric: '48K URL', impact: 'CSR\u2192SSR, \uc0ac\uc774\ud2b8\ub9f5 5\u219248K, PageSpeed 20\u219280, AI \uac80\uc0c9 GEO' },
         ],
         other: [
+          { id: 'sentry-triage-bot', name: 'Sentry \ud2b8\ub9ac\uc544\uc9c0 \ubd07', commits: null, desc: '\uc790\uc728 \uc5d0\ub7ec \ud2b8\ub9ac\uc544\uc9c0: \uc6f9\ud6c5 \u2192 AI \uc9c4\ub2e8 \u2192 \uc218\uc815 PR' },
           { id: 'ubuntu-crawler', name: '\ub370\uc774\ud130 \ud06c\ub864\ub7ec', commits: 420, desc: '\ubd80\ub3d9\uc0b0 \ub370\uc774\ud130 \uc218\uc9d1' },
           { id: 'data-pipelines', name: '\ub370\uc774\ud130 \ud30c\uc774\ud504\ub77c\uc778', commits: 109, desc: 'Dagster \uae30\ubc18 ETL' },
           { id: 'frontend-onboarding', name: '\ud504\ub860\ud2b8\uc5d4\ub4dc \uc628\ubcf4\ub529', commits: 342, desc: '\uac1c\ubc1c\uc790 \ubb38\uc11c (Mintlify)' },
@@ -823,6 +825,7 @@
       'projects/bootalk-app':       { en: 'en/projects/bootalk-app.md',        ko: 'ko/projects/bootalk-app.md' },
       'projects/bootalk-amplify':   { en: 'en/projects/bootalk-amplify.md',    ko: 'ko/projects/bootalk-amplify.md' },
       'projects/bootalk-web':       { en: 'en/projects/bootalk-web.md',        ko: 'ko/projects/bootalk-web.md' },
+      'projects/sentry-triage-bot':  { en: 'en/projects/sentry-triage-bot.md', ko: 'ko/projects/sentry-triage-bot.md' },
       'projects/ubuntu-crawler':    { en: 'en/projects/ubuntu-crawler.md',     ko: 'ko/projects/ubuntu-crawler.md' },
       'projects/data-pipelines':    { en: 'en/projects/data-pipelines.md',     ko: 'ko/projects/data-pipelines.md' },
       'projects/frontend-onboarding':{ en: 'en/projects/frontend-onboarding.md', ko: 'ko/projects/frontend-onboarding.md' },
@@ -1094,7 +1097,7 @@
               ${d.other.map(p => `
                 <a href="#/projects/${p.id}" class="other-project-item">
                   <span class="other-project-name">${p.name}</span>
-                  <span class="other-project-commits">${p.commits} ${d.labels.commits}</span>
+                  <span class="other-project-commits">${p.commits ? p.commits + ' ' + d.labels.commits : 'AX'}</span>
                   <span class="other-project-desc">${p.desc}</span>
                 </a>
               `).join('')}

@@ -60,6 +60,7 @@ Also served as Privacy Protection Officer, handled partner integrations (Nonghyu
 | [Ubuntu Crawler](en/projects/ubuntu-crawler.md) | 420 | Real estate data collection → Dagster orchestration |
 | [Data Pipelines](en/projects/data-pipelines.md) | 109 | Dagster-based ETL infrastructure |
 | [Frontend Onboarding](en/projects/frontend-onboarding.md) | 342 | Developer documentation platform (Mintlify) |
+| [Sentry Triage Bot](en/projects/sentry-triage-bot.md) | — | Autonomous error triage: webhook → AI diagnosis → fix PR |
 | [Other Projects](en/projects/other-projects.md) | 219 | Admin, Backend, AI/ML, and more |
 
 ---
@@ -88,4 +89,5 @@ Also served as Privacy Protection Officer, handled partner integrations (Nonghyu
 | [데이터 크롤러](ko/projects/ubuntu-crawler.md) | 420 | 부동산 데이터 수집 → Dagster 오케스트레이션 |
 | [데이터 파이프라인](ko/projects/data-pipelines.md) | 109 | Dagster 기반 ETL 인프라 |
 | [프론트엔드 온보딩](ko/projects/frontend-onboarding.md) | 342 | 개발자 문서화 플랫폼 (Mintlify) |
+| [Sentry 트리아지 봇](ko/projects/sentry-triage-bot.md) | — | 자율 에러 트리아지: 웹훅 → AI 진단 → 수정 PR |
 | [기타 프로젝트](ko/projects/other-projects.md) | 219 | Admin, Backend, AI/ML 등 |
