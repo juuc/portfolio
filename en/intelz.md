@@ -8,7 +8,7 @@
 
 **Organization:** [plootokr](https://github.com/plootokr)
 **Period:** 2022.02 — 2025.08 (~3.5 years, during college)
-**Education:** Seoul National University — Civil Engineering (Graduated 2025.07)
+**Education:** Seoul National University — Civil & Environmental Engineering (Graduated 2025.07)
 **Commits:** 368 across 6 repositories
 
 ## The Product

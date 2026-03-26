@@ -13,7 +13,7 @@
 
 > YouBook: AI-powered minibook knowledge platform — create, remix, and share short-form content in 13+ languages across 190+ countries.
 
-**Education:** Seoul National University — Civil Engineering (Graduated 2025.07)
+**Education:** Seoul National University — Civil & Environmental Engineering (Graduated 2025.07)
 
 ## Who I Am
 
@@ -30,7 +30,7 @@ Also served as Privacy Protection Officer, handled partner integrations (Nonghyu
 | Total Commits | **3,571** (3,203 at Bootalk + 368 at Intelz) |
 | Pull Requests | **754+** |
 | Active Repositories | **34** (28 at Bootalk + 6 at Intelz) |
-| Education | **Seoul National University** — Civil Engineering (2025.07) |
+| Education | **Seoul National University** — Civil & Environmental Engineering (2025.07) |
 | Career Span | **4+ years** of fullstack + data engineering |
 | Role Evolution | App Dev → Data Manager → CDO → Tech Lead / PO |
 
@@ -89,5 +89,5 @@ Also served as Privacy Protection Officer, handled partner integrations (Nonghyu
 | [데이터 크롤러](ko/projects/ubuntu-crawler.md) | 420 | 부동산 데이터 수집 → Dagster 오케스트레이션 |
 | [데이터 파이프라인](ko/projects/data-pipelines.md) | 109 | Dagster 기반 ETL 인프라 |
 | [프론트엔드 온보딩](ko/projects/frontend-onboarding.md) | 342 | 개발자 문서화 플랫폼 (Mintlify) |
-| [Sentry 트리아지 봇](ko/projects/sentry-triage-bot.md) | — | 자율 에러 트리아지: 웹훅 → AI 진단 → 수정 PR |
+| [Sentry Issue 분석 봇](ko/projects/sentry-triage-bot.md) | — | 자율 에러 분석: 웹훅 → AI 진단 → 수정 PR |
 | [기타 프로젝트](ko/projects/other-projects.md) | 219 | Admin, Backend, AI/ML 등 |
