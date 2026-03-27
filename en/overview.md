@@ -44,16 +44,18 @@ I then purchased the **Max 20x plan** for all developers on the team. This wasn'
 
 ### The Numbers Tell the Story
 
-| Period | Monthly Commits | AI Tooling |
-|--------|----------------|------------|
-| Mar–Jul 2025 | ~65/month avg | Cline (VS Code) |
-| **Aug 2025** | **291** | **Claude Code adopted** |
-| Sep 2025 | 163 | Workflow refinement |
-| Oct 2025 | 396 | Multi-repo rollout complete |
-| Nov 2025 | 632 | Parallel orchestration mastered |
-| Dec 2025 | **838** | Peak — 13x pre-Claude output |
+| Period | Commits | Business Impact |
+|--------|---------|----------------|
+| Mar–Jul 2025 | ~65/mo | Data pipelines, app maintenance, CTO handover preparation |
+| **Aug 2025** | **294** | CTO departed Aug 8 → Claude Code adopted Aug 16 → **engineering velocity restored without new hires** |
+| Sep 2025 | 168 | Web platform modernized (Next.js 15, SWC) — groundwork for SEO capability |
+| Oct 2025 | 447 | **SSR deployed → apartment listings indexable by search engines for the first time**. Dev/prod environments separated across all platforms |
+| Nov 2025 | 985 | **3 repos → 1 monorepo → cross-platform features ship in hours, not days**. SSR goes live in production |
+| Dec 2025 | **1,180** | 1,184 tests securing production stability. v3.2.0 deployed to all 4 platforms simultaneously |
+| Jan 2026 | 660 | **PageSpeed 20→80 (4x) → improved SEO rankings and user retention**. Mobile LCP 3.3s→1.3s |
+| Feb 2026 | 594 | Production error noise systematically eliminated. **Led directly to autonomous Sentry triage bot** |
 
-From ~65 commits/month with Cline to **838 commits in December** with Claude Code — a **13x increase** in output. This isn't typing faster. It's a fundamentally different way of working.
+From ~65 commits/month to **1,180 in December** — an **18x increase**. Two months later, PageSpeed went from 20 to 80, and the sitemap grew from 5 URLs to 48,706. This isn't typing faster — it's a fundamentally different operating model.
 
 ### How the Workflow Works
 
@@ -114,5 +116,5 @@ Led frontend architecture across web (Next.js), mobile (React Native/Expo), and 
 | Total Commits | **3,775** |
 | Pull Requests | **1,000+** (762 merged in monorepo alone) |
 | Active Repositories | **28** |
-| Peak Month | Dec 2025 — **838 commits** |
+| Peak Month | Dec 2025 — **1,180 commits** |
 | Active Days | ~220 (7 days/week including weekends) |
