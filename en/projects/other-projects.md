@@ -30,7 +30,7 @@ Kotlin/Spring multi-module MSA backend services.
 ## Apartment Advertising Dashboard
 **11 commits**
 
-Dashboard for managing **LAAD (아파트 광고 데이터)** — Bootalk's apartment advertising business. One of the first projects built during the CDO onboarding phase. Deployed on GCP Cloud Run. LAAD was a key revenue stream allowing developers and property managers to advertise apartment complexes on the Bootalk platform.
+Dashboard for managing **LAAD (아파트 광고 데이터)** — Bootalk's apartment advertising business. One of the first projects built during the Data Engineer onboarding phase. Deployed on GCP Cloud Run. LAAD was a key revenue stream allowing developers and property managers to advertise apartment complexes on the Bootalk platform.
 
 ---
 

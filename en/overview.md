@@ -4,7 +4,7 @@
 
 ## Executive Summary
 
-Joined Bootalk as **Chief Data Officer (CDO)** in March 2025, rapidly expanding scope beyond data to lead the entire engineering organization. After the CTO's departure in August 2025, assumed **Technical Lead / Product Owner** responsibilities — managing a 4-person development team, owning all platform deployments, and driving product decisions across web, mobile, backend, and data.
+Joined Bootalk as **Data Engineer** in March 2025, rapidly expanding scope beyond data to lead the entire engineering organization. After the CTO's departure in August 2025, assumed **Technical Lead / Product Owner** responsibilities — managing a 4-person development team, owning all platform deployments, and driving product decisions across web, mobile, backend, and data.
 
 Contributed **3,775 commits** and **1,000+ pull requests** across **28 repositories** in 12 months — an unusually broad scope reflecting an engineer who operated as both builder and leader.
 
@@ -81,7 +81,7 @@ This methodology enabled a single engineer to produce output comparable to a tea
 The tooling matters less than the approach. Here are the principles that turned AI from a code autocomplete into a force multiplier:
 
 **1. Treat AI as infrastructure, not a tool.**
-I didn't just install Claude Code and start prompting. I designed a **production pipeline** around it — tmux orchestration, `CLAUDE.md` conventions per repo, overnight execution queues, phase-based task decomposition. The 13x output increase came from systems engineering around AI, not from better prompts.
+I didn't just install Claude Code and start prompting. I designed a **production pipeline** around it — tmux orchestration, `CLAUDE.md` conventions per repo, overnight execution queues, phase-based task decomposition. The 18x output increase came from systems engineering around AI, not from better prompts.
 
 **2. Delegate intent, not instructions.**
 Effective AI delegation means giving **outcomes and constraints**, not step-by-step directions. "Eliminate all `any` types in the admin module while keeping tests passing" works. "Open file X, change line 42, then open file Y..." doesn't scale. The skill is knowing the right altitude of abstraction for each task.

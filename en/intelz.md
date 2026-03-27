@@ -52,7 +52,7 @@ This experience directly informed the [Bootalk App Expo migration](projects/boot
 
 **Solution:** Built automated data pipelines using Selenium and Python crawlers to ingest, transform, and load content data.
 
-**Impact:** 10x reduction in data processing time. This work became the foundation for my CDO role at Bootalk, where I built Dagster-based ETL pipelines and led the data team.
+**Impact:** 10x reduction in data processing time. This work became the foundation for my Data Engineer role at Bootalk, where I built Dagster-based ETL pipelines and led the data team.
 
 ### 3. Web-App Integration (121 commits in service-web)
 
@@ -87,9 +87,9 @@ The skills built at Intelz directly enabled what I did at Bootalk:
 
 | Intelz (2022–2025) | → | Bootalk (2025–2026) |
 |---------------------|---|---------------------|
-| Selenium/Python crawlers | → | Dagster ETL pipelines, CDO role |
+| Selenium/Python crawlers | → | Dagster ETL pipelines, Data Engineer role |
 | RN → Expo migration | → | Bootalk App Expo migration (7-stage) |
 | 4-person team member | → | 4-person team leader |
 | In-app payments (iamport) | → | Payment system (SemuGPT) |
 | GPT-4 chatbot integration | → | AI products (부토기, SemuGPT) |
-| 368 commits / 3.5 years | → | 3,203 commits / 11 months (AI-powered) |
+| 368 commits / 3.5 years | → | 3,775 commits / 12 months (AI-powered) |

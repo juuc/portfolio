@@ -8,7 +8,7 @@
 
 | Period | Company | Role | Commits |
 |--------|---------|------|---------|
-| 2025.03 — 2026.02 | [**Bootalk (부톡)**](https://bootalk.co.kr) — PropTech | CDO → Tech Lead / PO | **3,203** |
+| 2025.03 — 2026.02 | [**Bootalk (부톡)**](https://bootalk.co.kr) — PropTech | Data Engineer → Tech Lead / PO | **3,775** |
 | 2022.02 — 2025.08 | [**Intelz / YouBook**](https://youbook.biz) — EdTech | App Developer & Data Manager | **368** |
 
 > YouBook: AI-powered minibook knowledge platform — create, remix, and share short-form content in 13+ languages across 190+ countries.
@@ -17,7 +17,7 @@
 
 ## Who I Am
 
-3.5 years at Intelz during college — less about engineering volume, more about learning how users think. Built 3 generations of mobile apps and automated data pipelines, but the real takeaway was UX sensibility, content strategy, and product thinking. Then joined Bootalk as **CDO**, rapidly expanded to **Tech Lead / Product Owner** after the CTO's departure — managing a 4-person dev team, owning all platform deployments, and driving product decisions across web, mobile, backend, and data.
+3.5 years at Intelz during college — less about engineering volume, more about learning how users think. Built 3 generations of mobile apps and automated data pipelines, but the real takeaway was UX sensibility, content strategy, and product thinking. Then joined Bootalk as **Data Engineer**, rapidly expanded to **Tech Lead / Product Owner** after the CTO's departure — managing a 4-person dev team, owning all platform deployments, and driving product decisions across web, mobile, backend, and data.
 
 Also served as Privacy Protection Officer, handled partner integrations (Nonghyup, Lotte Card, Daelim Bath), co-founded AI subsidiary **BOOAI (부아이)**, and built AI products (SemuGPT, 부토기).
 
@@ -27,12 +27,12 @@ Also served as Privacy Protection Officer, handled partner integrations (Nonghyu
 
 | Metric | Value |
 |--------|-------|
-| Total Commits | **3,571** (3,203 at Bootalk + 368 at Intelz) |
+| Total Commits | **4,143** (3,775 at Bootalk + 368 at Intelz) |
 | Pull Requests | **754+** |
 | Active Repositories | **34** (28 at Bootalk + 6 at Intelz) |
 | Education | **Seoul National University** — Civil & Environmental Engineering (2025.07) |
 | Career Span | **4+ years** of fullstack + data engineering |
-| Role Evolution | App Dev → Data Manager → CDO → Tech Lead / PO |
+| Role Evolution | App Dev → Data Manager → Data Engineer → Tech Lead / PO |
 
 ---
 

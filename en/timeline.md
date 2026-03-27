@@ -14,7 +14,7 @@
 2025-09:  163 ████████████████
 2025-10:  396 ███████████████████████████████████████
 2025-11:  632 ███████████████████████████████████████████████████████████████
-2025-12:  838 ███████████████████████████████████████████████████████████████████████████████████
+2025-12:  1,180 ███████████████████████████████████████████████████████████████████████████████████
 2026-01:  290 █████████████████████████████
 2026-02:  619 █████████████████████████████████████████████████████████████
 ```
@@ -57,15 +57,15 @@ Active 7 days a week, with peak productivity on Tuesday-Wednesday.
 - **CTO departed in August** — received full technical handover (infrastructure, deployments, architecture)
 - Assumed **Product Owner** role alongside backend lead
 - Began leading **daily standups** and **weekly planning sessions** for 4-person dev team
-- **Claude Code adopted (Aug 16)** — transitioned from Cline (VS Code extension) to Claude Code CLI. First `CLAUDE.md` committed at 1:14 PM, first Claude-assisted code 11 minutes later. Within 10 days, rolled out across all major repos. Purchased Max 20x plan for entire dev team. Monthly output jumped from ~65 to 291 — the start of a 13x acceleration.
-- **First significant frontend commits** — started contributing to the mobile app and web platform (Aug 16). Until this point, my work was focused on data pipelines and crawlers as CDO. The CTO's departure forced a rapid transition to fullstack ownership.
+- **Claude Code adopted (Aug 16)** — transitioned from Cline (VS Code extension) to Claude Code CLI. First `CLAUDE.md` committed at 1:14 PM, first Claude-assisted code 11 minutes later. Within 10 days, rolled out across all major repos. Purchased Max 20x plan for entire dev team. Monthly output jumped from ~65 to 291 — the start of a 18x acceleration.
+- **First significant frontend commits** — started contributing to the mobile app and web platform (Aug 16). Until this point, my work was focused on data pipelines and crawlers as Data Engineer. The CTO's departure forced a rapid transition to fullstack ownership.
 - Expo framework migration planning and initial execution on the mobile app
 - Mobile app architecture migrations
 - Data pipeline development with Dagster migration
 - Managed 3 engineers: mobile, web, backend
 
 ### Phase 4: Peak Delivery & Platform Modernization (Oct–Dec 2025)
-- **~1,866 commits** | Peak performance — 838 in December alone
+- **~2,612 commits** | Peak performance — 1,180 in December alone
 - **Dove into bootalk-amplify** (Oct) — inherited legacy serverless backend with 29 Lambda functions, traced DynamoDB Stream flows, documented architecture before any changes
 - Created **monorepo** (Nov) — unified web/app/admin into single repository
 - **SEO infrastructure overhaul** — SSR on GCP Cloud Run, dynamic sitemap (5→48,706 URLs), canonical URLs, clean URL migration (legacy paths → `/apt`), robots.txt optimization
@@ -105,12 +105,12 @@ Active 7 days a week, with peak productivity on Tuesday-Wednesday.
 
 | Date | Milestone |
 |------|-----------|
-| 2025-03 | Joined Bootalk as CDO, began onboarding with CTO |
+| 2025-03 | Joined Bootalk as Data Engineer, began onboarding with CTO |
 | 2025-04 | First PR merged; LAAD dashboard and 부토기 chatbot development |
 | 2025-06 | BOOAI (AI subsidiary) co-founded; apartment ranking system built |
 | 2025-08 | **CTO departed** — assumed Tech Lead / PO responsibilities |
-| 2025-08-16 | **Claude Code adopted** — transitioned from Cline to Claude Code CLI; 13x output increase begins |
-| 2025-08 | **First frontend commits** — transitioned from CDO (data) to fullstack (mobile app, web platform) |
+| 2025-08-16 | **Claude Code adopted** — transitioned from Cline to Claude Code CLI; 18x output increase begins |
+| 2025-08 | **First frontend commits** — transitioned from Data Engineer (data) to fullstack (mobile app, web platform) |
 | 2025-08 | Dagster-based crawler infrastructure launched |
 | 2025-09 | Sentry error monitoring integrated across all platforms |
 | 2025-10 | **bootalk-amplify work begins** — inherited legacy serverless backend, environment separation |

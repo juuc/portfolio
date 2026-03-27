@@ -23,7 +23,7 @@ This was **legacy infrastructure that couldn't be thrown away**. The backend was
 
 ## Why This Project Matters
 
-I joined Bootalk as **CDO** — focused on data pipelines and crawlers. I had never touched this Amplify codebase. When the **CTO departed in August 2025**, I inherited full technical ownership of everything, including this legacy serverless backend that nobody else fully understood.
+I joined Bootalk as **Data Engineer** — focused on data pipelines and crawlers. I had never touched this Amplify codebase. When the **CTO departed in August 2025**, I inherited full technical ownership of everything, including this legacy serverless backend that nobody else fully understood.
 
 The challenge wasn't just fixing bugs — it was **learning to read a production system under pressure**, understanding undocumented event flows (DynamoDB Streams → Lambda → SNS → Legacy API), and making changes without breaking authentication or messaging for live users.
 
