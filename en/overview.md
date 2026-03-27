@@ -105,9 +105,23 @@ From alert to fix PR in minutes, not hours. No on-call engineer needed.
 
 This represents the evolution from "AI helps me code faster" to "AI handles production operations that previously required a dedicated on-call engineer." The Sentry bot doesn't just use the 5 principles — it *embodies* them: it's infrastructure (not a tool), it receives intent (not instructions), it coordinates across repos (not just speed), it produces PRs for human review (quality ownership), and it runs for the whole team (not just one person).
 
-## What I Built
+## The Compounding Arc: How I Rebuilt the Platform
 
-Led frontend architecture across web (Next.js), mobile (React Native/Expo), and admin systems while simultaneously building data pipelines, backend services, and AI products. Drove major platform modernization initiatives including cloud migration, type safety campaigns, and comprehensive test coverage.
+When the CTO left in August 2025, I inherited a fragile platform: three scattered frontend repos with no shared infrastructure, a static-only web app invisible to search engines, zero test coverage, no error monitoring, and a 29-Lambda backend with hardcoded environment variables. Firefighting would have kept the lights on. I chose to invest sequentially — each decision deliberately enabling the next.
+
+**Modernize → Unify → Stabilize → Optimize → Automate**
+
+1. **Modernize the foundation** (Sep–Oct): Upgraded the web platform to Next.js 15 and deployed SSR on GCP Cloud Run. For the first time, 48,706 apartment listings became indexable by search engines. Separated dev/prod environments across all platforms so the team could ship without fear.
+
+2. **Unify the codebase** (Nov): Consolidated 3 frontend repos into a single monorepo with shared packages. Features that previously required coordinating across repos now shipped in a single PR. This was the prerequisite for everything that followed — without a unified codebase, parallel AI agents would conflict.
+
+3. **Stabilize with tests and monitoring** (Dec): Built 1,184 tests across web, app, and admin. Integrated Sentry across frontend and serverless layers. Deployed v3.2.0 to all 4 platforms simultaneously — the first time the team could do a coordinated release with confidence.
+
+4. **Optimize for users** (Jan): With a stable, unified codebase, I could safely run aggressive performance optimization. PageSpeed went from 20 to 80. Mobile LCP dropped from 3.3s to 1.3s. These weren't cosmetic improvements — they directly improved SEO rankings and reduced bounce rates for 48K+ listing pages.
+
+5. **Automate operations** (Feb): The Sentry error campaign revealed the scale of manual triage work. I built an autonomous bot that receives Sentry webhooks, diagnoses issues across 4 repos, creates fix PRs, and reports to Telegram — replacing the need for an on-call engineer.
+
+Each step was only possible because of the previous one. You can't optimize a fragmented codebase. You can't test a platform with no environment separation. You can't automate triage without monitoring. The 12-month roadmap wasn't a list of projects — it was a **chain of compounding investments** where each decision multiplied the value of every decision before it.
 
 ## Key Metrics
 

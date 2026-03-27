@@ -45,7 +45,21 @@ README.md          → Punchline (one-liner per project, scannable in 30 seconds
 - Project pages provide evidence. Use Problem → Solution → Impact structure.
 - **Cross-reference, don't duplicate.** If content exists at one level, link to it from others.
 
-## 4. Show Impact, Not Activity
+## 4. Show the Compounding Arc
+
+Each project enabled the next breakthrough. When describing impact, connect it to what it unlocked — not just what it achieved in isolation.
+
+```
+GOOD:  "SSR → listings indexable → PageSpeed 20→80 → SEO rankings improved"
+BAD:   "Implemented SSR. Separately improved PageSpeed. Also did SEO."
+
+GOOD:  "Sentry campaign revealed manual triage was unsustainable → built autonomous bot"
+BAD:   "Integrated Sentry. Built a triage bot."
+```
+
+The 12-month roadmap was a **chain of compounding investments**: Modernize → Unify → Stabilize → Optimize → Automate. Each project page should reference what it built upon and what it enabled.
+
+## 5. Show Impact, Not Activity
 
 Lead with business outcomes. Implementation is supporting evidence.
 
@@ -61,14 +75,14 @@ BAD:   "Built a sitemap generator using Next.js API routes"
 - Cut vanity stats (lines added/removed, file counts)
 - PR links are evidence, not content — reference them, don't list titles as bullet points
 
-## 5. Tone & Voice
+## 6. Tone & Voice
 
 - **First person, direct.** "I built X" not "X was built"
 - **Confident but factual.** Let numbers speak. No superlatives ("amazing", "incredible", "cutting-edge")
 - **No filler.** Cut "In order to", "As part of the effort to", "It should be noted that"
-- **Show, don't tell.** "838 commits in December — 13x pre-Claude output" demonstrates intensity better than "I worked extremely hard"
+- **Show, don't tell.** "1,180 commits in December — 18x pre-Claude output" demonstrates intensity better than "I worked extremely hard"
 
-## 6. AX Section Integrity
+## 7. AX Section Integrity
 
 The AI Transformation section is a key differentiator. Protect its quality:
 
@@ -77,7 +91,7 @@ The AI Transformation section is a key differentiator. Protect its quality:
 - **Keep the 5 principles section.** It distinguishes "AI user" from "AI-powered engineer"
 - **Update the commit numbers** when adding new work — the monthly table and totals must stay accurate
 
-## 7. UI Effects Philosophy
+## 8. UI Effects Philosophy
 
 The portfolio site (`index.html`) may incorporate interactive effects from the `../ui-practice` repo. Follow these principles:
 
@@ -87,7 +101,7 @@ The portfolio site (`index.html`) may incorporate interactive effects from the `
 - **Skip:** Effects that don't serve the portfolio's purpose (page-curl, grid-focus), auto-playing animations that distract from reading
 - **Keep it vanilla.** No frameworks, no build step — match the `ui-practice` philosophy of raw browser APIs in a single file.
 
-## 8. Accuracy
+## 9. Accuracy
 
 - Commit counts, PR counts, dates MUST match real GitHub data
 - When updating metrics, verify with `gh` CLI against the actual repos
