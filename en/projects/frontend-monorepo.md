@@ -123,6 +123,30 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 
 > **Epic Issue:** #635 — React Best Practices 적용 - Vercel Engineering 45 Rules 기반 최적화
 
+### 8. Custom E2E Test Framework — Testing What Off-the-Shelf Tools Can't
+
+**Problem:** The app uses WebViews extensively (calculator, corporate discount, partner pages). Off-the-shelf mobile testing tools (Detox, Maestro, Appium) cannot inspect WebView DOM — they only see native UI. This left critical user flows untestable.
+
+**Solution:** Built a custom event-driven E2E framework (~3,600 lines TypeScript) with a dual-channel architecture:
+
+```
+App (React Native)              Engine (Node.js)
+──────────────────              ──────────────────
+console.log(E2E_DATA:*)  ──>   LogcatStream  ──>  AssertionWaiter
+console.log(E2E_SCREEN:*) ──>  LogcatStream  ──>  Precondition checks
+WebView CDP events        ──>   CDPClient     ──>  AssertionWaiter
+```
+
+**Key architectural decisions:**
+
+- **Event-driven assertions** — tests react to app-emitted logcat signals (`E2E_DATA:LoginComplete`) instead of polling with fixed sleeps. Faster and more reliable.
+- **Dual-channel testing** — ADB `uiautomator dump` for native UI + Chrome DevTools Protocol for WebView DOM, with a recovery pattern for the CDP→ADB corruption problem.
+- **TapHint protocol** — app reports its own element coordinates (`E2E_DATA:TapHint:{testId}:{cx}:{cy}`) to solve stale ADB bounds on dynamically positioned elements like map markers.
+- **Declarative YAML flows** — 232 test steps across 19 flows. Non-engineers can write test scenarios without TypeScript knowledge.
+- **Zero production overhead** — all markers wrapped in `if (__DEV__)`, stripped from production builds.
+
+**Impact:** 19 flows covering login → matching → chat → security → maps → state management → app stability → WebView interactions → auth lifecycle → AI features. 62 test runs tracked in the first 10 days. Caught a real `/me` API migration bug that unit tests missed.
+
 ## Technical Decisions
 
 | Decision | Rationale |
@@ -136,3 +160,5 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 | Sentry per-app configuration | Different error severity per platform |
 | Test-first refactoring | Ensure each phase doesn't regress |
 | Feature-based architecture | Code splitting by domain, not by type |
+| Custom E2E over Detox/Maestro | Off-the-shelf tools can't test WebView-heavy flows; built event-driven ADB+CDP dual-channel framework |
+| `noImplicitAny` strict enforcement | Final gate of type safety campaign — compiler-level guarantee, not just coverage % |

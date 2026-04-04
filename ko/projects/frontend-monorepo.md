@@ -103,6 +103,30 @@
 
 > **에픽 이슈:** #635 — React Best Practices 적용 - Vercel Engineering 45 Rules 기반 최적화
 
+### 8. 커스텀 E2E 테스트 프레임워크 — 기성 도구로 테스트할 수 없는 영역
+
+**문제:** 앱이 웹뷰를 광범위하게 사용(계산기, 기업 제휴 할인, 파트너 페이지). Detox, Maestro, Appium 같은 기성 모바일 테스트 도구는 웹뷰 DOM을 검사할 수 없어 — 네이티브 UI만 볼 수 있음. 핵심 사용자 플로우가 테스트 불가 상태.
+
+**해결:** 듀얼 채널 아키텍처 기반 이벤트 드리븐 E2E 프레임워크를 직접 구축 (~3,600줄 TypeScript):
+
+```
+App (React Native)              Engine (Node.js)
+──────────────────              ──────────────────
+console.log(E2E_DATA:*)  ──>   LogcatStream  ──>  AssertionWaiter
+console.log(E2E_SCREEN:*) ──>  LogcatStream  ──>  Precondition checks
+WebView CDP events        ──>   CDPClient     ──>  AssertionWaiter
+```
+
+**핵심 아키텍처 결정:**
+
+- **이벤트 드리븐 어서션** — 고정 sleep 폴링 대신 앱이 방출하는 logcat 시그널(`E2E_DATA:LoginComplete`)에 반응. 더 빠르고 안정적.
+- **듀얼 채널 테스팅** — 네이티브 UI용 ADB `uiautomator dump` + 웹뷰 DOM용 Chrome DevTools Protocol, CDP→ADB 손상 문제에 대한 복구 패턴 포함.
+- **TapHint 프로토콜** — 앱이 자체 엘리먼트 좌표를 보고(`E2E_DATA:TapHint:{testId}:{cx}:{cy}`), 지도 마커 같은 동적 배치 엘리먼트의 ADB bounds 불일치 문제 해결.
+- **선언적 YAML 플로우** — 19개 플로우, 232개 테스트 스텝. TypeScript 지식 없이도 비개발자가 테스트 시나리오 작성 가능.
+- **프로덕션 오버헤드 제로** — 모든 마커가 `if (__DEV__)` 래핑, 프로덕션 빌드에서 제거.
+
+**임팩트:** 로그인 → 매칭 → 채팅 → 보안 → 지도 → 상태 관리 → 앱 안정성 → 웹뷰 인터랙션 → 인증 라이프사이클 → AI 기능을 커버하는 19개 플로우. 첫 10일간 62회 테스트 실행 추적. 유닛 테스트로는 발견할 수 없었던 실제 `/me` API 마이그레이션 버그 포착.
+
 ## 기술 결정
 
 | 결정 | 근거 |
@@ -113,3 +137,5 @@
 | 앱별 Sentry 설정 | 플랫폼별 에러 심각도 차등 관리 |
 | 테스트 우선 리팩토링 | 각 페이즈의 리그레션 방지 |
 | Feature-based 아키텍처 | 타입이 아닌 도메인 기준 코드 스플리팅 |
+| Detox/Maestro 대신 커스텀 E2E | 기성 도구는 웹뷰 플로우 테스트 불가; 이벤트 드리븐 ADB+CDP 듀얼 채널 프레임워크 직접 구축 |
+| `noImplicitAny` strict 적용 | 타입 안전성 캠페인의 최종 관문 — 커버리지 %가 아닌 컴파일러 수준의 보장 |
