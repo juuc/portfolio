@@ -7,7 +7,7 @@ interface LangContextValue {
   toggle: () => void
 }
 
-const LangContext = createContext<LangContextValue>({ lang: 'en', toggle: () => {} })
+const LangContext = createContext<LangContextValue | undefined>(undefined)
 
 export function LangProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLang] = useState<Lang>('en')
@@ -15,4 +15,8 @@ export function LangProvider({ children }: { children: React.ReactNode }) {
   return <LangContext.Provider value={{ lang, toggle }}>{children}</LangContext.Provider>
 }
 
-export const useLang = () => useContext(LangContext)
+export function useLang(): LangContextValue {
+  const ctx = useContext(LangContext)
+  if (!ctx) throw new Error('useLang must be used within LangProvider')
+  return ctx
+}
