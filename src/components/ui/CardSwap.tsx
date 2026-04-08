@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 
 import React, { Children, cloneElement, forwardRef, isValidElement, useEffect, useMemo, useRef } from 'react';

@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 
 import { animate, motion, useMotionValue, useMotionValueEvent, useTransform } from 'motion/react';

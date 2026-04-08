@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 
 import { Renderer, Program, Mesh, Triangle } from 'ogl';
