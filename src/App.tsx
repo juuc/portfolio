@@ -3,13 +3,18 @@ import { LangProvider } from './context/LangContext'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Projects from './components/Projects'
+import Timeline from './components/Timeline'
+import Skills from './components/Skills'
+import OtherProjects from './components/OtherProjects'
 
 function Home() {
   return (
     <>
       <Hero />
       <Projects />
-      <div style={{ color: 'var(--text-secondary)', padding: '80px 40px' }}>More sections coming…</div>
+      <Timeline />
+      <Skills />
+      <OtherProjects />
     </>
   )
 }
