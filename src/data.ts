@@ -41,6 +41,7 @@ export interface PortfolioData {
     flagship: string
     otherProjects: string
     explore: string
+    skills: string
   }
   nav: {
     home: string
@@ -61,6 +62,7 @@ export interface PortfolioData {
   labels: {
     commits: string
     back: string
+    viewProject: string
   }
 }
 
@@ -99,6 +101,7 @@ export const DATA: Record<Lang, PortfolioData> = {
       flagship: 'Flagship Projects',
       otherProjects: 'Other Projects',
       explore: 'Explore More',
+      skills: 'Skills & Tech',
     },
     nav: {
       home: 'Home',
@@ -119,6 +122,7 @@ export const DATA: Record<Lang, PortfolioData> = {
     labels: {
       commits: 'commits',
       back: 'Back to Home',
+      viewProject: 'View project',
     },
   },
   ko: {
@@ -155,6 +159,7 @@ export const DATA: Record<Lang, PortfolioData> = {
       flagship: '주요 프로젝트',
       otherProjects: '기타 프로젝트',
       explore: '더 보기',
+      skills: '기술 스택',
     },
     nav: {
       home: '홈',
@@ -175,6 +180,7 @@ export const DATA: Record<Lang, PortfolioData> = {
     labels: {
       commits: '커밋',
       back: '홈으로',
+      viewProject: '프로젝트 보기',
     },
   },
 }

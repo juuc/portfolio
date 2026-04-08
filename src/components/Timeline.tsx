@@ -31,7 +31,7 @@ export default function Timeline() {
 
         {d.career.map((item, i) => (
           <motion.div
-            key={item.company}
+            key={`${item.company}-${i}`}
             initial={{ opacity: 0, x: -20 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.45, delay: 0.2 + i * 0.15 }}

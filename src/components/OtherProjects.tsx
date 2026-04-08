@@ -39,7 +39,7 @@ export default function OtherProjects() {
               background: 'var(--bg-card)',
               borderColor: 'var(--border)',
             }}
-            whileHover={{ backgroundColor: '#1f1f23' }}
+            whileHover={{ backgroundColor: 'var(--surface-hover)' }}
             onClick={() => navigate(`/${lang}/projects/${item.id}`)}
           >
             <span className="font-medium text-sm flex-1" style={{ color: 'var(--text)' }}>

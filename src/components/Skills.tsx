@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useLang } from '../context/LangContext'
+import { DATA } from '../data'
 
 const TECH_TAGS = [
   'React', 'TypeScript', 'Next.js', 'React Native', 'Expo',
@@ -9,8 +10,11 @@ const TECH_TAGS = [
   'Framer Motion', 'GraphQL', 'REST', 'Vite', 'Turborepo',
 ]
 
+const TAGS_REVERSED = [...TECH_TAGS].reverse()
+
 export default function Skills() {
   const { lang } = useLang()
+  const d = DATA[lang]
   const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { once: true, margin: '-60px' })
 
@@ -24,20 +28,21 @@ export default function Skills() {
         className="text-2xl font-bold tracking-tight mb-12"
         style={{ color: 'var(--text)' }}
       >
-        {lang === 'en' ? 'Skills & Tech' : '기술 스택'}
+        {d.sections.skills}
       </motion.h2>
 
-      {/* Two rows of auto-scrolling tags, opposite directions */}
+      {/* Two rows of CSS-animated marquee tags, opposite directions */}
       <div className="space-y-3 overflow-hidden">
-        {[TECH_TAGS, [...TECH_TAGS].reverse()].map((tags, row) => (
-          <motion.div
+        {[TECH_TAGS, TAGS_REVERSED].map((tags, row) => (
+          <div
             key={row}
             className="flex gap-3"
-            animate={{ x: row === 0 ? [0, -400] : [-400, 0] }}
-            transition={{ duration: 25, ease: 'linear', repeat: Infinity }}
-            style={{ width: 'max-content' }}
+            style={{
+              width: 'max-content',
+              animation: `${row === 0 ? 'marquee' : 'marquee-reverse'} 25s linear infinite`,
+            }}
           >
-            {[...tags, ...tags, ...tags].map((tag, i) => (
+            {[...tags, ...tags].map((tag, i) => (
               <span
                 key={`${tag}-${i}`}
                 className="px-3 py-1.5 rounded text-xs font-medium whitespace-nowrap"
@@ -50,7 +55,7 @@ export default function Skills() {
                 {tag}
               </span>
             ))}
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>

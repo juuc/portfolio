@@ -12,6 +12,7 @@
   --accent: #3b82f6;
   --accent-hover: #2563eb;
   --accent-subtle: rgba(59,130,246,0.08);
+  --surface-hover: #1f1f23;
   --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
 }
 
@@ -53,3 +54,5 @@ body {
 .prose hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
 
 @keyframes spin { to { transform: rotate(360deg); } }
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+@keyframes marquee-reverse { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }

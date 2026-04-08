@@ -2,10 +2,10 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { useLang } from '../context/LangContext'
-import { DATA, FlagshipItem } from '../data'
+import { DATA, FlagshipItem, type PortfolioData } from '../data'
 import SpotlightCard from './ui/SpotlightCard'
 
-function ProjectCard({ item, index }: { item: FlagshipItem; index: number }) {
+function ProjectCard({ item, index, d }: { item: FlagshipItem; index: number; d: PortfolioData }) {
   const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
   const navigate = useNavigate()
@@ -17,6 +17,7 @@ function ProjectCard({ item, index }: { item: FlagshipItem; index: number }) {
       initial={{ opacity: 0, y: 40 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5, delay: index * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
+      whileHover={{ y: -4 }}
       className="relative rounded-xl cursor-pointer"
       onClick={() => navigate(`/${lang}/projects/${item.id}`)}
     >
@@ -25,7 +26,7 @@ function ProjectCard({ item, index }: { item: FlagshipItem; index: number }) {
         spotlightColor="rgba(99, 102, 241, 0.12)"
       >
         <div
-          className="rounded-xl p-6 h-full transition-transform duration-200 hover:-translate-y-1"
+          className="rounded-xl p-6 h-full"
           style={{
             background: 'var(--bg-card)',
             border: '1px solid var(--border)',
@@ -44,7 +45,7 @@ function ProjectCard({ item, index }: { item: FlagshipItem; index: number }) {
             {item.impact}
           </p>
           <div className="mt-4 flex items-center gap-1 text-xs" style={{ color: 'var(--accent)' }}>
-            <span>View project</span>
+            <span>{d.labels.viewProject}</span>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
@@ -75,7 +76,7 @@ export default function Projects() {
       </motion.h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {d.flagship.map((item, i) => (
-          <ProjectCard key={item.id} item={item} index={i} />
+          <ProjectCard key={item.id} item={item} index={i} d={d} />
         ))}
       </div>
     </section>
