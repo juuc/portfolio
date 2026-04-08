@@ -42,8 +42,22 @@ export interface PortfolioData {
     otherProjects: string
     explore: string
   }
-  nav: Record<string, string>
-  navDesc: Record<string, string>
+  nav: {
+    home: string
+    overview: string
+    projects: string
+    timeline: string
+    skills: string
+    architecture: string
+    intelz: string
+  }
+  navDesc: {
+    overview: string
+    timeline: string
+    skills: string
+    architecture: string
+    intelz: string
+  }
   labels: {
     commits: string
     back: string

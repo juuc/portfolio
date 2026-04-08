@@ -3,7 +3,7 @@ import { LangProvider } from './context/LangContext'
 import Nav from './components/Nav'
 
 function Home() {
-  return <div style={{ paddingTop: 56, color: 'var(--text-secondary)', padding: '80px 40px' }}>Sections coming soon…</div>
+  return <div style={{ color: 'var(--text-secondary)', padding: '80px 40px' }}>Sections coming soon…</div>
 }
 
 export default function App() {
