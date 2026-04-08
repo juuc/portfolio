@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import Timeline from './components/Timeline'
 import Skills from './components/Skills'
 import OtherProjects from './components/OtherProjects'
+import MarkdownPage from './components/MarkdownPage'
 
 function Home() {
   return (
@@ -26,6 +27,12 @@ export default function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/:lang/projects/:id" element={<MarkdownPage />} />
+          <Route path="/:lang/overview" element={<MarkdownPage />} />
+          <Route path="/:lang/timeline" element={<MarkdownPage />} />
+          <Route path="/:lang/skills" element={<MarkdownPage />} />
+          <Route path="/:lang/architecture" element={<MarkdownPage />} />
+          <Route path="/:lang/intelz" element={<MarkdownPage />} />
         </Routes>
       </HashRouter>
     </LangProvider>
