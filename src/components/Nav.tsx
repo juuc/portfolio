@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useLang } from '../context/LangContext'
-import { DATA } from '../data'
+import { DATA, PortfolioData } from '../data'
 
 const NAV_LINKS = [
-  { label: (d: typeof DATA.en) => d.nav.home, href: '/' },
-  { label: (d: typeof DATA.en) => d.nav.overview, href: '/overview' },
-  { label: (d: typeof DATA.en) => d.nav.projects, href: '/projects' },
-  { label: (d: typeof DATA.en) => d.nav.timeline, href: '/timeline' },
-  { label: (d: typeof DATA.en) => d.nav.skills, href: '/skills' },
+  { label: (d: PortfolioData) => d.nav.home, href: '/' },
+  { label: (d: PortfolioData) => d.nav.overview, href: '/overview' },
+  { label: (d: PortfolioData) => d.nav.projects, href: '/projects' },
+  { label: (d: PortfolioData) => d.nav.timeline, href: '/timeline' },
+  { label: (d: PortfolioData) => d.nav.skills, href: '/skills' },
 ]
 
 export default function Nav() {
