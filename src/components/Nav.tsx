@@ -6,7 +6,6 @@ import { DATA, PortfolioData } from '../data'
 const NAV_LINKS = [
   { label: (d: PortfolioData) => d.nav.home, path: '/' },
   { label: (d: PortfolioData) => d.nav.overview, path: '/overview' },
-  { label: (d: PortfolioData) => d.nav.projects, path: '/projects' },
   { label: (d: PortfolioData) => d.nav.timeline, path: '/timeline' },
   { label: (d: PortfolioData) => d.nav.skills, path: '/skills' },
 ]
