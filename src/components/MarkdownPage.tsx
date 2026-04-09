@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams, useNavigate, useLocation } from 'react-router-dom'
+import { useParams, useLocation } from 'react-router-dom'
 import { marked } from 'marked'
 import { DATA, type Lang } from '../data'
 
@@ -50,7 +50,6 @@ function Spinner() {
 
 export default function MarkdownPage() {
   const { lang, id } = useParams<{ lang: string; id?: string }>()
-  const navigate = useNavigate()
   const { pathname } = useLocation()
 
   const resolvedLang: Lang = lang === 'ko' ? 'ko' : 'en'
@@ -103,26 +102,6 @@ export default function MarkdownPage() {
 
   return (
     <div style={{ maxWidth: 800, margin: '0 auto', padding: '80px 24px 120px' }}>
-      <button
-        onClick={() => navigate('/')}
-        style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: 6,
-          color: 'var(--accent)',
-          background: 'none',
-          border: 'none',
-          cursor: 'pointer',
-          fontSize: 14,
-          fontWeight: 500,
-          padding: '6px 0',
-          marginBottom: 32,
-          letterSpacing: '-0.01em',
-        }}
-      >
-        ← {d.labels.back}
-      </button>
-
       {loading ? (
         <Spinner />
       ) : routeType === 'intelz' ? (
