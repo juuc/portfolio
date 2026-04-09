@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { LangProvider } from './context/LangContext'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
@@ -27,6 +27,7 @@ export default function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/:lang/projects" element={<Navigate to="/" replace />} />
           <Route path="/:lang/projects/:id" element={<MarkdownPage />} />
           <Route path="/:lang/overview" element={<MarkdownPage />} />
           <Route path="/:lang/timeline" element={<MarkdownPage />} />
