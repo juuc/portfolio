@@ -1,7 +1,5 @@
 # Frontend Monorepo
 
-[← Back to Portal](../../README.md) | [한국어](../../ko/projects/frontend-monorepo.md)
-
 ## Project Overview
 
 The central frontend monorepo unifying all client-facing applications for Bootalk. **Created in November 2025** as a strategic initiative to consolidate previously scattered repositories (web, mobile app, admin) into a single, unified codebase — reducing cross-repo dependency issues and enabling shared infrastructure.

@@ -1,7 +1,5 @@
 # Other Projects
 
-[← Back to Portal](../../README.md) | [한국어](../../ko/projects/other-projects.md)
-
 ## Agent Dashboard
 **34 commits | 7 PRs (7 merged)**
 

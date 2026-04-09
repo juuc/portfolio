@@ -1,7 +1,5 @@
 # 인텔즈 / 유북 — 이전 경력
 
-[← 포털로 돌아가기](../README.md) | [English](../en/intelz.md)
-
 ## 개요
 
 [인텔즈 (Intelz)](https://youbook.biz)에서 **앱 개발자 & 데이터 매니저** — AI 기반 미니북 지식 공유 플랫폼. "동영상은 YouTube, 미니북은 YouBook."

@@ -1,7 +1,5 @@
 # Bootalk App
 
-[← Back to Portal](../../README.md) | [한국어](../../ko/projects/bootalk-app.md)
-
 ## Project Overview
 
 React Native mobile application for Bootalk — serving home buyers and renters with property search, AI chat, real-time notifications, and agent communication.

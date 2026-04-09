@@ -1,7 +1,5 @@
 # Overview
 
-[← Back to Portal](../README.md)
-
 ## Executive Summary
 
 Joined Bootalk as **Data Engineer** in March 2025, rapidly expanding scope beyond data to lead the entire engineering organization. After the CTO's departure in August 2025, assumed **Technical Lead / Product Owner** responsibilities — managing a 4-person development team, owning all platform deployments, and driving product decisions across web, mobile, backend, and data.

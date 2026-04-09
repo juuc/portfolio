@@ -1,7 +1,5 @@
 # Bootalk Web
 
-[← Back to Portal](../../README.md) | [한국어](../../ko/projects/bootalk-web.md)
-
 ## Project Overview
 
 The public-facing Next.js web platform at bootalk.co.kr — serving property search, AI chat, calculators, event pages, and real estate agent matching.

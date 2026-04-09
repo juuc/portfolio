@@ -1,7 +1,5 @@
 # Ubuntu Crawler
 
-[← Back to Portal](../../README.md) | [한국어](../../ko/projects/ubuntu-crawler.md)
-
 ## Project Overview
 
 Comprehensive real estate data collection system for the Korean market — crawling government APIs, aggregating apartment data, and feeding the Bootalk platform's data layer.

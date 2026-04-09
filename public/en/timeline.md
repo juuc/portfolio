@@ -1,7 +1,5 @@
 # Growth Timeline
 
-[← Back to Portal](../README.md)
-
 ## Monthly Activity
 
 ```

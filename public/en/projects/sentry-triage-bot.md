@@ -1,7 +1,5 @@
 # Autonomous Sentry Triage Bot
 
-[← Back to Portal](../../README.md) | [한국어](../../ko/projects/sentry-triage-bot.md)
-
 ## Project Overview
 
 An autonomous error triage pipeline that receives Sentry webhooks, diagnoses production issues across 4 repositories, and creates fix PRs — all without human intervention. Built on OpenClaw (AI agent orchestration framework) with Cloudflare Tunnel for secure webhook ingestion.

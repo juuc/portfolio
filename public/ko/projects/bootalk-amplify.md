@@ -1,7 +1,5 @@
 # Bootalk Amplify
 
-[← 포털로 돌아가기](../../README.md) | [English](../../en/projects/bootalk-amplify.md)
-
 ## 프로젝트 개요
 
 부톡의 핵심 비즈니스 로직을 담당하는 AWS Amplify 기반 서버리스 백엔드 — 실시간 채팅, 인증(Cognito OTP), 푸시 알림(Pinpoint), 29개 Lambda 함수의 이벤트 기반 트리거.

@@ -1,7 +1,5 @@
 # 아키텍처 의사결정
 
-[← 포털로 돌아가기](../README.md) | [English](../en/architectural-decisions.md)
-
 부톡에서 내린 가장 영향력 있는 기술적 결정들 — 각각이 플랫폼의 방향을 바꿨습니다.
 
 ---

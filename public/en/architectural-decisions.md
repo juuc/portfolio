@@ -1,7 +1,5 @@
 # Architectural Decisions
 
-[← Back to Portal](../README.md) | [한국어](../ko/architectural-decisions.md)
-
 The most impactful technical decisions I made at Bootalk — each one changed the trajectory of the platform.
 
 ---

@@ -1,7 +1,5 @@
 # 부톡 앱
 
-[← 포털로 돌아가기](../../README.md) | [English](../../en/projects/bootalk-app.md)
-
 ## 프로젝트 개요
 
 부톡 React Native 모바일 앱 — 아파트 검색, AI 채팅, 실시간 알림, 중개사 소통 기능 제공.

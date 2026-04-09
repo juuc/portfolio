@@ -1,7 +1,5 @@
 # Data Pipelines
 
-[← Back to Portal](../../README.md) | [한국어](../../ko/projects/data-pipelines.md)
-
 ## Project Overview
 
 Dagster-based ETL infrastructure managing apartment data — enrichment, floor plans, daily listing statistics, and stored procedure modernization.

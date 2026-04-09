@@ -1,7 +1,5 @@
 # 데이터 파이프라인
 
-[← 포털로 돌아가기](../../README.md) | [English](../../en/projects/data-pipelines.md)
-
 ## 프로젝트 개요
 
 아파트 데이터를 관리하는 Dagster 기반 ETL 인프라 — 데이터 보강, 평면도, 일별 매물 통계, 저장 프로시저 현대화.

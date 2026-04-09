@@ -1,7 +1,5 @@
 # 기타 프로젝트
 
-[← 포털로 돌아가기](../../README.md) | [English](../../en/projects/other-projects.md)
-
 ## 중개사 대시보드
 **34건 커밋 | 7건 PR (7건 머지)**
 

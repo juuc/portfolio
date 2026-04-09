@@ -1,7 +1,5 @@
 # 부톡 웹
 
-[← 포털로 돌아가기](../../README.md) | [English](../../en/projects/bootalk-web.md)
-
 ## 프로젝트 개요
 
 bootalk.co.kr의 공개 Next.js 웹 플랫폼 — 매물 검색, AI 채팅, 계산기, 이벤트 페이지, 중개사 매칭 서비스 제공.

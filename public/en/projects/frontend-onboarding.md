@@ -1,7 +1,5 @@
 # Frontend Onboarding
 
-[← Back to Portal](../../README.md) | [한국어](../../ko/projects/frontend-onboarding.md)
-
 ## Project Overview
 
 Comprehensive developer documentation platform for the Bootalk frontend team, built on Mintlify. Serves as the single source of truth for architecture, features, APIs, and development workflows.

@@ -1,7 +1,5 @@
 # 자율 Sentry Issue 분석 및 PR 생성 봇
 
-[← 포털로 돌아가기](../../README.md) | [English](../../en/projects/sentry-triage-bot.md)
-
 ## 프로젝트 개요
 
 Sentry 웹훅을 수신하여 4개 레포지토리에 걸쳐 프로덕션 이슈를 진단하고, 수정 PR을 자동 생성하는 자율 에러 분석 파이프라인. OpenClaw(AI 에이전트 오케스트레이션 프레임워크)와 Cloudflare Tunnel 기반 보안 웹훅 수신으로 구축.

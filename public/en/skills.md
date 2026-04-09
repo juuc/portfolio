@@ -1,7 +1,5 @@
 # Technical Skills
 
-[← Back to Portal](../README.md)
-
 ## Language Proficiency
 
 Measured by bytes of code across all contributed repositories:

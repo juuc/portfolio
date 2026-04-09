@@ -1,7 +1,5 @@
 # Bootalk Amplify
 
-[← Back to Portal](../../README.md) | [한국어](../../ko/projects/bootalk-amplify.md)
-
 ## Project Overview
 
 AWS Amplify-based serverless backend powering Bootalk's core business logic — real-time chat, authentication (Cognito OTP), push notifications (Pinpoint), and event-driven triggers across 29 Lambda functions.

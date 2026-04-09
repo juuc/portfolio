@@ -1,7 +1,5 @@
 # Intelz / YouBook — Previous Experience
 
-[← Back to Portal](../README.md) | [한국어](../ko/intelz.md)
-
 ## Overview
 
 **App Developer & Data Manager** at [Intelz (인텔즈)](https://youbook.biz) — an AI-powered minibook knowledge sharing platform. "동영상은 YouTube, 미니북은 YouBook" (Videos are YouTube, mini-books are YouBook).
