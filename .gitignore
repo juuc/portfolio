@@ -5,3 +5,10 @@ dist-ssr/
 *.local
 .env.local
 .env.*.local
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js
+.omc/
+.superpowers/
+components/
+docs/
