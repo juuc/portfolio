@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useLang } from '../context/LangContext'
 import { DATA, PortfolioData } from '../data'
 
@@ -14,6 +14,14 @@ export default function Nav() {
   const { lang, toggle } = useLang()
   const d = DATA[lang]
   const location = useLocation()
+  const navigate = useNavigate()
+
+  const handleLangToggle = () => {
+    const nextLang = lang === 'en' ? 'ko' : 'en'
+    const newPathname = location.pathname.replace(/^\/(en|ko)/, `/${nextLang}`)
+    if (newPathname !== location.pathname) navigate(newPathname)
+    toggle()
+  }
   const [scrollProgress, setScrollProgress] = useState(0)
   const [scrolled, setScrolled] = useState(false)
 
@@ -73,7 +81,7 @@ export default function Nav() {
 
         {/* Lang toggle */}
         <button
-          onClick={toggle}
+          onClick={handleLangToggle}
           className="text-xs font-semibold px-3 py-1.5 rounded transition-all duration-150"
           style={{
             background: 'rgba(255,255,255,0.04)',
