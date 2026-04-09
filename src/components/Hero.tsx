@@ -69,7 +69,7 @@ export default function Hero() {
             <DecryptedText
               text={d.name}
               className="text-5xl md:text-7xl font-bold tracking-tight"
-              speed={45}
+              speed={120}
               revealDirection="start"
             />
           )}
