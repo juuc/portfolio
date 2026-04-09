@@ -80,6 +80,7 @@ const DecryptedText = ({
     return () => {
       clearInterval(scrambleInterval);
       clearInterval(revealInterval);
+      hasRun.current = false;
     };
   }, [text, speed, characters, revealDirection]);
 
