@@ -4,11 +4,11 @@ import { useLang } from '../context/LangContext'
 import { DATA, PortfolioData } from '../data'
 
 const NAV_LINKS = [
-  { label: (d: PortfolioData) => d.nav.home, href: '/' },
-  { label: (d: PortfolioData) => d.nav.overview, href: '/overview' },
-  { label: (d: PortfolioData) => d.nav.projects, href: '/projects' },
-  { label: (d: PortfolioData) => d.nav.timeline, href: '/timeline' },
-  { label: (d: PortfolioData) => d.nav.skills, href: '/skills' },
+  { label: (d: PortfolioData) => d.nav.home, path: '/' },
+  { label: (d: PortfolioData) => d.nav.overview, path: '/overview' },
+  { label: (d: PortfolioData) => d.nav.projects, path: '/projects' },
+  { label: (d: PortfolioData) => d.nav.timeline, path: '/timeline' },
+  { label: (d: PortfolioData) => d.nav.skills, path: '/skills' },
 ]
 
 export default function Nav() {
@@ -55,18 +55,21 @@ export default function Nav() {
 
         {/* Nav links (hidden on mobile) */}
         <nav className="hidden md:flex items-center gap-6">
-          {NAV_LINKS.map(({ label, href }) => (
-            <Link
-              key={href}
-              to={href}
-              className="text-xs font-medium transition-colors duration-150"
-              style={{
-                color: location.pathname === href ? 'var(--accent)' : 'var(--text-muted)',
-              }}
-            >
-              {label(d)}
-            </Link>
-          ))}
+          {NAV_LINKS.map(({ label, path }) => {
+            const href = path === '/' ? '/' : `/${lang}${path}`
+            return (
+              <Link
+                key={path}
+                to={href}
+                className="text-xs font-medium transition-colors duration-150"
+                style={{
+                  color: location.pathname === href ? 'var(--accent)' : 'var(--text-muted)',
+                }}
+              >
+                {label(d)}
+              </Link>
+            )
+          })}
         </nav>
 
         {/* Lang toggle */}
