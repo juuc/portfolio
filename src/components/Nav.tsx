@@ -84,9 +84,9 @@ export default function Nav() {
         {/* Lang toggle — hidden on detail pages */}
         <button
           onClick={handleLangToggle}
-          style={{ visibility: isDetailPage ? 'hidden' : 'visible' }}
           className="text-xs font-semibold px-3 py-1.5 rounded transition-all duration-150"
           style={{
+            visibility: isDetailPage ? 'hidden' : 'visible',
             background: 'rgba(255,255,255,0.04)',
             border: '1px solid rgba(255,255,255,0.08)',
             color: 'var(--text-secondary)',
