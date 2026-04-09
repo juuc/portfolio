@@ -10,5 +10,5 @@ vite.config.d.ts
 vite.config.js
 .omc/
 .superpowers/
-components/
-docs/
+/components/
+/docs/

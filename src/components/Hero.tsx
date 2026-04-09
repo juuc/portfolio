@@ -1,10 +1,10 @@
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useLang } from '../context/LangContext'
 import { DATA } from '../data'
 
 import Particles from './ui/Particles'
-import SplitText from './ui/SplitText'
+import DecryptedText from './ui/DecryptedText'
 import BlurText from './ui/BlurText'
 import CountUp from './ui/CountUp'
 
@@ -12,6 +12,12 @@ export default function Hero() {
   const { lang } = useLang()
   const d = DATA[lang]
   const heroRef = useRef<HTMLDivElement>(null)
+  const [showName, setShowName] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowName(true), 400)
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <section
@@ -57,14 +63,16 @@ export default function Hero() {
           {d.title}
         </motion.div>
 
-        {/* Name — SplitText animation */}
-        <div className="mb-4">
-          <SplitText
-            text={d.name}
-            className="text-5xl md:text-7xl font-bold tracking-tight"
-            stagger={0.05}
-            delay={0.3}
-          />
+        {/* Name — DecryptedText animation */}
+        <div className="mb-4 flex justify-center">
+          {showName && (
+            <DecryptedText
+              text={d.name}
+              className="text-5xl md:text-7xl font-bold tracking-tight"
+              speed={45}
+              revealDirection="start"
+            />
+          )}
         </div>
 
         {/* Alt name */}
