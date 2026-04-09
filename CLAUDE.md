@@ -93,13 +93,13 @@ The AI Transformation section is a key differentiator. Protect its quality:
 
 ## 8. UI Effects Philosophy
 
-The portfolio site (`index.html`) may incorporate interactive effects from the `../ui-practice` repo. Follow these principles:
+The portfolio is a **React + Vite + TypeScript + Tailwind CSS SPA** deployed to GitHub Pages via GitHub Actions. Animation components come from [reactbits.dev](https://reactbits.dev) and live in `src/components/ui/` (all files have `// @ts-nocheck` — don't remove it, don't type them strictly).
 
 - **One strong accent > three competing ones.** A single well-placed effect demonstrates frontend taste. Multiple effects turn the portfolio into a demo page.
 - **Effect must serve the content.** The portfolio's job: "I built impressive things." The effect's job: "...and I have excellent frontend taste." Never let the effect compete with the message.
-- **Good fits:** Card-swap on project cards (interactive, keeps metrics visible), electric-border as subtle section accents
-- **Skip:** Effects that don't serve the portfolio's purpose (page-curl, grid-focus), auto-playing animations that distract from reading
-- **Keep it vanilla.** No frameworks, no build step — match the `ui-practice` philosophy of raw browser APIs in a single file.
+- **HashRouter is required** for GitHub Pages static hosting — all routes live after `#` (e.g. `/#/en/projects/bootalk-app`). Never switch to BrowserRouter.
+- **Lang toggle + URL must stay in sync.** `LangContext` holds UI state; `/:lang/` URL param drives markdown fetches. When toggling language on a detail page, both must update together (see `Nav.tsx`).
+- **reactbits components are vendored** — update them by replacing the file, not by patching internals. The one exception: `hasRun` cleanup in `DecryptedText.tsx` (fixes React StrictMode double-mount).
 
 ## 9. Accuracy
 
@@ -111,25 +111,32 @@ The portfolio site (`index.html`) may incorporate interactive effects from the `
 ## Structure Reference
 
 ```
-/tmp/portfolio/
-  README.md                    # Portal — bilingual project index
-  en/
-    overview.md                # Role narrative + AX section + metrics
-    timeline.md                # Monthly/weekly activity + growth phases
-    skills.md                  # Tech stack
-    architectural-decisions.md # 7 key decisions
-    projects/
-      frontend-monorepo.md     # Flagship
-      bootalk-app.md           # Flagship
-      bootalk-amplify.md       # Flagship
-      bootalk-web.md           # Flagship (SEO focus)
-      ubuntu-crawler.md        # Supporting
-      data-pipelines.md        # Supporting
-      frontend-onboarding.md   # Supporting
-      other-projects.md        # Supporting (multiple small projects)
-  ko/                          # Mirror of en/ in Korean
-    (same structure)
+/portfolio/
+  public/
+    en/
+      overview.md, timeline.md, skills.md, architectural-decisions.md
+      projects/
+        frontend-monorepo.md, bootalk-app.md, bootalk-amplify.md, bootalk-web.md
+        sentry-triage-bot.md, ubuntu-crawler.md, data-pipelines.md
+        frontend-onboarding.md, other-projects.md
+    ko/                        # Mirror of en/ in Korean
+  src/
+    data.ts                    # All bilingual UI strings + project metadata
+    App.tsx                    # HashRouter + route definitions
+    context/LangContext.tsx    # en/ko toggle (state + URL must stay in sync)
+    components/
+      Nav.tsx                  # Fixed nav + lang toggle (hides on detail pages)
+      Hero.tsx                 # DecryptedText name + Particles background
+      Projects.tsx             # Flagship project cards (SpotlightCard)
+      Timeline.tsx, Skills.tsx, OtherProjects.tsx
+      MarkdownPage.tsx         # Fetches public/{lang}/*.md, renders with marked
+      ui/                      # reactbits vendored components (@ts-nocheck)
+  README.md                    # Portal — bilingual project index (GitHub-facing)
+  CLAUDE.md                    # This file
 ```
+
+**Live site:** `https://juuc.github.io/portfolio/`  
+**Deploy:** GitHub Actions (`.github/workflows/deploy.yml`) — pushes to `main` trigger auto-deploy.
 
 ## Workflow
 

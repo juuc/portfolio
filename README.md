@@ -1,6 +1,6 @@
 # Portfolio: 주우철 (Ju Woocheol)
 
-**GitHub:** [@juuc](https://github.com/juuc) / [@jwc-bootalk](https://github.com/jwc-bootalk)
+**Live:** [juuc.github.io/portfolio](https://juuc.github.io/portfolio/) · **GitHub:** [@juuc](https://github.com/juuc) / [@jwc-bootalk](https://github.com/jwc-bootalk)
 
 ---
 
