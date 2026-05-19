@@ -10,7 +10,7 @@ I joined Bootalk as a Data Engineer in March 2025 and expanded into Tech Lead / 
 | Static or client-rendered pages invisible to search | SSR, dynamic sitemap, 48,706 indexable listing URLs |
 | PageSpeed around 20 | PageSpeed 80 after phased performance work |
 | Manual production error triage | Sentry alert -> AI diagnosis -> fix PR pipeline |
-| Prototype-stage AI tax assistant | SemuGPT production handover and signed commercial agreement |
+| Prototype-stage AI tax assistant | [SemuGPT](https://semugpt.co.kr) production handover and signed commercial agreement |
 | Individual AI coding experiments | Team-level AI-assisted engineering workflow |
 
 ## Proof Points
@@ -20,7 +20,7 @@ I joined Bootalk as a Data Engineer in March 2025 and expanded into Tech Lead / 
 - **1,462** merged PRs, with **1,130** authored in the frontend monorepo.
 - **22x** peak monthly output increase from the pre-Claude baseline to December 2025.
 - **48,706** sitemap URLs generated after SSR/SEO migration.
-- **2026-05-18** SemuGPT production handover completed and commercial agreement signed.
+- **2026-05-18** [SemuGPT](https://semugpt.co.kr) production handover completed and commercial agreement signed.
 
 These numbers are not the story by themselves. They are evidence that the operating model changed: AI-assisted execution, tight review loops, small reversible phases, and production guardrails made a small team capable of sustained platform work.
 
@@ -28,7 +28,7 @@ These numbers are not the story by themselves. They are evidence that the operat
 
 ### 1. SemuGPT Commercialization
 
-I helped move SemuGPT from AI product buildout into production operation: entitlement logic, payment/webhook handling, evaluation loops, prompt observability, CI/CD, runbooks, cutover preparation, client handover, and a signed commercial agreement.
+I helped move [SemuGPT](https://semugpt.co.kr) from AI product buildout into production operation: entitlement logic, payment/webhook handling, evaluation loops, prompt observability, CI/CD, runbooks, cutover preparation, client handover, and a signed commercial agreement.
 
 ### 2. Bootalk Platform Rebuild
 

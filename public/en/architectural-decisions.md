@@ -34,11 +34,11 @@
 
 ## 5. Prototype AI Product -> Commercial Delivery
 
-**Problem:** SemuGPT needed to move beyond a prototype into a client-operable production product.
+**Problem:** [SemuGPT](https://semugpt.co.kr) needed to move beyond a prototype into a client-operable production product.
 
 **Decision:** Treat productionization as the product: entitlement logic, payment/webhook handling, evaluation, observability, CI/CD, runbooks, handover, and cutover readiness.
 
-**Impact:** Client handover completed and a commercial agreement was signed on 2026-05-18.
+**Impact:** [SemuGPT](https://semugpt.co.kr) client handover completed and a commercial agreement was signed on 2026-05-18.
 
 ## Compounding Pattern
 

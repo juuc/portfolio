@@ -78,7 +78,7 @@ export const DATA: Record<Lang, PortfolioData> = {
       { id: 'platform-rebuild', name: 'Platform Rebuild', metric: '1,130 PRs', impact: 'Fragmented product stack → small-team delivery system after CTO transition' },
       { id: 'seo-performance', name: 'SEO & Performance', metric: '20→80', impact: 'CSR/static web → SSR, 48,706 sitemap URLs, PageSpeed 20→80' },
       { id: 'sentry-automation', name: 'Autonomous Sentry Ops', metric: 'Alert→PR', impact: 'Production errors became AI-assisted diagnosis and fix PR candidates' },
-      { id: 'data-reliability', name: 'Data Reliability', metric: 'Recovery', impact: 'Crawler/data incidents turned into guarded lifecycle and preflight operations' },
+      { id: 'data-reliability', name: 'Data Reliability', metric: 'Dagster', impact: 'Script crawlers -> scheduled assets/jobs with freshness alerts and recovery gates' },
     ],
     sections: {
       career: 'Career',
@@ -128,7 +128,7 @@ export const DATA: Record<Lang, PortfolioData> = {
       { id: 'platform-rebuild', name: '플랫폼 재건', metric: '1,130 PR', impact: 'CTO 전환 이후 분산된 제품 스택 → 작은 팀의 배포 시스템' },
       { id: 'seo-performance', name: 'SEO & 성능', metric: '20→80', impact: 'CSR/정적 웹 → SSR, 사이트맵 48,706개 URL, PageSpeed 20→80' },
       { id: 'sentry-automation', name: '자율 Sentry 운영', metric: 'Alert→PR', impact: '프로덕션 에러를 AI 진단과 수정 PR 후보로 연결' },
-      { id: 'data-reliability', name: '데이터 신뢰성', metric: 'Recovery', impact: '크롤러/데이터 사고를 guarded lifecycle과 preflight 운영으로 전환' },
+      { id: 'data-reliability', name: '데이터 신뢰성', metric: 'Dagster', impact: '스크립트형 크롤러 -> 스케줄형 assets/jobs와 신선도 알림/복구 gate' },
     ],
     sections: {
       career: '경력',

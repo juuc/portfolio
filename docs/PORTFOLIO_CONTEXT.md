@@ -89,6 +89,7 @@ Avoid making commit count the lead. Commit count is supporting evidence.
 Public-safe details:
 
 - AI tax consulting product.
+- Public service URL: https://semugpt.co.kr.
 - MVP completed around 2026-01.
 - RAG/evaluation/prompt observability expanded around 2026-02.
 - Production hardening continued through 2026-03 to 2026-05.
@@ -183,12 +184,26 @@ Public-safe details:
   geospatial data, and public datasets.
 - Important incidents included stale/corrupted data recovery, lifecycle
   propagation, and crawler correctness.
+- The crawler system used Dagster as the orchestration layer.
+- Local source verification on 2026-05-19 showed the central Dagster
+  `Definitions` registry registering 18 jobs, 19 schedules, resources, and one
+  run-failure sensor.
+- Source-level verification on 2026-05-19 found 155 Python `@asset`
+  definitions under the crawler Dagster project.
+- Dagster coverage included apartment info/listings, real trade/pricing,
+  mapping/ranking, presale/facilities, household, loan, dealer, and
+  reconstruction domains.
+- Operational mechanics included `AssetSelection` groups, runtime caps, daily,
+  weekly, monthly, and biannual schedules, and failure notifications with
+  root-cause summaries.
 - The durable outcome was repository-level guards, preflight checks,
   orchestration, monitoring, and runbooks.
 
 What to emphasize:
 
 - Real-estate products rely on data correctness as user trust.
+- The stronger public framing is "script crawlers -> observable Dagster ETL
+  operations."
 - One-off fixes were converted into safer operating rules.
 
 What to avoid:
@@ -220,4 +235,3 @@ team velocity, production reliability, or commercial delivery?
 ```
 
 If not, keep it in context/evidence material rather than the main portfolio.
-

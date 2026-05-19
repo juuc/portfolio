@@ -2,7 +2,7 @@
 
 ## Why It Matters
 
-SemuGPT moved from AI service buildout to production handover and a signed commercial agreement on 2026-05-18.
+[SemuGPT](https://semugpt.co.kr) moved from AI service buildout to production handover and a signed commercial agreement on 2026-05-18.
 
 ## Problem
 
@@ -26,3 +26,4 @@ This turned SemuGPT from an AI product project into a commercial delivery. The o
 - 2026-02: RAG expansion, evaluation, and prompt observability work.
 - 2026-03 to 2026-05: production hardening, payment/membership, runbooks, cutover prep.
 - 2026-05-18: client handover completed and commercial agreement signed.
+- Public service: [semugpt.co.kr](https://semugpt.co.kr).

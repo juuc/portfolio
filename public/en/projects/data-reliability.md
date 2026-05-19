@@ -2,27 +2,31 @@
 
 ## Why It Matters
 
-Real-estate products depend on trust in data freshness and correctness. Crawler and lifecycle bugs can change what users believe about the market.
+Real-estate products only work when users can trust freshness, coordinates, rankings, and lifecycle state.
 
 ## Problem
 
-Data work spanned crawlers, backend propagation, ranking logic, geospatial fields, and external public datasets. Failures could appear far downstream from the writer that caused them, making one-off fixes insufficient.
+The crawler had become a production data backbone: apartment info, listings, trade/pricing refreshes, rankings, presales, facilities, households, loans, dealers, and reconstruction data. Failures often showed up downstream from the writer that caused them, so script-level fixes were not enough.
 
 ## Output
 
-- Treated data incidents as system problems, not isolated patches.
-- Added repository-level guards around high-risk data fields.
-- Recovered corrupted or stale production data where needed.
-- Used orchestration, monitoring, and preflight checks to make freshness visible.
-- Documented operational runbooks so future handover did not depend on memory.
+- Consolidated crawler work into a Dagster asset/job/schedule structure.
+- Registered 18 jobs and 19 schedules in the central Dagster `Definitions` registry, with 155 Python `@asset` definitions across domains.
+- Split execution by `AssetSelection` groups for targeted listing, info, pricing, ranking, presale, and facility runs.
+- Added runtime limits plus daily, weekly, monthly, and biannual cadences for freshness-sensitive work.
+- Wired a run-failure sensor with root-cause notification for faster incident triage.
+- Turned coordinate, ranking, lifecycle, and freshness incidents into repository guards, preflight checks, and runbooks.
 
 ## Impact
 
-The data layer became easier to reason about under production pressure. Data lifecycle, recovery, and migration work gained a safer operating model.
+The crawler moved from script operations to an observable ETL system. Data recovery became repeatable, freshness risk became visible, and platform changes gained a verification gate before they reached production data.
 
 ## Evidence
 
-- Crawler recovery and coordinate correction work.
-- Apartment lifecycle propagation fixes.
-- Batch/data pipeline modernization through orchestration.
-- Migration preflight gates for safer backend changes.
+| Area | Proof |
+|------|-------|
+| Orchestration | Dagster `Definitions` registry with assets, jobs, schedules, resources, and a failure sensor |
+| Scale | 18 registered jobs, 19 registered schedules, 155 Python `@asset` definitions |
+| Coverage | Apartment info/listings, trade/pricing, mapping/ranking, presale/facilities, household/loan/dealer/reconstruction |
+| Operations | Daily, weekly, monthly, and biannual schedules with runtime caps |
+| Recovery | Coordinate recovery, lifecycle propagation fixes, freshness checks, and migration preflight gates |

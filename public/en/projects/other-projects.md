@@ -32,10 +32,10 @@ Dashboard for managing **LAAD (아파트 광고 데이터)** — Bootalk's apart
 
 ---
 
-## Tax Consulting GPT (세무GPT)
+## Tax Consulting GPT ([SemuGPT](https://semugpt.co.kr))
 **10 commits**
 
-Frontend for 세무GPT — an AI-powered tax consulting service built for a partner tax firm. This was a significant product initiative involving full-stack development:
+Frontend for [SemuGPT](https://semugpt.co.kr) — an AI-powered tax consulting service built for a partner tax firm. This was a significant product initiative involving full-stack development:
 
 **What I Built:**
 - **Payment System:** Integrated PortOne payment gateway with free/standard/special tier pricing
@@ -45,7 +45,7 @@ Frontend for 세무GPT — an AI-powered tax consulting service built for a part
 - **Chat UX:** Dynamic route `/chat/{id}` for conversation history, feedback forms per response, expandable law/precedent/consultation sections, category selection toggle
 - **Data Quality:** Fixed broken precedent links (재수집), ensured 3+ precedents per response, improved old/new law comparison display
 
-**Business Impact:** MVP completed by January 2026. First client meeting held. Active iteration on UX and data quality based on partner feedback.
+**Business Impact:** MVP completed by January 2026. Production handover completed and a commercial agreement was signed on 2026-05-18.
 
 ---
 
