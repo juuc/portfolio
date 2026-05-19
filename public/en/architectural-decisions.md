@@ -1,7 +1,5 @@
 # Technical Evidence
 
-These are the decisions worth keeping in the public portfolio because they changed outcomes, not just implementation details.
-
 ## 1. Fragmented Frontend -> Monorepo
 
 **Problem:** Web, mobile, admin, and webview work lived across separate repositories. Shared types and utilities drifted, and cross-platform changes required coordination overhead.

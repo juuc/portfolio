@@ -1,7 +1,5 @@
 # Operating Stack
 
-This is not a keyword inventory. It is the stack I used to produce the portfolio outcomes.
-
 ## Product Platform
 
 | Area | Tools | Output |

@@ -64,4 +64,3 @@ I am strongest where product, platform, and execution overlap:
 - turning scattered codebases into coordinated release systems
 - using AI agents as an engineering operating layer, not a demo trick
 - converting prototypes into production and commercial outcomes
-- keeping public communication focused on impact while preserving private operational detail

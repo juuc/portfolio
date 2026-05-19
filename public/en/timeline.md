@@ -1,7 +1,5 @@
 # Selected Timeline
 
-This page keeps only milestones that changed product, platform, team velocity, or commercial outcome. Raw monthly activity is intentionally demoted; the portfolio should show impact first.
-
 ## Milestones
 
 | Date | Output | Why It Mattered |
@@ -31,5 +29,3 @@ As of 2026-05-19, GitHub Search API counts across `juuc` and `jwc-bootalk` show:
 | Pull requests | **1,588** |
 | Merged PRs | **1,462** |
 | Peak month | **1,576 commits** in December 2025 |
-
-The useful interpretation is not "more commits are better." The useful interpretation is that the engineering system changed: small phases, parallel AI-assisted execution, review discipline, and production verification made sustained platform work possible.
