@@ -24,4 +24,4 @@ The web stack relied heavily on client rendering and static behavior. Important 
 | PageSpeed around 20 | **80** |
 | Search visibility blocked by rendering | Listing pages indexable |
 
-The result was not just a better Lighthouse score. It turned the public web surface into an acquisition channel.
+The public web surface became an acquisition channel.

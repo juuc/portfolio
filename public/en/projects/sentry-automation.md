@@ -2,7 +2,7 @@
 
 ## Why It Matters
 
-Production error handling does not scale if every issue depends on manual inspection. The goal was to turn monitoring into an operating system, not another inbox.
+Production error handling does not scale if every issue depends on manual inspection. Monitoring became an operating system instead of another inbox.
 
 ## Problem
 
@@ -19,6 +19,6 @@ Sentry revealed too much production noise for a small team to triage manually. E
 
 The workflow changed production response from "someone needs to investigate" to "the system prepares the investigation and fix candidate." It reduced the need for manual on-call triage while keeping engineering ownership intact.
 
-## Principle
+## Operating Model
 
-This is the best example of my AI approach: AI is not just a coding assistant. It can become a production operating layer when bounded by policy, observability, and review gates.
+AI can become a production operating layer when bounded by policy, observability, and review gates.

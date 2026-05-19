@@ -2,11 +2,11 @@
 
 ## Why It Matters
 
-SemuGPT is the clearest recent example of product ownership beyond code: an AI service moved from buildout to production handover and a signed commercial agreement on 2026-05-18.
+SemuGPT moved from AI service buildout to production handover and a signed commercial agreement on 2026-05-18.
 
 ## Problem
 
-The product needed to become operable by a client, not just impressive in a demo. That required production boundaries: membership entitlement, payment and webhook behavior, answer-quality evaluation, deployment discipline, observability, and handover documentation.
+Client operation required production boundaries: membership entitlement, payment and webhook behavior, answer-quality evaluation, deployment discipline, observability, and handover documentation.
 
 ## Output
 
@@ -18,7 +18,7 @@ The product needed to become operable by a client, not just impressive in a demo
 
 ## Impact
 
-This turned SemuGPT from an AI product project into a commercial delivery. The important output was not only the model or the UI; it was the operating wrapper that made the service sellable, supportable, and handoff-ready.
+This turned SemuGPT from an AI product project into a commercial delivery. The operating wrapper made the service sellable, supportable, and handoff-ready.
 
 ## Evidence
 

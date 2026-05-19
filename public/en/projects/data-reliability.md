@@ -2,7 +2,7 @@
 
 ## Why It Matters
 
-Real-estate products depend on trust in data freshness and correctness. A crawler or lifecycle bug is not just a backend defect; it can change what users believe about the market.
+Real-estate products depend on trust in data freshness and correctness. Crawler and lifecycle bugs can change what users believe about the market.
 
 ## Problem
 
@@ -18,7 +18,7 @@ Data work spanned crawlers, backend propagation, ranking logic, geospatial field
 
 ## Impact
 
-The data layer became easier to reason about under production pressure. The important output was not a single crawler fix; it was a safer operating model for data lifecycle, recovery, and migration work.
+The data layer became easier to reason about under production pressure. Data lifecycle, recovery, and migration work gained a safer operating model.
 
 ## Evidence
 
