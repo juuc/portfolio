@@ -33,7 +33,7 @@ frontend-monorepo/
     └── common/            ← unified shared utilities
 ```
 
-**Impact:** 594 PRs of systematic migration. Unified type system enabled the type safety campaign. Single CI/CD pipeline for all apps. Partner webview integrations went from days to hours.
+**Impact:** 1,130 authored PRs in the monorepo by May 19, 2026. Unified type system enabled the type safety campaign. Single CI/CD pipeline for all apps. Partner webview integrations went from days to hours.
 
 > References: Discussion #27 (monorepo milestone proposal), PRs #737 (Lotte Card webview), #753 (Nonghyup webview)
 

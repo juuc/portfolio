@@ -11,4 +11,5 @@ vite.config.js
 .omc/
 .superpowers/
 /components/
-/docs/
+/docs/*
+!/docs/LLM_UPDATE_RUNBOOK.md

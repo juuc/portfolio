@@ -4,7 +4,7 @@
 
 Joined Bootalk as **Data Engineer** in March 2025, rapidly expanding scope beyond data to lead the entire engineering organization. After the CTO's departure in August 2025, assumed **Technical Lead / Product Owner** responsibilities — managing a 4-person development team, owning all platform deployments, and driving product decisions across web, mobile, backend, and data.
 
-Contributed **3,775 commits** and **1,000+ pull requests** across **28 repositories** in 12 months — an unusually broad scope reflecting an engineer who operated as both builder and leader.
+As of **May 19, 2026**, GitHub activity across `juuc` and `jwc-bootalk` shows **8,231 authored commits**, **1,588 pull requests**, and **1,462 merged PRs** since March 2025. Within the Bootalk organization alone, that is **7,895 commits** — an unusually broad scope reflecting an engineer who operated as both builder and leader.
 
 ## Role & Leadership
 
@@ -44,16 +44,21 @@ I then purchased the **Max 20x plan** for all developers on the team. This wasn'
 
 | Period | Commits | Business Impact |
 |--------|---------|----------------|
-| Mar–Jul 2025 | ~65/mo | Data pipelines, app maintenance, CTO handover preparation |
-| **Aug 2025** | **294** | CTO departed Aug 8 → Claude Code adopted Aug 16 → **engineering velocity restored without new hires** |
-| Sep 2025 | 168 | Web platform modernized (Next.js 15, SWC) — groundwork for SEO capability |
-| Oct 2025 | 447 | **SSR deployed → apartment listings indexable by search engines for the first time**. Dev/prod environments separated across all platforms |
-| Nov 2025 | 985 | **3 repos → 1 monorepo → cross-platform features ship in hours, not days**. SSR goes live in production |
-| Dec 2025 | **1,180** | 1,184 tests securing production stability. v3.2.0 deployed to all 4 platforms simultaneously |
-| Jan 2026 | 660 | **PageSpeed 20→80 (4x) → improved SEO rankings and user retention**. Mobile LCP 3.3s→1.3s |
-| Feb 2026 | 594 | Production error noise systematically eliminated. **Led directly to autonomous Sentry triage bot** |
+| Mar–Jul 2025 | ~71/mo | Data pipelines, app maintenance, CTO handover preparation |
+| **Aug 2025** | **297** | CTO departed Aug 8 → Claude Code adopted Aug 16 → **engineering velocity restored without new hires** |
+| Sep 2025 | 170 | Web platform modernized (Next.js 15, SWC) — groundwork for SEO capability |
+| Oct 2025 | 476 | **SSR deployed → apartment listings indexable by search engines for the first time**. Dev/prod environments separated across all platforms |
+| Nov 2025 | 1,065 | **3 repos → 1 monorepo → cross-platform features ship in hours, not days**. SSR goes live in production |
+| Dec 2025 | **1,576** | 1,184 tests securing production stability. v3.2.0 deployed to all 4 platforms simultaneously |
+| Jan 2026 | 819 | **PageSpeed 20→80 (4x) → improved SEO rankings and user retention**. Mobile LCP 3.3s→1.3s |
+| Feb 2026 | 987 | Production error noise systematically eliminated. **Led directly to autonomous Sentry triage bot** |
+| Mar 2026 | 1,004 | SemuGPT answer quality, mobile UI consolidation, backend safety fixes |
+| Apr 2026 | 930 | App Router migration, Expo SDK 55 / v3.6 preparation, OpenClaw team layer |
+| May 2026* | 554 | SemuGPT production hardening, data lifecycle fixes, crawler recovery, WebView/SEO stability |
 
-From ~65 commits/month to **1,180 in December** — an **18x increase**. Two months later, PageSpeed went from 20 to 80, and the sitemap grew from 5 URLs to 48,706. This isn't typing faster — it's a fundamentally different operating model.
+*May 2026 is counted through May 19.
+
+From ~71 commits/month to **1,576 in December** — a **22x peak increase**. The output then stayed near 1,000 commits/month through March and April 2026 while production hardening continued. This isn't typing faster — it's a fundamentally different operating model.
 
 ### How the Workflow Works
 
@@ -72,14 +77,14 @@ From ~65 commits/month to **1,180 in December** — an **18x increase**. Two mon
 - Distribute phases across concurrent agent sessions
 - Coordinate via shared `CLAUDE.md` instructions and issue tracking
 
-This methodology enabled a single engineer to produce output comparable to a team of 5+ — directly responsible for the 3,775 commits and 1,000+ PRs across 28 repositories in 12 months.
+This methodology enabled a single engineer to produce output comparable to a team of 5+ — directly responsible for 8,231 GitHub-verified commits and 1,588 PRs by May 19, 2026.
 
 ### What Makes AI-Powered Engineering Work
 
 The tooling matters less than the approach. Here are the principles that turned AI from a code autocomplete into a force multiplier:
 
 **1. Treat AI as infrastructure, not a tool.**
-I didn't just install Claude Code and start prompting. I designed a **production pipeline** around it — tmux orchestration, `CLAUDE.md` conventions per repo, overnight execution queues, phase-based task decomposition. The 18x output increase came from systems engineering around AI, not from better prompts.
+I didn't just install Claude Code and start prompting. I designed a **production pipeline** around it — tmux orchestration, `CLAUDE.md` conventions per repo, overnight execution queues, phase-based task decomposition. The 22x peak output increase came from systems engineering around AI, not from better prompts.
 
 **2. Delegate intent, not instructions.**
 Effective AI delegation means giving **outcomes and constraints**, not step-by-step directions. "Eliminate all `any` types in the admin module while keeping tests passing" works. "Open file X, change line 42, then open file Y..." doesn't scale. The skill is knowing the right altitude of abstraction for each task.
@@ -107,7 +112,7 @@ This represents the evolution from "AI helps me code faster" to "AI handles prod
 
 When the CTO left in August 2025, I inherited a fragile platform: three scattered frontend repos with no shared infrastructure, a static-only web app invisible to search engines, zero test coverage, no error monitoring, and a 29-Lambda backend with hardcoded environment variables. Firefighting would have kept the lights on. I chose to invest sequentially — each decision deliberately enabling the next.
 
-**Modernize → Unify → Stabilize → Optimize → Automate**
+**Modernize → Unify → Stabilize → Optimize → Automate → Harden**
 
 1. **Modernize the foundation** (Sep–Oct): Upgraded the web platform to Next.js 15 and deployed SSR on GCP Cloud Run. For the first time, 48,706 apartment listings became indexable by search engines. Separated dev/prod environments across all platforms so the team could ship without fear.
 
@@ -119,14 +124,16 @@ When the CTO left in August 2025, I inherited a fragile platform: three scattere
 
 5. **Automate operations** (Feb): The Sentry error campaign revealed the scale of manual triage work. I built an autonomous bot that receives Sentry webhooks, diagnoses issues across 4 repos, creates fix PRs, and reports to Telegram — replacing the need for an on-call engineer.
 
-Each step was only possible because of the previous one. You can't optimize a fragmented codebase. You can't test a platform with no environment separation. You can't automate triage without monitoring. The 12-month roadmap wasn't a list of projects — it was a **chain of compounding investments** where each decision multiplied the value of every decision before it.
+6. **Harden and scale production** (Mar–May): With the platform stabilized, I pushed the operating layer forward: SemuGPT production membership and payment flows, App Router migration phases, Expo SDK 55 release preparation, crawler data recovery, backend migration preflight gates, self-hosted CI runners, and team-level OpenClaw assistant infrastructure.
+
+Each step was only possible because of the previous one. You can't optimize a fragmented codebase. You can't test a platform with no environment separation. You can't automate triage without monitoring. You can't harden production safely without the release, observability, and documentation systems built earlier. The roadmap wasn't a list of projects — it was a **chain of compounding investments** where each decision multiplied the value of every decision before it.
 
 ## Key Metrics
 
 | Metric | Value |
 |--------|-------|
-| Total Commits | **3,775** |
-| Pull Requests | **1,000+** (762 merged in monorepo alone) |
-| Active Repositories | **28** |
-| Peak Month | Dec 2025 — **1,180 commits** |
-| Active Days | ~220 (7 days/week including weekends) |
+| GitHub-Verified Commits | **8,231** |
+| Bootalk Org Commits | **7,895** |
+| Pull Requests | **1,588** (1,462 merged; 1,130 authored in monorepo) |
+| Peak Month | Dec 2025 — **1,576 commits** |
+| Active Window | Mar 2025 → May 19, 2026 |

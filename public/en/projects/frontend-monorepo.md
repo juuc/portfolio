@@ -18,8 +18,8 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 
 | Metric | Value |
 |--------|-------|
-| Commits | 1,323 |
-| Pull Requests | 594 (564 merged) |
+| Commits | 4,881 |
+| Pull Requests | 1,130 (1,041 merged) |
 | Lines Added | +2,318,637 |
 | Lines Removed | -872,029 |
 | Stack | TypeScript, CSS, HTML, JavaScript |
@@ -47,7 +47,7 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 
 **Solution:** Built unit test suites across web and admin modules with systematic coverage. Created test infrastructure aligned with component implementations.
 
-**Impact:** 159 test-related PRs. Tests caught regressions during refactoring phases. Enabled confident deployments.
+**Impact:** 159+ test-related PRs. Tests caught regressions during refactoring phases. Enabled confident deployments.
 
 **Key PRs:**
 - Unit tests for web, admin, and app modules (159 PRs with "test" in title)

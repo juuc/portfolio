@@ -62,7 +62,7 @@ Not just using AI — **orchestrating it as a production workflow**.
 - **Claude GitHub Actions** — Automated PR review and code analysis workflows across 6+ repositories
 - **oh-my-claudecode** — Advanced multi-agent orchestration framework for complex tasks
 
-**Impact:** 18x output increase (65 → 1,180 commits/month). Single engineer producing team-equivalent output.
+**Impact:** 22x peak output increase (~71 → 1,576 commits/month), with 8,231 GitHub-verified commits and 1,588 PRs by May 19, 2026. Single engineer producing team-equivalent output.
 
 ### AI/ML (Products)
 - **RAG** — Apartment complex and listing retrieval-augmented generation

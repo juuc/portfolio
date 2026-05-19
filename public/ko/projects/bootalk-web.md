@@ -9,8 +9,8 @@ bootalk.co.kr의 공개 Next.js 웹 플랫폼 — 매물 검색, AI 채팅, 계�
 
 | 지표 | 수치 |
 |------|------|
-| 커밋 | 273 (bootalk_web) + 1,323 (monorepo) |
-| SEO 관련 PR | **~40건** (두 레포 합산) |
+| 커밋 | 273 (bootalk_web) + 4,881 (monorepo) |
+| SEO 관련 PR | **40건 이상** (두 레포 합산) |
 | 기술 스택 | TypeScript, Next.js, GCP Cloud Run |
 
 ## 비즈니스 임팩트
@@ -93,6 +93,8 @@ bootalk.co.kr의 공개 Next.js 웹 플랫폼 — 매물 검색, AI 채팅, 계�
 | 2026년 1월 | **PageSpeed Phase 5-8** — LCP, GTM, 번들, 스켈레톤 로딩 | monorepo #639-#701 |
 | 2026년 2월 | 30개 CSR 페이지 → SSR 전환 | monorepo #704 |
 | 2026년 2월 | **GEO** — 구조화 데이터 스키마 + AI 크롤러 지시어 | monorepo #761 |
+| 2026년 4월 | 레거시 마케팅·이벤트 라우트 App Router 마이그레이션 페이즈 | monorepo #1265 |
+| 2026년 5월 | SEO 감사 도구, 크롤링 가능한 anchor 수정, hydration/WebView 안정성 핫픽스 | monorepo #1425, #1430-#1439 |
 
 ---
 

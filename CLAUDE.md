@@ -140,6 +140,8 @@ The portfolio is a **React + Vite + TypeScript + Tailwind CSS SPA** deployed to 
 
 ## Workflow
 
+For portfolio metric or documentation refreshes, follow `docs/LLM_UPDATE_RUNBOOK.md` before editing.
+
 1. Read the file(s) you plan to edit in BOTH languages
 2. Check the security gate before writing anything
 3. Make edits in both en/ and ko/

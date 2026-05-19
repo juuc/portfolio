@@ -8,7 +8,7 @@
 
 | Period | Company | Role | Commits |
 |--------|---------|------|---------|
-| 2025.03 — 2026.02 | [**Bootalk (부톡)**](https://bootalk.co.kr) — PropTech | Data Engineer → Tech Lead / PO | **3,775** |
+| 2025.03 — Present | [**Bootalk (부톡)**](https://bootalk.co.kr) — PropTech | Data Engineer → Tech Lead / PO | **7,895** |
 | 2022.02 — 2025.08 | [**Intelz / YouBook**](https://youbook.biz) — EdTech | App Developer & Data Manager | **368** |
 
 > YouBook: AI-powered minibook knowledge platform — create, remix, and share short-form content in 13+ languages across 190+ countries.
@@ -27,9 +27,9 @@ Also served as Privacy Protection Officer, handled partner integrations (Nonghyu
 
 | Metric | Value |
 |--------|-------|
-| Total Commits | **4,143** (3,775 at Bootalk + 368 at Intelz) |
-| Pull Requests | **754+** |
-| Active Repositories | **34** (28 at Bootalk + 6 at Intelz) |
+| GitHub-Verified Commits | **8,231** (2025.03.01 → 2026.05.19, `juuc` + `jwc-bootalk`) |
+| Bootalk Org Commits | **7,895** |
+| Pull Requests | **1,588** (1,462 merged) |
 | Education | **Seoul National University** — Civil & Environmental Engineering (2025.07) |
 | Career Span | **4+ years** of fullstack + data engineering |
 | Role Evolution | App Dev → Data Manager → Data Engineer → Tech Lead / PO |
@@ -48,7 +48,7 @@ Also served as Privacy Protection Officer, handled partner integrations (Nonghyu
 
 | Project | Impact |
 |---------|--------|
-| [Frontend Monorepo](en/projects/frontend-monorepo.md) | 3 repos → 1 monorepo. 594 PRs, PageSpeed 20→80, type safety 98%+ |
+| [Frontend Monorepo](en/projects/frontend-monorepo.md) | 3 repos → 1 monorepo. 1,130 PRs, PageSpeed 20→80, type safety 98%+ |
 | [Bootalk App](en/projects/bootalk-app.md) | Bare RN → Expo managed workflow. 7-stage migration, OTA updates, 90% test coverage |
 | [Bootalk Amplify](en/projects/bootalk-amplify.md) | Inherited 29-Lambda legacy backend. Environment separation, Sentry, auth fixes |
 | [Bootalk Web](en/projects/bootalk-web.md) | Full SEO transformation: CSR→SSR, sitemap 5→48K URLs, PageSpeed 20→80, GEO for AI search engines |
@@ -77,7 +77,7 @@ Also served as Privacy Protection Officer, handled partner integrations (Nonghyu
 
 | 프로젝트 | 임팩트 |
 |---------|--------|
-| [프론트엔드 모노레포](ko/projects/frontend-monorepo.md) | 3개 레포 → 1개 모노레포. 594 PR, PageSpeed 20→80, 타입 안전성 98%+ |
+| [프론트엔드 모노레포](ko/projects/frontend-monorepo.md) | 3개 레포 → 1개 모노레포. 1,130 PR, PageSpeed 20→80, 타입 안전성 98%+ |
 | [부톡 앱](ko/projects/bootalk-app.md) | Bare RN → Expo managed workflow. 7단계 마이그레이션, OTA 업데이트, 90% 테스트 커버리지 |
 | [Bootalk Amplify](ko/projects/bootalk-amplify.md) | 29개 Lambda 레거시 백엔드 승계. 환경 분리, Sentry 통합, 인증 수정 |
 | [부톡 웹](ko/projects/bootalk-web.md) | SEO 풀 트랜스포메이션: CSR→SSR, 사이트맵 5→48K URL, PageSpeed 20→80, AI 검색엔진 GEO |

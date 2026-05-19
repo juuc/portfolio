@@ -70,7 +70,7 @@ DynamoDB 테이블 ──→ Stream Trigger
 - Lambda API URL → 공유 Layer 상수를 통한 환경별 분기
 - SNS 토픽 → 스테이징은 환경별 접두사, 프로덕션은 접두사 없음
 - DynamoDB Stream ARN → 환경별 CloudFormation 참조
-- SSM Parameter Store → 환경별 경로 규칙으로 시크릿 관리
+- 중앙화된 시크릿 관리 → 하드코딩된 인증값 대신 환경별 참조 사용
 
 **임팩트:** 팀이 프로덕션 리스크 없이 Lambda 변경을 테스트할 수 있게 된 최초의 순간.
 
@@ -85,15 +85,15 @@ DynamoDB 테이블 ──→ Stream Trigger
 
 **해결:** 모든 29개 Lambda 함수에 **Layer 래퍼 패턴**으로 Sentry를 통합했습니다. `@sentry/aws-serverless`가 공유 Layer에만 존재하고 개별 Lambda `node_modules`에는 없기 때문에, 직접 import하면 크래시가 발생합니다.
 
-**임팩트:** Lambda 에러가 처음으로 가시화됨. 여러 프로덕션 무소음 장애(401 인증 실패, 누락된 서비스 토큰) 발견 및 수정으로 직결.
+**임팩트:** Lambda 에러가 처음으로 가시화됨. 서비스 간 인증 실패를 포함한 여러 프로덕션 무소음 장애 발견 및 수정으로 직결.
 
 **주요 PR:** `feat(lambda): Add centralized Sentry error tracking to all Lambda functions` (#20)
 
 ### 3. 서비스 인증 — 무소음 401 오류 수정
 
-**문제:** Sentry 도입 후 `401 Unauthorized` 에러가 대량 노출됨. MSA 마이그레이션 이후 JWT 토큰이 필요한 엔드포인트를 Lambda가 인증 없이 호출하고 있었습니다.
+**문제:** Sentry 도입 후 `401 Unauthorized` 에러가 대량 노출됨. MSA 마이그레이션 이후 서비스 인증이 필요한 엔드포인트를 서버리스 함수가 인증 없이 호출하고 있었습니다.
 
-**해결:** 공유 Layer에 JWT 기반 서비스 인증을 구현하고, 모든 Lambda→Legacy HTTP 호출(메시징, 크롤링, 대화 트리거 함수)에 체계적으로 추가.
+**해결:** 공유 Layer에 서비스 간 인증을 구현하고, 모든 서버리스→모놀리식 API HTTP 호출(메시징, 크롤링, 대화 트리거 함수)에 체계적으로 추가.
 
 **임팩트:** 메시징, 크롤링, 대화 흐름 전반의 프로덕션 401 에러 해결. 실패한 API 호출로 인한 무소음 데이터 손실 제거.
 
@@ -129,7 +129,7 @@ DynamoDB 테이블 ──→ Stream Trigger
 | 2025-11 | API URL 환경 분리 및 MSA 경로 규칙 적용 |
 | 2025-12 | 전체 Lambda 함수 Sentry 통합 |
 | 2025-12 | 인증 Lambda 장애 — 수 시간 내 진단 및 해결 |
-| 2026-02 | 서비스 인증 캠페인 — 모든 Lambda→Legacy 호출에 JWT 추가 |
+| 2026-02 | 서비스 인증 캠페인 — 모든 서버리스→모놀리식 API 호출에 인증값 추가 |
 | 2026-02 | DynamoDB Stream 재시도 폭풍 방지 |
 
 ## 핵심 시사점

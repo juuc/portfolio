@@ -90,4 +90,4 @@ The skills built at Intelz directly enabled what I did at Bootalk:
 | 4-person team member | → | 4-person team leader |
 | In-app payments (iamport) | → | Payment system (SemuGPT) |
 | GPT-4 chatbot integration | → | AI products (부토기, SemuGPT) |
-| 368 commits / 3.5 years | → | 3,775 commits / 12 months (AI-powered) |
+| 368 commits / 3.5 years | → | 7,895 Bootalk org commits / 15 months (AI-powered) |

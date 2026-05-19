@@ -9,8 +9,8 @@ The public-facing Next.js web platform at bootalk.co.kr — serving property sea
 
 | Metric | Value |
 |--------|-------|
-| Commits | 273 (bootalk_web) + 1,323 (monorepo) |
-| SEO-Related PRs | **~40** across both repos |
+| Commits | 273 (bootalk_web) + 4,881 (monorepo) |
+| SEO-Related PRs | **40+** across both repos |
 | Stack | TypeScript, Next.js, GCP Cloud Run |
 
 ## Business Impact
@@ -93,6 +93,8 @@ Key optimizations: Naver Maps SDK lazy loading (#517), LCP image optimization (#
 | Jan 2026 | **PageSpeed Phase 5-8** — LCP, GTM, bundle, skeleton loading | monorepo #639-#701 |
 | Feb 2026 | 30 CSR pages → SSR migration | monorepo #704 |
 | Feb 2026 | **GEO** — structured data schemas + AI crawler directives | monorepo #761 |
+| Apr 2026 | App Router migration phases for legacy marketing and event routes | monorepo #1265 |
+| May 2026 | SEO audit tooling, crawlable anchor fixes, hydration and WebView stability hotfixes | monorepo #1425, #1430-#1439 |
 
 ---
 

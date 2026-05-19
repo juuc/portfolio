@@ -70,7 +70,7 @@ DynamoDB Tables ──→ Stream Triggers
 - Lambda API URLs → environment-based via shared Layer constants
 - SNS topics → environment-specific prefix for staging vs. bare for production
 - DynamoDB Stream ARNs → environment-specific CloudFormation references
-- SSM Parameter Store → environment-based path convention for secrets
+- Centralized secret management → environment-based references instead of hardcoded credentials
 
 **Impact:** First time the team could safely test Lambda changes without production risk.
 
@@ -87,17 +87,17 @@ DynamoDB Tables ──→ Stream Triggers
 
 Each Lambda function wraps its handler with a shared Sentry layer — a centralized error tracking wrapper loaded from the common utilities layer. This ensures consistent error capture without duplicating Sentry config across 29 functions.
 
-**Impact:** Lambda errors became visible for the first time. Led directly to discovering and fixing multiple silent production issues (401 auth failures, missing service tokens).
+**Impact:** Lambda errors became visible for the first time. Led directly to discovering and fixing multiple silent production issues, including failed service-to-service authentication.
 
 **Key PR:** `feat(lambda): Add centralized Sentry error tracking to all Lambda functions` (#20)
 
 ### 3. Service Authentication — Fixing Silent 401 Failures
 
-**Problem:** After Sentry went live, it immediately surfaced a wave of `401 Unauthorized` errors. Lambda functions calling the Legacy API had no service authentication — they were hitting endpoints that now required JWT tokens after the MSA migration.
+**Problem:** After Sentry went live, it immediately surfaced a wave of `401 Unauthorized` errors. Serverless functions calling the monolithic API had no service authentication — they were hitting endpoints that now required service credentials after the MSA migration.
 
-**Solution:** Implemented JWT-based service authentication in the shared Layer, then systematically added it to every Lambda→Legacy HTTP call across messaging, crawling, and conversation trigger functions.
+**Solution:** Implemented service-to-service authentication in the shared layer, then systematically added it to every serverless-to-monolith HTTP call across messaging, crawling, and conversation trigger functions.
 
-Also added SSM Parameter Store integration for JWT secrets — injected via CloudFormation dynamic references instead of environment variable hardcoding.
+Also added centralized secret management for service credentials instead of environment variable hardcoding.
 
 **Impact:** Fixed production-affecting 401 errors across messaging, crawling, and conversation flows. No more silent data loss from failed API calls.
 
@@ -164,7 +164,7 @@ Getting this wrong would mean deploying test code to production. My documentatio
 | Nov 2025 | API URL environment separation + MSA path rules |
 | Dec 2025 | Sentry integration across all Lambda functions |
 | Dec 2025 | Auth Lambda outage — diagnosed and resolved within hours |
-| Feb 2026 | Service auth campaign — JWT tokens added to all Lambda→Legacy calls |
+| Feb 2026 | Service auth campaign — credentials added to serverless→monolith calls |
 | Feb 2026 | Retry storm prevention for DynamoDB Stream triggers |
 
 ## Key Takeaway
