@@ -97,7 +97,7 @@
 - **검색 UX:** 맵 SDK 로딩 대기 없이 검색 UI 즉시 표시
 - **상태관리:** Zustand 마이그레이션 기반 아키텍처 정리
 
-**임팩트:** PageSpeed 점수 **~20 → ~80** — **4배 향상**. 구글 Search Console 성능 경고 전체 해결. Core Web Vitals (LCP, FID, CLS) 대폭 개선.
+**임팩트:** PageSpeed 점수 **[~20 → ~80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop)** — **4배 향상**. 구글 Search Console 성능 경고 전체 해결. Core Web Vitals (LCP, FID, CLS) 대폭 개선.
 
 > **에픽 이슈:** #635 — React Best Practices 적용 - Vercel Engineering 45 Rules 기반 최적화
 

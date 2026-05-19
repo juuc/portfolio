@@ -21,7 +21,7 @@ The web stack relied heavily on client rendering and static behavior. Important 
 |--------|-------|
 | CSR/static public pages | SSR-capable public web |
 | 5 sitemap URLs | **48,706** URLs |
-| PageSpeed around 20 | **80** |
+| PageSpeed around 20 | **[80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop)** |
 | Search visibility blocked by rendering | Listing pages indexable |
 
 The public web surface became an acquisition channel.

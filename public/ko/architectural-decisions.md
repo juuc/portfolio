@@ -22,7 +22,7 @@
 
 **결정:** 전체 rewrite가 아니라 단계적 성능 캠페인을 실행했습니다. SSR waterfall 제거, LCP 최적화, 무거운 SDK lazy load, 번들 축소, perceived loading 개선으로 나눴습니다.
 
-**임팩트:** PageSpeed가 80까지 올라갔습니다. 작은 단위의 가역적 단계로 나누었기 때문에 운영 중인 제품에서도 배포 가능했습니다.
+**임팩트:** [PageSpeed가 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop)까지 올라갔습니다. 작은 단위의 가역적 단계로 나누었기 때문에 운영 중인 제품에서도 배포 가능했습니다.
 
 ## 4. 수동 에러 분석 -> AI 운영 workflow
 

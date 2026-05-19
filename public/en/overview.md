@@ -8,7 +8,7 @@ I joined Bootalk as a Data Engineer in March 2025 and expanded into Tech Lead / 
 |--------|-------|
 | Fragmented web/app/admin repositories | Unified frontend monorepo with 1,130 authored PRs |
 | Static or client-rendered pages invisible to search | SSR, dynamic sitemap, 48,706 indexable listing URLs |
-| PageSpeed around 20 | PageSpeed 80 after phased performance work |
+| PageSpeed around 20 | [PageSpeed 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop) after phased performance work |
 | Manual production error triage | Sentry alert -> AI diagnosis -> fix PR pipeline |
 | Prototype-stage AI tax assistant | [SemuGPT](https://semugpt.co.kr) production handover and signed commercial agreement |
 | Individual AI coding experiments | Team-level AI-assisted engineering workflow |
@@ -36,7 +36,7 @@ After the CTO transition, I owned engineering execution across web, mobile, back
 
 ### 3. Search And Performance Transformation
 
-The public web experience moved from a search-invisible CSR/static model to SSR with dynamic sitemaps and structured data. PageSpeed moved from 20 to 80, and 48K+ listing pages became indexable.
+The public web experience moved from a search-invisible CSR/static model to SSR with dynamic sitemaps and structured data. [PageSpeed moved from 20 to 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop), and 48K+ listing pages became indexable.
 
 ### 4. Autonomous Production Operations
 

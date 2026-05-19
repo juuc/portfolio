@@ -8,7 +8,7 @@
 |------|------|
 | 웹/앱/어드민 레포가 분산됨 | 프론트엔드 모노레포 통합, 작성 PR 1,130건 |
 | 정적/CSR 페이지가 검색엔진에 거의 보이지 않음 | SSR, 동적 사이트맵, 매물 URL 48,706개 색인 가능 |
-| PageSpeed 약 20 | 단계적 성능 개선 후 PageSpeed 80 |
+| PageSpeed 약 20 | 단계적 성능 개선 후 [PageSpeed 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop) |
 | 프로덕션 에러 수동 분석 | Sentry 알림 -> AI 진단 -> 수정 PR 파이프라인 |
 | 프로토타입 단계의 AI 세무 상담 | [세무GPT](https://semugpt.co.kr) 프로덕션 인수인계 및 상용 계약 체결 |
 | 개인 수준의 AI 코딩 실험 | 팀 단위 AI 기반 엔지니어링 운영 방식 |
@@ -36,7 +36,7 @@ CTO 전환 이후 웹, 앱, 백엔드, 데이터, 릴리스, 배포를 가로지
 
 ### 3. 검색/성능 전환
 
-공개 웹 경험을 검색엔진에 거의 보이지 않던 CSR/정적 구조에서 SSR, 동적 사이트맵, 구조화 데이터 기반으로 전환했습니다. PageSpeed는 20에서 80으로 올라갔고, 48K+ 매물 페이지가 색인 가능한 상태가 되었습니다.
+공개 웹 경험을 검색엔진에 거의 보이지 않던 CSR/정적 구조에서 SSR, 동적 사이트맵, 구조화 데이터 기반으로 전환했습니다. [PageSpeed는 20에서 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop)으로 올라갔고, 48K+ 매물 페이지가 색인 가능한 상태가 되었습니다.
 
 ### 4. 자율 프로덕션 운영
 

@@ -17,7 +17,7 @@ bootalk.co.kr의 공개 Next.js 웹 플랫폼 — 매물 검색, AI 채팅, 계�
 
 ### 1. SEO 트랜스포메이션 — 검색 불가능에서 완전한 검색 가능으로
 
-사이트는 클라이언트 렌더링, 정적 5개 URL 사이트맵, 깨진 메타 태그, **PageSpeed 20점**, AI 검색엔진에서 완전히 미노출 상태였습니다. 6개월간 두 레포에 걸쳐 ~40건의 PR로 포괄적인 SEO 인프라를 구축하여 **PageSpeed 80점**과 완전한 크롤링 가능 상태를 달성했습니다.
+사이트는 클라이언트 렌더링, 정적 5개 URL 사이트맵, 깨진 메타 태그, **PageSpeed 20점**, AI 검색엔진에서 완전히 미노출 상태였습니다. 6개월간 두 레포에 걸쳐 ~40건의 PR로 포괄적인 SEO 인프라를 구축하여 **[PageSpeed 80점](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop)**과 완전한 크롤링 가능 상태를 달성했습니다.
 
 #### 크롤링 가능성 & 인덱싱
 
@@ -58,7 +58,7 @@ bootalk.co.kr의 공개 Next.js 웹 플랫폼 — 매물 검색, AI 채팅, 계�
 
 | 지표 | 이전 | 이후 |
 |------|------|------|
-| PageSpeed | ~20 | **~80** |
+| PageSpeed | ~20 | **[~80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop)** |
 | FCP | 12.6s | < 2s |
 | LCP | 36.2s | < 3s |
 | 번들 (`_app.js`) | 1.01 MB | **-46%** (barrel export 제거) |

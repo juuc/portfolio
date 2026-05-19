@@ -17,7 +17,7 @@ The public-facing Next.js web platform at bootalk.co.kr — serving property sea
 
 ### 1. SEO Transformation — From Invisible to Discoverable
 
-The site was client-rendered, had a static 5-URL sitemap, broken meta tags, scored **20 on PageSpeed**, and was invisible to AI search engines. Over 6 months and ~40 PRs across two repos, I built a comprehensive SEO infrastructure that took it to **PageSpeed 80** with full crawlability.
+The site was client-rendered, had a static 5-URL sitemap, broken meta tags, scored **20 on PageSpeed**, and was invisible to AI search engines. Over 6 months and ~40 PRs across two repos, I built a comprehensive SEO infrastructure that took it to **[PageSpeed 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop)** with full crawlability.
 
 #### Crawlability & Indexing
 
@@ -58,7 +58,7 @@ Conducted a systematic, multi-phase optimization based on [Vercel Engineering's 
 
 | Metric | Before | After |
 |--------|--------|-------|
-| PageSpeed | ~20 | **~80** |
+| PageSpeed | ~20 | **[~80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop)** |
 | FCP | 12.6s | < 2s |
 | LCP | 36.2s | < 3s |
 | Bundle (`_app.js`) | 1.01 MB | **-46%** (barrel export elimination) |

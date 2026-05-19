@@ -21,7 +21,7 @@
 |------|------|
 | CSR/정적 공개 페이지 | SSR 가능한 공개 웹 |
 | 사이트맵 URL 5개 | **48,706개** URL |
-| PageSpeed 약 20 | **80** |
+| PageSpeed 약 20 | **[80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop)** |
 | 렌더링 구조 때문에 검색 노출 제한 | 매물 페이지 색인 가능 |
 
 공개 웹 표면을 유입 채널로 바꾼 작업이었습니다.

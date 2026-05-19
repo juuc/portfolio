@@ -139,7 +139,8 @@ Public-safe details:
 - Public web was previously limited by CSR/static behavior.
 - SSR and dynamic sitemap work made public pages indexable.
 - Sitemap grew from 5 URLs to 48,706 URLs.
-- PageSpeed improved from around 20 to 80.
+- PageSpeed improved from around 20 to 80. Public proof link:
+  https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop
 - Work included canonical URLs, clean routing, structured data, AI-search crawler
   support, LCP optimization, lazy loading, and bundle cleanup.
 

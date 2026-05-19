@@ -22,7 +22,7 @@
 
 **Decision:** Run a phased performance campaign instead of a rewrite: remove SSR waterfalls, optimize LCP, lazy-load heavy SDKs, reduce bundle weight, and improve perceived loading.
 
-**Impact:** PageSpeed reached 80. The work was shippable because it was divided into small reversible phases.
+**Impact:** [PageSpeed reached 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop). The work was shippable because it was divided into small reversible phases.
 
 ## 4. Manual Error Triage -> AI-Operated Workflow
 

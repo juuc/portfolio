@@ -117,7 +117,7 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 - **Search UX:** Show search UI immediately without waiting for map SDK
 - **State management:** Architecture cleanup with Zustand migration
 
-**Impact:** PageSpeed score improved from **~20 → ~80** — a **4x improvement**. Resolved all critical Google Search Console performance warnings. Significantly improved Core Web Vitals (LCP, FID, CLS).
+**Impact:** PageSpeed score improved from **[~20 → ~80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop)** — a **4x improvement**. Resolved all critical Google Search Console performance warnings. Significantly improved Core Web Vitals (LCP, FID, CLS).
 
 > **Epic Issue:** #635 — React Best Practices 적용 - Vercel Engineering 45 Rules 기반 최적화
 
