@@ -11,12 +11,14 @@ aggregates and public-friendly descriptions.
 Before editing:
 
 1. Read `AGENTS.md` and `CLAUDE.md`.
-2. Set the update date explicitly. Do not rely on "today" in prose.
-3. Keep English and Korean content in sync:
+2. Read `docs/PORTFOLIO_CONTEXT.md` for public-safe source material and the
+   current impact-first structure.
+3. Set the update date explicitly. Do not rely on "today" in prose.
+4. Keep English and Korean content in sync:
    - `public/en/...`
    - `public/ko/...`
-4. Use fresh `gh` output for metrics. Do not copy old counts forward.
-5. Do not publish private names, internal service identifiers, schema names,
+5. Use fresh `gh` output for metrics. Do not copy old counts forward.
+6. Do not publish private names, internal service identifiers, schema names,
    secret names, Sentry issue IDs, or exact internal API/protocol IDs.
 
 ## 1. Define The Update Packet
@@ -306,4 +308,3 @@ Notes:
 
 Do not claim a visual/browser check passed if only HTTP or markdown fetches were
 verified.
-

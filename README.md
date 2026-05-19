@@ -1,93 +1,67 @@
-# Portfolio: 주우철 (Ju Woocheol)
+# Portfolio: Ju Woocheol
 
 **Live:** [juuc.github.io/portfolio](https://juuc.github.io/portfolio/) · **GitHub:** [@juuc](https://github.com/juuc) / [@jwc-bootalk](https://github.com/jwc-bootalk)
 
----
+I rebuild fragile product platforms into systems that ship. At Bootalk, I moved from Data Engineer to Tech Lead / Product Owner, took over engineering ownership after the CTO transition, and turned AI-assisted development into an operating model for a small team.
 
-## Career
+## Impact Snapshot
 
-| Period | Company | Role | Commits |
-|--------|---------|------|---------|
-| 2025.03 — Present | [**Bootalk (부톡)**](https://bootalk.co.kr) — PropTech | Data Engineer → Tech Lead / PO | **7,895** |
-| 2022.02 — 2025.08 | [**Intelz / YouBook**](https://youbook.biz) — EdTech | App Developer & Data Manager | **368** |
+| Output | Evidence |
+|--------|----------|
+| **Commercial AI product delivered** | SemuGPT reached production handover and a signed commercial agreement on 2026-05-18 |
+| **Platform rebuilt after CTO transition** | Led a 4-person engineering team across web, mobile, backend, data, releases, and deployments |
+| **Frontend operating system unified** | 3 repos -> 1 monorepo; 1,130 authored PRs in the monorepo |
+| **Search and performance unlocked** | CSR/static web -> SSR, sitemap 5 -> 48,706 URLs, PageSpeed 20 -> 80 |
+| **Production operations automated** | Sentry alert -> AI diagnosis -> fix PR pipeline for production issues |
+| **AI-native execution scaled** | 8,231 authored commits, 1,588 PRs, 1,462 merged PRs as of 2026-05-19 |
 
-> YouBook: AI-powered minibook knowledge platform — create, remix, and share short-form content in 13+ languages across 190+ countries.
+## Case Studies
 
-**Education:** Seoul National University — Civil & Environmental Engineering (Graduated 2025.07)
+| Case | Why It Matters |
+|------|----------------|
+| [SemuGPT Commercialization](en/projects/semugpt-commercialization.md) | Prototype -> production handover -> signed commercial agreement |
+| [Platform Rebuild](en/projects/platform-rebuild.md) | Took over a fragmented platform and made it shippable by a small team |
+| [SEO & Performance Transformation](en/projects/seo-performance.md) | Made 48K+ listing pages indexable and raised PageSpeed from 20 to 80 |
+| [Autonomous Sentry Operations](en/projects/sentry-automation.md) | Replaced manual error triage with AI-operated diagnosis and PR generation |
+| [Data Reliability Recovery](en/projects/data-reliability.md) | Turned crawler/data correctness from incident response into guarded operations |
 
-## Who I Am
+## Core Evidence
 
-3.5 years at Intelz during college — less about engineering volume, more about learning how users think. Built 3 generations of mobile apps and automated data pipelines, but the real takeaway was UX sensibility, content strategy, and product thinking. Then joined Bootalk as **Data Engineer**, rapidly expanded to **Tech Lead / Product Owner** after the CTO's departure — managing a 4-person dev team, owning all platform deployments, and driving product decisions across web, mobile, backend, and data.
+- [Overview](en/overview.md) — 90-second narrative and headline outputs
+- [Selected Timeline](en/timeline.md) — only major milestones
+- [Technical Evidence](en/architectural-decisions.md) — decisions that changed the platform
+- [Operating Stack](en/skills.md) — skills mapped to outputs
+- [Previous: Intelz / YouBook](en/intelz.md) — product and UX foundation before Bootalk
 
-Also served as Privacy Protection Officer, handled partner integrations (Nonghyup, Lotte Card, Daelim Bath), co-founded AI subsidiary **BOOAI (부아이)**, and built AI products (SemuGPT, 부토기).
+## 한국어
 
----
+저는 취약한 제품 플랫폼을 실제로 배포되고 운영되는 시스템으로 바꾸는 엔지니어입니다. 부톡에서는 Data Engineer로 합류해 Tech Lead / Product Owner 역할까지 확장했고, CTO 전환 이후 웹, 앱, 백엔드, 데이터, 릴리스, 배포를 직접 책임졌습니다.
 
-## At a Glance
+### 핵심 산출물
 
-| Metric | Value |
-|--------|-------|
-| GitHub-Verified Commits | **8,231** (2025.03.01 → 2026.05.19, `juuc` + `jwc-bootalk`) |
-| Bootalk Org Commits | **7,895** |
-| Pull Requests | **1,588** (1,462 merged) |
-| Education | **Seoul National University** — Civil & Environmental Engineering (2025.07) |
-| Career Span | **4+ years** of fullstack + data engineering |
-| Role Evolution | App Dev → Data Manager → Data Engineer → Tech Lead / PO |
+| 산출물 | 근거 |
+|--------|------|
+| **상용 AI 제품 인수인계** | 세무GPT 프로덕션 인수인계 및 2026-05-18 상용 계약 체결 |
+| **CTO 전환 이후 플랫폼 재건** | 4인 개발팀을 이끌며 웹, 앱, 백엔드, 데이터, 배포 전반 소유 |
+| **프론트엔드 운영체계 통합** | 3개 레포 -> 1개 모노레포; 모노레포 작성 PR 1,130건 |
+| **검색/성능 전환** | CSR/정적 웹 -> SSR, 사이트맵 5개 -> 48,706개 URL, PageSpeed 20 -> 80 |
+| **프로덕션 운영 자동화** | Sentry 알림 -> AI 진단 -> 수정 PR 생성 파이프라인 |
+| **AI 기반 실행력 확장** | 2026-05-19 기준 작성 커밋 8,231건, PR 1,588건, 머지 PR 1,462건 |
 
----
+### 케이스 스터디
 
-## English Version
+| 케이스 | 의미 |
+|--------|------|
+| [세무GPT 상용화](ko/projects/semugpt-commercialization.md) | 프로토타입 -> 프로덕션 인수인계 -> 상용 계약 체결 |
+| [플랫폼 재건](ko/projects/platform-rebuild.md) | 분산된 플랫폼을 작은 팀이 배포 가능한 구조로 재정비 |
+| [SEO & 성능 전환](ko/projects/seo-performance.md) | 48K+ 매물 페이지 색인화와 PageSpeed 20 -> 80 |
+| [자율 Sentry 운영](ko/projects/sentry-automation.md) | 수동 에러 분석을 AI 진단/PR 생성 파이프라인으로 대체 |
+| [데이터 신뢰성 복구](ko/projects/data-reliability.md) | 크롤러/데이터 정합성을 사고 대응에서 guarded operation으로 전환 |
 
-- [Overview — Role, Summary & Stats](en/overview.md)
-- [Architectural Decisions](en/architectural-decisions.md) — 7 platform-shaping technical decisions
-- [Technical Skills](en/skills.md)
-- [Growth Timeline](en/timeline.md)
-- [Previous: Intelz / YouBook](en/intelz.md) — 3.5 years during college: UX, content, and app development
+### 근거 문서
 
-### Bootalk — Flagship Projects
-
-| Project | Impact |
-|---------|--------|
-| [Frontend Monorepo](en/projects/frontend-monorepo.md) | 3 repos → 1 monorepo. 1,130 PRs, PageSpeed 20→80, type safety 98%+ |
-| [Bootalk App](en/projects/bootalk-app.md) | Bare RN → Expo managed workflow. 7-stage migration, OTA updates, 90% test coverage |
-| [Bootalk Amplify](en/projects/bootalk-amplify.md) | Inherited 29-Lambda legacy backend. Environment separation, Sentry, auth fixes |
-| [Bootalk Web](en/projects/bootalk-web.md) | Full SEO transformation: CSR→SSR, sitemap 5→48K URLs, PageSpeed 20→80, GEO for AI search engines |
-
-### Other Projects
-
-| Project | Commits | Description |
-|---------|---------|-------------|
-| [Ubuntu Crawler](en/projects/ubuntu-crawler.md) | 420 | Real estate data collection → Dagster orchestration |
-| [Data Pipelines](en/projects/data-pipelines.md) | 109 | Dagster-based ETL infrastructure |
-| [Frontend Onboarding](en/projects/frontend-onboarding.md) | 342 | Developer documentation platform (Mintlify) |
-| [Sentry Triage Bot](en/projects/sentry-triage-bot.md) | — | Autonomous error triage: webhook → AI diagnosis → fix PR |
-| [Other Projects](en/projects/other-projects.md) | 219 | Admin, Backend, AI/ML, and more |
-
----
-
-## 한국어 버전
-
-- [개요 — 역할, 요약 및 주요 지표](ko/overview.md)
-- [아키텍처 의사결정](ko/architectural-decisions.md) — 플랫폼을 바꾼 7가지 기술적 결정
-- [기술 스택](ko/skills.md)
-- [성장 타임라인](ko/timeline.md)
-- [이전 경력: 인텔즈 / 유북](ko/intelz.md) — 대학 재학 중 3.5년: UX, 콘텐츠, 앱 개발
-
-### 부톡 — 주요 프로젝트
-
-| 프로젝트 | 임팩트 |
-|---------|--------|
-| [프론트엔드 모노레포](ko/projects/frontend-monorepo.md) | 3개 레포 → 1개 모노레포. 1,130 PR, PageSpeed 20→80, 타입 안전성 98%+ |
-| [부톡 앱](ko/projects/bootalk-app.md) | Bare RN → Expo managed workflow. 7단계 마이그레이션, OTA 업데이트, 90% 테스트 커버리지 |
-| [Bootalk Amplify](ko/projects/bootalk-amplify.md) | 29개 Lambda 레거시 백엔드 승계. 환경 분리, Sentry 통합, 인증 수정 |
-| [부톡 웹](ko/projects/bootalk-web.md) | SEO 풀 트랜스포메이션: CSR→SSR, 사이트맵 5→48K URL, PageSpeed 20→80, AI 검색엔진 GEO |
-
-### 기타 프로젝트
-
-| 프로젝트 | 커밋 | 설명 |
-|---------|------|------|
-| [데이터 크롤러](ko/projects/ubuntu-crawler.md) | 420 | 부동산 데이터 수집 → Dagster 오케스트레이션 |
-| [데이터 파이프라인](ko/projects/data-pipelines.md) | 109 | Dagster 기반 ETL 인프라 |
-| [프론트엔드 온보딩](ko/projects/frontend-onboarding.md) | 342 | 개발자 문서화 플랫폼 (Mintlify) |
-| [Sentry Issue 분석 봇](ko/projects/sentry-triage-bot.md) | — | 자율 에러 분석: 웹훅 → AI 진단 → 수정 PR |
-| [기타 프로젝트](ko/projects/other-projects.md) | 219 | Admin, Backend, AI/ML 등 |
+- [개요](ko/overview.md)
+- [선별 타임라인](ko/timeline.md)
+- [기술적 근거](ko/architectural-decisions.md)
+- [운영 스택](ko/skills.md)
+- [이전 경력: Intelz / YouBook](ko/intelz.md)

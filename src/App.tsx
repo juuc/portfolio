@@ -5,7 +5,6 @@ import Hero from './components/Hero'
 import Projects from './components/Projects'
 import Timeline from './components/Timeline'
 import Skills from './components/Skills'
-import OtherProjects from './components/OtherProjects'
 import MarkdownPage from './components/MarkdownPage'
 
 function Home() {
@@ -15,7 +14,6 @@ function Home() {
       <Projects />
       <Timeline />
       <Skills />
-      <OtherProjects />
     </>
   )
 }

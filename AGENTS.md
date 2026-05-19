@@ -174,7 +174,8 @@ trigger deployment.
 
 ## Recommended Workflow
 
-For portfolio metric or documentation refreshes, follow
+For portfolio metric or documentation refreshes, read
+`docs/PORTFOLIO_CONTEXT.md` for public-safe source material, then follow
 `docs/LLM_UPDATE_RUNBOOK.md` before editing.
 
 1. Read the files you plan to edit in both languages.

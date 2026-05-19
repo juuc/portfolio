@@ -1,85 +1,34 @@
-# Technical Skills
+# Operating Stack
 
-## Language Proficiency
+This is not a keyword inventory. It is the stack I used to produce the portfolio outcomes.
 
-Measured by bytes of code across all contributed repositories:
+## Product Platform
 
-| Language | Share | Primary Usage |
-|----------|-------|---------------|
-| **TypeScript** | 51.3% | Frontend monorepo, web, app, admin |
-| **Kotlin** | 18.3% | React Native native modules, backend services |
-| **HTML** | 8.6% | Web templates, SSR pages |
-| **Python** | 3.4% + Notebooks 8.2% | Crawlers, data pipelines, ML POCs |
-| **MDX** | 4.8% | Developer documentation (Mintlify) |
-| **CSS** | 3.4% | Styling, responsive design |
-| **JavaScript** | 1.5% | Build configs, legacy code |
-| **Shell** | 0.3% | CI/CD scripts, automation |
+| Area | Tools | Output |
+|------|-------|--------|
+| Web | React, Next.js, TypeScript, Tailwind, GraphQL | SSR migration, 48,706 sitemap URLs, PageSpeed 20 -> 80 |
+| Mobile | React Native, Expo, EAS Update | Managed workflow migration, OTA releases, store-release discipline |
+| Backend | Kotlin, Spring, serverless functions, REST APIs | Production hardening, entitlement/payment flows, batch optimization |
+| Data | Python, Dagster, notebooks, government/open data APIs | Real-estate pipelines, crawler recovery, freshness monitoring |
+| Infrastructure | GCP Cloud Run, AWS, GitHub Actions, Docker | SSR hosting, CI/CD, self-hosted runner work, deployment cleanup |
+| Observability | Sentry, Telegram reporting, runbooks | Error monitoring, AI triage, production feedback loops |
 
-## Frameworks & Libraries
+## AI Engineering
 
-### Frontend
-- **React / Next.js** — SSR, ISR, dynamic sitemaps, structured data for SEO/GEO
-- **React Native (Expo)** — OTA updates, deep linking, native modules
-- **Zustand** — State management (migrated from Recoil)
-- **styled-components** — CSS-in-JS (migrated v5→v6)
-- **GraphQL** — Type-safe client integration
+| Capability | What I Actually Used It For |
+|------------|-----------------------------|
+| Multi-agent execution | Split large campaigns into non-overlapping work areas and reviewed the resulting PRs |
+| Repository instructions | Maintained project-specific agent context so repeated work stayed consistent |
+| Overnight execution | Let bounded tasks continue while preserving review gates before merge |
+| AI-operated systems | Built production workflows where alerts trigger diagnosis and fix PR creation |
+| Team rollout | Moved AI from a personal tool into a team-level engineering operating layer |
 
-### Data Engineering
-- **Dagster** — Workflow orchestration, asset-based pipelines
-- **Pandas / Jupyter** — Data analysis, transformation
-- **Government APIs** — Real-price data (실거래가), presale data, regional codes
+## Strongest Combination
 
-### Backend
-- **Kotlin / Spring** — MSA backend services
-- **AWS Lambda** — Serverless functions, event triggers
-- **REST API** — Design, versioning, error handling
+My strongest stack is not one framework. It is:
 
-### Documentation
-- **Mintlify** — Developer documentation platform
-- **MDX** — Rich documentation with interactive components
+```text
+product judgment + platform architecture + AI-assisted execution + production verification
+```
 
-### Monitoring & Observability
-- **Sentry** — Error tracking, performance monitoring, release tracking
-- **Telegram Bot** — Pipeline monitoring, data change alerts
-
-### Infrastructure & DevOps
-- **AWS** — Lambda, Amplify, S3, CloudFront, SNS/SQS
-- **GCP** — Cloud Run, Cloud SQL
-- **Naver Cloud** — CDN+
-- **GitHub Actions** — CI/CD pipelines
-- **Expo EAS** — Mobile app build and OTA deployment
-- **Docker** — Containerization
-
-### AI Engineering (Core Skill)
-
-Not just using AI — **orchestrating it as a production workflow**.
-
-- **Claude Code** — Primary AI coding agent (migrated from Cline, Aug 2025). Purchased Max 20x plan for entire team.
-- **Tmux multi-agent orchestration** — 4-8 concurrent Claude Code sessions on non-overlapping file sets
-- **CLAUDE.md architecture** — Per-repo instruction files that encode project context, conventions, and constraints for AI agents
-- **Overnight autonomous execution** — Task queues processed by agents continuously, producing review-ready PRs
-- **Phase-based parallelism** — Decompose large campaigns into independent phases distributed across agent sessions
-- **Claude GitHub Actions** — Automated PR review and code analysis workflows across 6+ repositories
-- **oh-my-claudecode** — Advanced multi-agent orchestration framework for complex tasks
-
-**Impact:** 22x peak output increase (~71 → 1,576 commits/month), with 8,231 GitHub-verified commits and 1,588 PRs by May 19, 2026. Single engineer producing team-equivalent output.
-
-### AI/ML (Products)
-- **RAG** — Apartment complex and listing retrieval-augmented generation
-- **OCR** — Image and table extraction
-- **GPT Integration** — Streaming SSE, tax consulting (세무GPT)
-- **GEO** — Generative Engine Optimization for AI search engines
-
-## Architecture Competencies
-
-| Area | Evidence |
-|------|----------|
-| **Monorepo architecture** | Designed and maintained multi-app monorepo (web, app, admin, webview) |
-| **Cloud migration** | Led Amplify → Cloud Run migration across web and app |
-| **Type system design** | Phase-based `any` elimination campaign, strict TypeScript adoption |
-| **API design** | RESTful API decomposition, IDOR vulnerability fixes via `/me/` pattern |
-| **Error handling** | Centralized error systems with Sentry integration across all platforms |
-| **Testing strategy** | Achieved 90% test coverage milestone on mobile app, comprehensive unit tests on web |
-| **Data pipeline design** | Dagster-based ETL with monitoring, alerting, and incremental processing |
-| **Performance engineering** | Production EXPLAIN forensics, query optimization (2,370x speedup), N+1 elimination, covering index design, cross-cloud cost analysis |
-| **Security** | IDOR fixes, privacy law compliance, service auth implementation |
+That combination is what produced the substantial outputs: SemuGPT commercialization, the frontend monorepo, SEO/performance recovery, autonomous Sentry operations, and data reliability fixes.

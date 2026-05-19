@@ -13,3 +13,4 @@ vite.config.js
 /components/
 /docs/*
 !/docs/LLM_UPDATE_RUNBOOK.md
+!/docs/PORTFOLIO_CONTEXT.md
