@@ -54,7 +54,7 @@ I then purchased the **Max 20x plan** for all developers on the team. This wasn'
 | Feb 2026 | 987 | Production error noise systematically eliminated. **Led directly to autonomous Sentry triage bot** |
 | Mar 2026 | 1,004 | SemuGPT answer quality, mobile UI consolidation, backend safety fixes |
 | Apr 2026 | 930 | App Router migration, Expo SDK 55 / v3.6 preparation, OpenClaw team layer |
-| May 2026* | 554 | SemuGPT production hardening, data lifecycle fixes, crawler recovery, WebView/SEO stability |
+| May 2026* | 554 | SemuGPT production handover and commercial agreement, data lifecycle fixes, crawler recovery, WebView/SEO stability |
 
 *May 2026 is counted through May 19.
 
@@ -124,7 +124,7 @@ When the CTO left in August 2025, I inherited a fragile platform: three scattere
 
 5. **Automate operations** (Feb): The Sentry error campaign revealed the scale of manual triage work. I built an autonomous bot that receives Sentry webhooks, diagnoses issues across 4 repos, creates fix PRs, and reports to Telegram — replacing the need for an on-call engineer.
 
-6. **Harden and scale production** (Mar–May): With the platform stabilized, I pushed the operating layer forward: SemuGPT production membership and payment flows, App Router migration phases, Expo SDK 55 release preparation, crawler data recovery, backend migration preflight gates, self-hosted CI runners, and team-level OpenClaw assistant infrastructure.
+6. **Harden and scale production** (Mar–May): With the platform stabilized, I pushed the operating layer forward: SemuGPT production membership, payment flows, client handover, and commercial agreement; App Router migration phases; Expo SDK 55 release preparation; crawler data recovery; backend migration preflight gates; self-hosted CI runners; and team-level OpenClaw assistant infrastructure.
 
 Each step was only possible because of the previous one. You can't optimize a fragmented codebase. You can't test a platform with no environment separation. You can't automate triage without monitoring. You can't harden production safely without the release, observability, and documentation systems built earlier. The roadmap wasn't a list of projects — it was a **chain of compounding investments** where each decision multiplied the value of every decision before it.
 

@@ -105,7 +105,7 @@ Total through May 19, 2026: **8,231 commits**, **1,588 PRs**, **1,462 merged PRs
 
 ### Phase 6: Production Hardening & Scale-Out (Mar-May 2026)
 - **~2,488 commits, 552 PRs** | Continued high-output platform work through May 19
-- **SemuGPT productionization** — membership entitlement model, payment/webhook handling, CI/CD migration, production runbooks, domain cutover prep
+- **SemuGPT productionization** — membership entitlement model, payment/webhook handling, CI/CD migration, production runbooks, domain cutover prep, client handover, and signed commercial agreement
 - **Frontend platform modernization** — App Router migration phases, Expo SDK 55 / v3.6 release work, release branch discipline, SEO audit tooling, crawlability fixes
 - **Product UX consolidation** — bottom modal unification, design tokens, sell-house flow hardening, mobile release stabilization
 - **Backend and crawler data correctness** — apartment lifecycle fixes, coordinate corruption recovery, weekly presale/facility data wiring, migration preflight gates
@@ -140,3 +140,4 @@ Total through May 19, 2026: **8,231 commits**, **1,588 PRs**, **1,462 merged PRs
 | 2026-03 | SemuGPT reference quality upgrades, mobile UI consolidation, backend safety fixes |
 | 2026-04 | App Router migration phases, Expo SDK 55 / v3.6 preparation, OpenClaw team layer |
 | 2026-05 | SemuGPT production hardening, apartment data lifecycle fixes, crawler recovery, SEO/WebView stability hotfixes |
+| 2026-05-18 | **SemuGPT client handover completed** — commercial agreement signed after production handover |
