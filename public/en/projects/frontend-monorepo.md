@@ -4,13 +4,10 @@
 
 The central frontend monorepo unifying all client-facing applications for Bootalk. **Created in November 2025** as a strategic initiative to consolidate previously scattered repositories (web, mobile app, admin) into a single, unified codebase — reducing cross-repo dependency issues and enabling shared infrastructure.
 
-> **Epic Reference:** Discussion #27 — Frontend 프로젝트 통합을 위한 모노레포 도입 마일스톤
-
 - **apps/web** — Next.js public website (bootalk.co.kr)
 - **apps/app** — React Native mobile app components
 - **apps/admin** — Real estate agent dashboard
-- **Nonghyup (농협)** partner webview
-- **Lotte Card** partner webview
+- **partner webviews**
 - **packages/** — Shared types, API clients, utilities
 
 
@@ -18,10 +15,9 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 
 | Metric | Value |
 |--------|-------|
-| Commits | 4,881 |
-| Pull Requests | 1,130 (1,041 merged) |
-| Lines Added | +2,318,637 |
-| Lines Removed | -872,029 |
+| Authored PRs | 1,245 |
+| Merged PRs | 1,150 |
+| Scope | Web, app, admin, partner webviews, shared packages |
 | Stack | TypeScript, CSS, HTML, JavaScript |
 
 ## Business Impact
@@ -30,16 +26,16 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 
 **Problem:** The codebase had widespread `any` usage causing silent runtime errors in production. Users experienced broken UI states and data inconsistencies.
 
-**Solution:** Led a phase-based type migration across web, app, and admin modules — **50+ PRs across 30+ phases**. Systematically replaced `any` types with proper TypeScript interfaces. Used **AI-powered tmux multi-pane terminals** running overnight to process phases in parallel, enabling a single engineer to execute work that would typically require a full team. Also conducted cross-monorepo `@ts-ignore` removal (Issue #25).
+**Solution:** Led a phase-based type migration across web, app, and admin modules. Systematically replaced `any` types with proper TypeScript interfaces and used AI-assisted parallel execution to keep the campaign moving without destabilizing releases.
 
 **Results:**
-| Module | Before | After | Coverage | Report |
-|--------|--------|-------|----------|--------|
-| App | 122 `any` | **0** (100% ANY-FREE) | **99.19%** | #219, #540 |
-| Admin | 246 `any` | **~2** (~99%, 15 PRs in ~20h) | **97.87%** | #218, #539 |
-| Web | Hundreds | **< 90** (ongoing) | **98.84%** | #538 |
+| Module | Before | After | Coverage |
+|--------|--------|-------|----------|
+| App | 122 `any` | **0** (100% ANY-FREE) | **99.19%** |
+| Admin | 246 `any` | **~2** (~99%, 15 PRs in ~20h) | **97.87%** |
+| Web | Hundreds | **< 90** (ongoing) | **98.84%** |
 
-**Impact:** Reduced type-related Sentry errors. Enabled safe refactoring. Code became self-documenting through explicit types. All 1,184 tests maintained passing throughout the migration.
+**Impact:** Reduced type-related production errors, made refactoring safer, and turned the monorepo into a reliable base for later performance, correctness, and release work.
 
 ### 2. Comprehensive Test Coverage — Catching Bugs Before Users
 
@@ -47,11 +43,7 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 
 **Solution:** Built unit test suites across web and admin modules with systematic coverage. Created test infrastructure aligned with component implementations.
 
-**Impact:** 159+ test-related PRs. Tests caught regressions during refactoring phases. Enabled confident deployments.
-
-**Key PRs:**
-- Unit tests for web, admin, and app modules (159 PRs with "test" in title)
-- Phase-based test alignment after source changes
+**Impact:** Tests caught regressions during refactoring phases and made repetitive cross-surface changes deployable by a small team.
 
 ### 3. Sentry Error Monitoring — Proactive Production Stability
 
@@ -59,12 +51,7 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 
 **Solution:** Integrated Sentry across all monorepo apps. Classified error severity (critical vs. noise), added Cognito token expiry handling, OTA error suppression, and network disconnection guards.
 
-**Impact:** Proactive error detection. PRs directly referenced Sentry incidents, showing a disciplined incident-to-fix workflow.
-
-**Key PRs:**
-- `fix(app): handle Cognito token expiry gracefully and suppress Sentry noise`
-- `fix(app): skip Sentry reporting for ApiError with status 0 (network disconnection)`
-- `fix(web): prevent Next.js hard navigation error on /calculator page`
+**Impact:** Proactive error detection turned production issues into a disciplined incident-to-fix workflow instead of reactive firefighting.
 
 ### 4. GEO — AI Search Engine Optimization
 
@@ -72,10 +59,7 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 
 **Solution:** Added structured data schemas (JSON-LD) and AI crawler directives to enable Generative Engine Optimization.
 
-**Impact:** Increased potential for Bootalk brand citations in AI-generated search results.
-
-**Key PRs:**
-- `feat(web): add structured data schemas and AI crawler directives (#759)`
+**Impact:** Increased the chance that the product would appear in AI-generated search answers, not just conventional search.
 
 ### 5. Coupon System — Revenue & User Engagement
 
@@ -83,45 +67,33 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 
 **Solution:** Built end-to-end 50% brokerage fee discount coupon system — landing pages, code entry, status badges, banners/modals across both web and app.
 
-**Impact:** Directly drives user acquisition and revenue through promotional campaigns.
-
-**Key PRs:**
-- `feat: #712 복비 할인 쿠폰 시스템 UI + API 통합`
-- `fix(web): initialize coupon store on login via useUserEffects`
+**Impact:** Created a reusable promotion surface that connected marketing campaigns to product conversion.
 
 ### 6. Partner Platform Expansion
 
-**Problem:** Business partnerships required dedicated webview applications (Nonghyup, Lotte Card).
+**Problem:** Business partnerships required dedicated webview applications.
 
 **Solution:** Migrated standalone projects into the monorepo. Upgraded tech stack: Next.js 12→16, React 18→19, styled-components v5→v6, Recoil→Zustand. Fixed 21 TypeScript errors.
 
-**Impact:** Reduced maintenance burden through monorepo consolidation. Enabled shared infrastructure for partner apps.
-
-**Key PRs:**
-- Migrated Nonghyup partner webview into monorepo
-- Added Lotte Card partner webview to monorepo
+**Impact:** Reduced maintenance burden through monorepo consolidation and extended shared infrastructure to partner-facing surfaces.
 
 ### 7. Web Performance Epic — PageSpeed 20 → 80 (4x Improvement)
 
 **Problem:** bootalk.co.kr scored ~20 on [pagespeed.web.dev](https://pagespeed.web.dev), severely hurting SEO, user retention, and Google Search Console rankings.
 
-**Solution:** Conducted a systematic, multi-phase optimization based on [Vercel Engineering's 45 React Best Practices rules](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices). Executed across **10+ PRs** over multiple phases:
+**Solution:** Conducted a systematic multi-phase optimization campaign: eliminated SSR waterfalls, improved LCP, lazy-loaded heavy SDKs, reduced bundle weight, and cleaned up rendering paths that blocked perceived speed.
 
-- **Phase 2–7:** React best practices — eliminated SSR waterfalls, optimized useEffect dependencies, added `startTransition` for non-urgent updates
-- **Phase 5.1+6.1:** LCP image optimization and GTM consolidation
-- **Phase 8:** Performance optimizations and auth refactoring
-- **Homepage release:** Dedicated homepage performance optimization
-- **Bundle reduction:** Dynamic imports, react-spring removal
-- **Barrel import cleanup:** Storybook 10 migration, `_app` cleanup, barrel import elimination
-- **Skeleton loading:** Skeleton loading system and layout refactoring
-- **Search UX:** Show search UI immediately without waiting for map SDK
-- **State management:** Architecture cleanup with Zustand migration
+**Impact:** PageSpeed score improved from **[20 -> 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop)**. The public web became materially easier to discover, faster to use, and safer to keep iterating.
 
-**Impact:** PageSpeed score improved from **[~20 → ~80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop)** — a **4x improvement**. Resolved all critical Google Search Console performance warnings. Significantly improved Core Web Vitals (LCP, FID, CLS).
+### 8. Data Correctness, Product Polish, and Release Guards
 
-> **Epic Issue:** #635 — React Best Practices 적용 - Vercel Engineering 45 Rules 기반 최적화
+**Problem:** Once the monorepo was stable enough to move fast, the highest-risk work shifted to correctness-sensitive migrations and release confidence across multiple surfaces.
 
-### 8. Custom E2E Test Framework — Testing What Off-the-Shelf Tools Can't
+**Solution:** Used the shared frontend operating layer to coordinate rent/lease migration UI changes, reinforce data correctness checks at handoff points, polish SemuGPT production flows, and harden CI/deployment guards.
+
+**Impact:** The monorepo stopped being just a consolidation project. It became the delivery surface for correctness-sensitive product work and safer releases.
+
+### 9. Custom E2E Test Framework — Testing What Off-the-Shelf Tools Can't
 
 **Problem:** The app uses WebViews extensively (calculator, corporate discount, partner pages). Off-the-shelf mobile testing tools (Detox, Maestro, Appium) cannot inspect WebView DOM — they only see native UI. This left critical user flows untestable.
 
@@ -143,17 +115,14 @@ WebView CDP events        ──>   CDPClient     ──>  AssertionWaiter
 - **Declarative YAML flows** — 232 test steps across 19 flows. Non-engineers can write test scenarios without TypeScript knowledge.
 - **Zero production overhead** — all markers wrapped in `if (__DEV__)`, stripped from production builds.
 
-**Impact:** 19 flows covering login → matching → chat → security → maps → state management → app stability → WebView interactions → auth lifecycle → AI features. 62 test runs tracked in the first 10 days. Caught a real `/me` API migration bug that unit tests missed.
+**Impact:** 19 flows covering login, matching, chat, security, maps, state management, app stability, WebView interactions, auth lifecycle, and AI features. Early runs caught a real API migration bug that unit tests missed.
 
 ## Technical Decisions
 
 | Decision | Rationale |
 |----------|-----------|
-| Monorepo creation (Nov 2025) | Consolidate 3 repos → 1, eliminating cross-repo dependency issues |
-| @bootalk/common package | Shared API infrastructure — factory pattern for axios instances, adapter pattern for Sentry/Logger (Issue #1) |
-| Full nohoist strategy | Complete workspace isolation for maximum stability over disk savings |
-| Circular dependency resolution | Used madge to detect and resolve all circular dependencies (PR #535) |
-| Monorepo with shared packages | Unified types, consistent API clients, single CI/CD |
+| Monorepo creation (Nov 2025) | Consolidate fragmented client surfaces into one operating layer |
+| Shared packages | Unified types, consistent API clients, single CI/CD surface |
 | Phase-based type migration | Minimize risk of large-scale changes |
 | Sentry per-app configuration | Different error severity per platform |
 | Test-first refactoring | Ensure each phase doesn't regress |

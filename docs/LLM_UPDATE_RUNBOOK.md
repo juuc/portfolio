@@ -73,13 +73,13 @@ Use commit search totals for each author login and date range:
 gh api --method GET \
   -H "Accept: application/vnd.github.cloak-preview+json" \
   /search/commits \
-  -f q="author:juuc committer-date:2026-05-01..2026-05-19" \
+  -f q="author:juuc committer-date:2026-06-01..2026-06-15" \
   --jq '.total_count'
 
 gh api --method GET \
   -H "Accept: application/vnd.github.cloak-preview+json" \
   /search/commits \
-  -f q="author:jwc-bootalk committer-date:2026-05-01..2026-05-19" \
+  -f q="author:jwc-bootalk committer-date:2026-06-01..2026-06-15" \
   --jq '.total_count'
 ```
 
@@ -100,7 +100,7 @@ query($q: String!) {
     issueCount
   }
 }' \
-  -F q='type:pr author:juuc created:2026-05-01..2026-05-19' \
+  -F q='type:pr author:juuc created:2026-06-01..2026-06-15' \
   --jq '.data.search.issueCount'
 
 gh api graphql \
@@ -110,7 +110,7 @@ query($q: String!) {
     issueCount
   }
 }' \
-  -F q='type:pr author:juuc is:merged created:2026-05-01..2026-05-19' \
+  -F q='type:pr author:juuc is:merged created:2026-06-01..2026-06-15' \
   --jq '.data.search.issueCount'
 ```
 
@@ -126,7 +126,7 @@ Use closed ranges for complete months and a partial range for the current month:
 ```text
 2026-03-01..2026-03-31
 2026-04-01..2026-04-30
-2026-05-01..2026-05-19  # partial as of AS_OF
+2026-06-01..2026-06-15  # partial as of AS_OF
 ```
 
 When GitHub Search secondary limits appear, slow down and query month-by-month.

@@ -6,29 +6,29 @@ I joined Bootalk as a Data Engineer in March 2025 and expanded into Tech Lead / 
 
 | Before | After |
 |--------|-------|
-| Fragmented web/app/admin repositories | Unified frontend monorepo with 1,130 authored PRs |
+| Fragmented web/app/admin repositories | Unified frontend monorepo with 1,245 authored PRs |
 | Static or client-rendered pages invisible to search | SSR, dynamic sitemap, 48,706 indexable listing URLs |
 | PageSpeed around 20 | [PageSpeed 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop) after phased performance work |
 | Manual production error triage | Sentry alert -> AI diagnosis -> fix PR pipeline |
 | Prototype-stage AI tax assistant | [SemuGPT](https://semugpt.co.kr) production handover and signed commercial agreement |
-| Individual AI coding experiments | Team-level AI-assisted engineering workflow |
+| Individual AI coding experiments | Team-level AI-assisted engineering workflow with stronger CI/deployment guardrails |
 
 ## Proof Points
 
-- **8,231** GitHub-verified authored commits and **1,588** PRs across `juuc` and `jwc-bootalk` as of 2026-05-19.
-- **7,895** authored commits in Bootalk-scope repositories.
-- **1,462** merged PRs, with **1,130** authored in the frontend monorepo.
-- **22x** peak monthly output increase from the pre-Claude baseline to December 2025.
+- Fresh GitHub Search API / GraphQL counts as of **2026-06-15** show **8,549** authored commits and **1,854** PRs.
+- **8,121** authored commits were in company-scope repositories, with **1,710** merged PRs overall.
+- The frontend monorepo accounts for **1,245** authored PRs and **1,150** merged PRs.
+- Peak monthly output reached **1,603 commits** in **December 2025**, about **21x** the refreshed baseline.
 - **48,706** sitemap URLs generated after SSR/SEO migration.
 - **2026-05-18** [SemuGPT](https://semugpt.co.kr) production handover completed and commercial agreement signed.
 
-These numbers are not the story by themselves. They are evidence that the operating model changed: AI-assisted execution, tight review loops, small reversible phases, and production guardrails made a small team capable of sustained platform work.
+These numbers matter because they show a durable operating model, not a burst of activity. AI-assisted execution, tight review loops, small reversible phases, and production guardrails made a small team capable of sustained platform work across product, platform, and data reliability.
 
 ## Five Substantial Outputs
 
 ### 1. SemuGPT Commercialization
 
-I helped move [SemuGPT](https://semugpt.co.kr) from AI product buildout into production operation: entitlement logic, payment/webhook handling, evaluation loops, prompt observability, CI/CD, runbooks, cutover preparation, client handover, and a signed commercial agreement.
+I helped move [SemuGPT](https://semugpt.co.kr) from AI product buildout into production operation: entitlement flows, payment behavior, evaluation loops, prompt observability, CI/CD, runbooks, cutover preparation, client handover, and a signed commercial agreement. After handover, the work continued as production polish and safer deployment discipline rather than feature churn.
 
 ### 2. Bootalk Platform Rebuild
 
@@ -44,7 +44,7 @@ The Sentry triage bot turned production alerts into AI-assisted diagnosis and fi
 
 ### 5. Data Reliability Recovery
 
-Crawler and backend data issues were handled as system problems, not one-off fixes: lifecycle propagation, coordinate recovery, preflight gates, orchestration, and monitoring made data freshness and correctness operationally visible.
+Data reliability became the strongest theme after the commercial handover. I treated crawler and backend issues as system problems, not one-off fixes: rent/lease migration, cross-surface correctness for search, detail, AI recommendations, and data views, plus preflight gates, orchestration, and monitoring that made freshness and correctness operationally visible.
 
 ## Operating Model
 

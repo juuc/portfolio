@@ -83,11 +83,11 @@ As the app developer, I owned the bridge between the web platform and native app
 
 The skills built at Intelz directly enabled what I did at Bootalk:
 
-| Intelz (2022–2025) | → | Bootalk (2025–2026) |
-|---------------------|---|---------------------|
-| Selenium/Python crawlers | → | Dagster ETL pipelines, Data Engineer role |
-| RN → Expo migration | → | Bootalk App Expo migration (7-stage) |
+| Intelz (2022–2025) | → | Bootalk (2025–2026, as of 2026-06-15) |
+|---------------------|---|----------------------------------------|
+| Selenium/Python crawlers | → | Observable ETL operations and data reliability ownership |
+| RN → Expo migration | → | Faster mobile modernization and release stabilization |
 | 4-person team member | → | 4-person team leader |
-| In-app payments (iamport) | → | Payment system (SemuGPT) |
-| GPT-4 chatbot integration | → | AI products (부토기, SemuGPT) |
-| 368 commits / 3.5 years | → | 7,895 Bootalk org commits / 15 months (AI-powered) |
+| In-app payments (iamport) | → | Productionized payment and entitlement flows (SemuGPT) |
+| GPT-4 chatbot integration | → | AI products and AI-operated engineering workflows |
+| 368 commits / 3.5 years | → | 8,121 company-scope commits / 15 months, with a peak month about 21x above the refreshed baseline |

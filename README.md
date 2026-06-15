@@ -1,6 +1,6 @@
 # Portfolio: Ju Woocheol
 
-**Live:** [juuc.github.io/portfolio](https://juuc.github.io/portfolio/) · **GitHub:** [@juuc](https://github.com/juuc) / [@jwc-bootalk](https://github.com/jwc-bootalk)
+**Live:** [juuc.github.io/portfolio](https://juuc.github.io/portfolio/) · **GitHub:** [@juuc](https://github.com/juuc)
 
 I rebuild fragile product platforms into systems that ship. At Bootalk, I moved from Data Engineer to Tech Lead / Product Owner, took over engineering ownership after the CTO transition, and turned AI-assisted development into an operating model for a small team.
 
@@ -10,17 +10,17 @@ I rebuild fragile product platforms into systems that ship. At Bootalk, I moved 
 |--------|----------|
 | **Commercial AI product delivered** | [SemuGPT](https://semugpt.co.kr) reached production handover and a signed commercial agreement on 2026-05-18 |
 | **Platform rebuilt after CTO transition** | Led a 4-person engineering team across web, mobile, backend, data, releases, and deployments |
-| **Frontend operating system unified** | 3 repos -> 1 monorepo; 1,130 authored PRs in the monorepo |
+| **Frontend operating system unified** | 3 repos -> 1 monorepo; 1,245 authored PRs and 1,150 merged PRs in the frontend monorepo |
 | **Search and performance unlocked** | CSR/static web -> SSR, sitemap 5 -> 48,706 URLs, [PageSpeed 20 -> 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop) |
 | **Production operations automated** | Sentry alert -> AI diagnosis -> fix PR pipeline for production issues |
-| **AI-native execution scaled** | 8,231 authored commits, 1,588 PRs, 1,462 merged PRs as of 2026-05-19 |
+| **AI-native execution scaled** | Fresh GitHub Search API / GraphQL counts as of 2026-06-15: 8,549 authored commits, 1,854 PRs, 1,710 merged PRs |
 
 ## Case Studies
 
 | Case | Why It Matters |
 |------|----------------|
 | [SemuGPT Commercialization](en/projects/semugpt-commercialization.md) | Prototype -> production handover -> signed commercial agreement for [semugpt.co.kr](https://semugpt.co.kr) |
-| [Platform Rebuild](en/projects/platform-rebuild.md) | Took over a fragmented platform and made it shippable by a small team |
+| [Platform Rebuild](en/projects/platform-rebuild.md) | Took over a fragmented platform, then kept hardening production and rent/lease migration across frontend, backend, and data |
 | [SEO & Performance Transformation](en/projects/seo-performance.md) | Made 48K+ listing pages indexable and raised [PageSpeed from 20 to 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop) |
 | [Autonomous Sentry Operations](en/projects/sentry-automation.md) | Replaced manual error triage with AI-operated diagnosis and PR generation |
 | [Data Reliability Recovery](en/projects/data-reliability.md) | Turned script crawlers into scheduled Dagster data operations |
@@ -43,17 +43,17 @@ I rebuild fragile product platforms into systems that ship. At Bootalk, I moved 
 |--------|------|
 | **상용 AI 제품 인수인계** | [세무GPT](https://semugpt.co.kr) 프로덕션 인수인계 및 2026-05-18 상용 계약 체결 |
 | **CTO 전환 이후 플랫폼 재건** | 4인 개발팀을 이끌며 웹, 앱, 백엔드, 데이터, 배포 전반 소유 |
-| **프론트엔드 운영체계 통합** | 3개 레포 -> 1개 모노레포; 모노레포 작성 PR 1,130건 |
+| **프론트엔드 운영체계 통합** | 3개 레포 -> 1개 모노레포; 프론트엔드 모노레포 작성 PR 1,245건, 머지 PR 1,150건 |
 | **검색/성능 전환** | CSR/정적 웹 -> SSR, 사이트맵 5개 -> 48,706개 URL, [PageSpeed 20 -> 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop) |
 | **프로덕션 운영 자동화** | Sentry 알림 -> AI 진단 -> 수정 PR 생성 파이프라인 |
-| **AI 기반 실행력 확장** | 2026-05-19 기준 작성 커밋 8,231건, PR 1,588건, 머지 PR 1,462건 |
+| **AI 기반 실행력 확장** | 2026-06-15 기준 최신 GitHub Search API / GraphQL 집계: 작성 커밋 8,549건, PR 1,854건, 머지 PR 1,710건 |
 
 ### 케이스 스터디
 
 | 케이스 | 의미 |
 |--------|------|
 | [세무GPT 상용화](ko/projects/semugpt-commercialization.md) | 프로토타입 -> 프로덕션 인수인계 -> [semugpt.co.kr](https://semugpt.co.kr) 상용 계약 체결 |
-| [플랫폼 재건](ko/projects/platform-rebuild.md) | 분산된 플랫폼을 작은 팀이 배포 가능한 구조로 재정비 |
+| [플랫폼 재건](ko/projects/platform-rebuild.md) | 분산된 플랫폼을 작은 팀이 운영 가능한 구조로 재정비한 뒤, 프론트엔드·백엔드·데이터 전반의 프로덕션 하드닝과 전월세 마이그레이션까지 이어감 |
 | [SEO & 성능 전환](ko/projects/seo-performance.md) | 48K+ 매물 페이지 색인화와 [PageSpeed 20 -> 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop) |
 | [자율 Sentry 운영](ko/projects/sentry-automation.md) | 수동 에러 분석을 AI 진단/PR 생성 파이프라인으로 대체 |
 | [데이터 신뢰성 복구](ko/projects/data-reliability.md) | 스크립트형 크롤러를 Dagster 기반 데이터 운영으로 전환 |

@@ -6,7 +6,7 @@
 
 **Decision:** Consolidate the frontend operating layer into a single monorepo.
 
-**Impact:** 1,130 authored PRs landed in the monorepo by 2026-05-19. Shared packages, consistent review patterns, and single-place type fixes made later performance, SEO, and release work safer.
+**Impact:** 1,245 authored PRs landed in the monorepo by 2026-06-15, with 1,150 merged. Shared packages, consistent review patterns, and single-place fixes made later performance, data correctness, and release work safer.
 
 ## 2. Search-Invisible Web -> SSR
 
@@ -22,7 +22,7 @@
 
 **Decision:** Run a phased performance campaign instead of a rewrite: remove SSR waterfalls, optimize LCP, lazy-load heavy SDKs, reduce bundle weight, and improve perceived loading.
 
-**Impact:** [PageSpeed reached 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop). The work was shippable because it was divided into small reversible phases.
+**Impact:** [PageSpeed moved from 20 to 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop). The work was shippable because it was divided into small reversible phases.
 
 ## 4. Manual Error Triage -> AI-Operated Workflow
 
@@ -40,10 +40,18 @@
 
 **Impact:** [SemuGPT](https://semugpt.co.kr) client handover completed and a commercial agreement was signed on 2026-05-18.
 
+## 6. Fragile Cross-Surface Changes -> Guarded Delivery
+
+**Problem:** After the initial platform rebuild, the riskiest work was no longer one migration. It was coordinating changes that touched frontend, backend, and data surfaces without creating correctness regressions.
+
+**Decision:** Push recent work through guarded, outcome-oriented tracks: rent/lease migration with data correctness checks, SemuGPT production polish, and CI/deployment guard hardening.
+
+**Impact:** The platform moved from "can ship" to "can keep shipping safely." The same operating layer now supported correctness-sensitive migrations, production AI product polish, and tighter release confidence.
+
 ## Compounding Pattern
 
 ```text
-monorepo -> type/release safety -> SSR -> performance -> monitoring -> AI operations -> commercial handover
+monorepo -> type/release safety -> SSR -> performance -> monitoring -> guarded delivery -> AI operations -> commercial handover
 ```
 
 The important part is the order. Each decision reduced the cost or risk of the next one.
