@@ -7,7 +7,7 @@ I joined Bootalk as a Data Engineer in March 2025 and expanded into Tech Lead / 
 | Before | After |
 |--------|-------|
 | Fragmented web/app/admin repositories | Unified frontend monorepo with 1,245 authored PRs |
-| Static or client-rendered pages invisible to search | SSR, dynamic sitemap, 48,706 indexable listing URLs |
+| Static or client-rendered pages invisible to search | SSR, dynamic sitemap, 48,706 indexable listing URLs, Search Console clicks 3.9x |
 | PageSpeed around 20 | [PageSpeed 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop) after phased performance work |
 | Manual production error triage | Sentry alert -> AI diagnosis -> fix PR pipeline |
 | Prototype-stage AI tax assistant | [SemuGPT](https://semugpt.co.kr) production handover and signed commercial agreement |
@@ -20,6 +20,7 @@ I joined Bootalk as a Data Engineer in March 2025 and expanded into Tech Lead / 
 - The frontend monorepo accounts for **1,245** authored PRs and **1,150** merged PRs.
 - Peak monthly output reached **1,603 commits** in **December 2025**, about **21x** the refreshed baseline.
 - **48,706** sitemap URLs generated after SSR/SEO migration.
+- Search Console complete-quarter comparison showed **3.9x** clicks, **5.6x** impressions, and average position moving from **9.0 to 5.4**.
 - **2026-05-18** [SemuGPT](https://semugpt.co.kr) production handover completed and commercial agreement signed.
 
 These numbers matter because they show a durable operating model, not a burst of activity. AI-assisted execution, tight review loops, small reversible phases, and production guardrails made a small team capable of sustained platform work across product, platform, and data reliability.
@@ -36,7 +37,7 @@ After the CTO transition, I owned engineering execution across web, mobile, back
 
 ### 3. Search And Performance Transformation
 
-The public web experience moved from a search-invisible CSR/static model to SSR with dynamic sitemaps and structured data. [PageSpeed moved from 20 to 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop), and 48K+ listing pages became indexable.
+The public web experience moved from a search-invisible CSR/static model to SSR with dynamic sitemaps and structured data. [PageSpeed moved from 20 to 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop), 48K+ listing pages became indexable, and Search Console showed the shift in production: clicks grew 3.9x and impressions 5.6x across complete 3-month windows.
 
 ### 4. Autonomous Production Operations
 

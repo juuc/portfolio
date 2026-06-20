@@ -142,6 +142,16 @@ Public-safe details:
 - Sitemap grew from 5 URLs to 48,706 URLs.
 - PageSpeed improved from around 20 to 80. Public proof link:
   https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop
+- Search Console Web search data through 2026-06-16 showed production impact:
+  comparing complete 3-month windows, 2025-07..2025-09 to 2026-03..2026-05,
+  clicks grew from 599 to 2,317 (3.9x), impressions from 47,871 to 266,864
+  (5.6x), and average position improved from 9.0 to 5.4.
+- Manual Search Console annotations around major web updates provide a useful
+  public-safe sequence: Jan 2026 redirect/canonical cleanup corresponded with
+  28-day clicks/day +142% and impressions/day +45%; Feb 2026 web v3.5.0
+  performance release corresponded with lag-aware impressions/day +36% and
+  average position 5.99 -> 5.53; May 2026 web v3.6.0 App Router migration
+  held average position around 5.2 while post-release impressions/day rose 19%.
 - Work included canonical URLs, clean routing, structured data, AI-search crawler
   support, LCP optimization, lazy loading, and bundle cleanup.
 

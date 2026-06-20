@@ -76,7 +76,7 @@ export const DATA: Record<Lang, PortfolioData> = {
     flagship: [
       { id: 'semugpt-commercialization', name: 'SemuGPT Commercialization', metric: '2026-05-18', impact: 'Production handover completed and commercial agreement signed' },
       { id: 'platform-rebuild', name: 'Platform Rebuild', metric: '1,245 PRs', impact: 'Post-handover production hardening and rent/lease migration across frontend, backend, and data' },
-      { id: 'seo-performance', name: 'SEO & Performance', metric: '20→80', impact: 'CSR/static web → SSR, 48,706 sitemap URLs, PageSpeed 20→80' },
+      { id: 'seo-performance', name: 'SEO & Performance', metric: '20→80', impact: 'CSR/static web → SSR, 48,706 sitemap URLs, Search clicks 3.9x' },
       { id: 'sentry-automation', name: 'Autonomous Sentry Ops', metric: 'Alert→PR', impact: 'Production errors became AI-assisted diagnosis and fix PR candidates' },
       { id: 'data-reliability', name: 'Data Reliability', metric: 'Dagster', impact: 'Script crawlers -> scheduled assets/jobs with freshness alerts and recovery gates' },
     ],
@@ -126,7 +126,7 @@ export const DATA: Record<Lang, PortfolioData> = {
     flagship: [
       { id: 'semugpt-commercialization', name: '세무GPT 상용화', metric: '2026-05-18', impact: '프로덕션 인수인계 완료 및 상용 계약 체결' },
       { id: 'platform-rebuild', name: '플랫폼 재건', metric: '1,245 PR', impact: '상용 인수인계 이후 프론트엔드, 백엔드, 데이터 전반에서 프로덕션 하드닝과 전월세 마이그레이션 지속' },
-      { id: 'seo-performance', name: 'SEO & 성능', metric: '20→80', impact: 'CSR/정적 웹 → SSR, 사이트맵 48,706개 URL, PageSpeed 20→80' },
+      { id: 'seo-performance', name: 'SEO & 성능', metric: '20→80', impact: 'CSR/정적 웹 → SSR, 사이트맵 48,706개 URL, 검색 클릭 3.9배' },
       { id: 'sentry-automation', name: '자율 Sentry 운영', metric: 'Alert→PR', impact: '프로덕션 에러를 AI 진단과 수정 PR 후보로 연결' },
       { id: 'data-reliability', name: '데이터 신뢰성', metric: 'Dagster', impact: '스크립트형 크롤러 -> 스케줄형 assets/jobs와 신선도 알림/복구 gate' },
     ],
