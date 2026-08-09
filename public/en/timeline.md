@@ -18,19 +18,20 @@
 | 2026-04 | App Router migration, Expo SDK 55 preparation, OpenClaw team layer | Continued platform modernization while spreading AI operating practices across the team |
 | 2026-05-18 | SemuGPT client handover completed; commercial agreement signed | Converted the AI product into a delivered commercial outcome |
 | 2026-06 | Rent/lease migration and cross-surface data correctness hardening | Extended the post-handover focus from shipping features to protecting user trust across search, detail, AI recommendation, and data surfaces |
+| 2026-07 | Evidence-gated mobile operations and cross-surface contract hardening | Connected authentication, real-time interaction, document/media handling, and offline recovery to release evidence; standardized scheduling across web, mobile, backend, and legacy data without silently changing historical meaning |
 
 ## Activity Context
 
-Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-06-15** show:
+Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-08-09** show:
 
 | Metric | Value |
 |--------|-------|
-| Authored commits | **8,549** |
-| Company-scope commits | **8,121** |
-| Pull requests | **1,854** |
-| Merged PRs | **1,710** |
-| Frontend monorepo authored PRs | **1,245** |
-| Frontend monorepo merged PRs | **1,150** |
+| Authored commits | **9,283** |
+| Company-scope commits | **8,855** |
+| Pull requests | **2,504** |
+| Merged PRs | **2,325** |
+| Frontend monorepo authored PRs | **1,409** |
+| Frontend monorepo merged PRs | **1,301** |
 | Peak month | **1,603 commits** in December 2025 |
 | Output multiplier | **About 21x** from the refreshed baseline |
 
@@ -38,19 +39,21 @@ Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-06-15**
 
 | Month | Authored Commits | PRs | Merged PRs |
 |-------|------------------|-----|------------|
-| 2025-03 | 17 | 0 | 0 |
+| 2025-03 | 16 | 0 | 0 |
 | 2025-04 | 125 | 7 | 7 |
 | 2025-05 | 67 | 15 | 15 |
-| 2025-06 | 103 | 1 | 1 |
+| 2025-06 | 102 | 1 | 1 |
 | 2025-07 | 64 | 0 | 0 |
 | 2025-08 | 305 | 4 | 3 |
 | 2025-09 | 170 | 11 | 11 |
 | 2025-10 | 475 | 58 | 55 |
 | 2025-11 | 1,066 | 83 | 79 |
 | 2025-12 | 1,603 | 480 | 464 |
-| 2026-01 | 834 | 115 | 103 |
-| 2026-02 | 1,005 | 266 | 223 |
+| 2026-01 | 833 | 116 | 104 |
+| 2026-02 | 1,005 | 267 | 225 |
 | 2026-03 | 1,004 | 167 | 146 |
 | 2026-04 | 930 | 205 | 194 |
-| 2026-05 | 724 | 316 | 291 |
-| 2026-06 | 57 | 126 | 118 *(partial through 2026-06-15)* |
+| 2026-05 | 926 | 316 | 292 |
+| 2026-06 | 380 | 305 | 280 |
+| 2026-07 | 143 | 294 | 289 |
+| 2026-08 | 69 | 175 | 160 *(partial through 2026-08-09)* |

@@ -20,13 +20,13 @@ The product surface spanned web, mobile, backend, data, admin, and partner-facin
 
 The platform became shippable by a small team. Cross-platform work moved from scattered coordination to a single operating surface, which later enabled the SEO migration, type-safety campaign, performance work, mobile release stabilization, and AI-assisted parallel execution.
 
-As of 2026-06-15, that operating surface was carrying three newer proof points at once: rent/lease migration with correctness checks, SemuGPT production polish, and CI/deployment guard hardening.
+As of 2026-08-09, that operating surface was carrying three newer proof points at once: rent/lease migration with correctness checks, SemuGPT production polish, and CI/deployment guard hardening.
 
 ## Evidence
 
 | Metric | Value |
 |--------|-------|
-| Frontend monorepo authored PRs | **1,245** |
-| GitHub-verified authored commits | **8,549** |
-| Merged PRs | **1,710** |
+| Frontend monorepo authored PRs | **1,409** |
+| GitHub-verified authored commits | **9,283** |
+| Merged PRs | **2,325** |
 | Peak monthly output | **1,603 commits in 2025-12** |
