@@ -23,14 +23,14 @@
 
 ## Activity Context
 
-Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-08-09** show:
+Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-08-10** show:
 
 | Metric | Value |
 |--------|-------|
-| Authored commits | **9,283** |
-| Company-scope commits | **8,855** |
-| Pull requests | **2,504** |
-| Merged PRs | **2,325** |
+| Authored commits | **9,308** |
+| Company-scope commits | **8,877** |
+| Pull requests | **2,518** |
+| Merged PRs | **2,341** |
 | Frontend monorepo authored PRs | **1,409** |
 | Frontend monorepo merged PRs | **1,301** |
 | Peak month | **1,603 commits** in December 2025 |
@@ -57,4 +57,4 @@ Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-08-09**
 | 2026-05 | 926 | 316 | 292 |
 | 2026-06 | 380 | 305 | 280 |
 | 2026-07 | 143 | 294 | 289 |
-| 2026-08 | 69 | 175 | 160 *(partial through 2026-08-09)* |
+| 2026-08 | 94 | 189 | 176 *(partial through 2026-08-10)* |

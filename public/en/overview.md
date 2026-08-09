@@ -16,8 +16,8 @@ I joined Bootalk as a Data Engineer in March 2025 and expanded into Tech Lead / 
 
 ## Proof Points
 
-- Fresh GitHub Search API / GraphQL counts as of **2026-08-09** show **9,283** authored commits and **2,504** PRs.
-- **8,855** authored commits were in company-scope repositories, with **2,325** merged PRs overall.
+- Fresh GitHub Search API / GraphQL counts as of **2026-08-10** show **9,308** authored commits and **2,518** PRs.
+- **8,877** authored commits were in company-scope repositories, with **2,341** merged PRs overall.
 - The frontend monorepo accounts for **1,409** authored PRs and **1,301** merged PRs.
 - Peak monthly output reached **1,603 commits** in **December 2025**, about **21x** the refreshed baseline.
 - **48,706** sitemap URLs generated after SSR/SEO migration.

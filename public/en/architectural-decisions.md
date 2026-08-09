@@ -6,7 +6,7 @@
 
 **Decision:** Consolidate the frontend operating layer into a single monorepo.
 
-**Impact:** 1,409 authored PRs landed in the monorepo by 2026-08-09, with 1,301 merged. Shared packages, consistent review patterns, and single-place fixes made later performance, data correctness, and release work safer.
+**Impact:** 1,409 authored PRs landed in the monorepo by 2026-08-10, with 1,301 merged. Shared packages, consistent review patterns, and single-place fixes made later performance, data correctness, and release work safer.
 
 ## 2. Search-Invisible Web -> SSR
 
