@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "test:activity": "node --test tests/ai-activity.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "test:activity": "node --test tests/ai-activity.test.mjs tests/generate-ai-activity-cli.test.mjs",
+    "generate:activity": "node scripts/generate-ai-activity.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
