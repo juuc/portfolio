@@ -15,18 +15,19 @@ The product surface spanned web, mobile, backend, data, admin, and partner-facin
 - Separated development and production environments across major surfaces.
 - Added monitoring and test coverage where production confidence was weakest.
 - Used small phased changes so migration work could continue while the product stayed live.
+- Designed guarded cross-system account-lifecycle migration with ownership fencing, durable handoff markers, and replay-safe checks.
 
 ## Impact
 
 The platform became shippable by a small team. Cross-platform work moved from scattered coordination to a single operating surface, which later enabled the SEO migration, type-safety campaign, performance work, mobile release stabilization, and AI-assisted parallel execution.
 
-As of 2026-06-15, that operating surface was carrying three newer proof points at once: rent/lease migration with correctness checks, SemuGPT production polish, and CI/deployment guard hardening.
+As of 2026-08-09, that operating surface was carrying four newer proof points at once: rent/lease migration with correctness checks, SemuGPT production polish, CI/deployment guard hardening, and guarded account-lifecycle migration. The migration design reduced double-write and partial-handoff risk, but production cutover remains a separate gate rather than a claimed result.
 
 ## Evidence
 
 | Metric | Value |
 |--------|-------|
-| Frontend monorepo authored PRs | **1,245** |
-| GitHub-verified authored commits | **8,549** |
-| Merged PRs | **1,710** |
+| Frontend monorepo authored PRs | **1,409** |
+| GitHub-verified authored commits | **9,283** |
+| Merged PRs | **2,325** |
 | Peak monthly output | **1,603 commits in 2025-12** |

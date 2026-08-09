@@ -39,28 +39,29 @@ product-platform operator who turns fragile systems into shippable,
 commercially useful products using AI-assisted engineering as leverage
 ```
 
-The portfolio should not read like a work diary. It should prove five substantial
+The portfolio should not read like a work diary. It should prove six substantial
 outputs:
 
-1. SemuGPT commercialization
-2. Bootalk platform rebuild after CTO transition
-3. SEO/performance transformation
-4. Autonomous Sentry operations
-5. Data reliability recovery
+1. Field-operations platform productization
+2. SemuGPT commercialization
+3. Bootalk platform rebuild after CTO transition
+4. SEO/performance transformation
+5. Autonomous Sentry operations
+6. Data reliability recovery
 
 ## Headline Metrics
 
-As of 2026-06-15, the portfolio uses GitHub Search API / GraphQL counts for
+As of 2026-08-09, the portfolio uses GitHub Search API / GraphQL counts for
 `juuc` and `jwc-bootalk`:
 
 | Metric | Value |
 |--------|-------|
-| Authored commits | 8,549 |
-| Bootalk-scope commits | 8,121 |
-| Pull requests | 1,854 |
-| Merged PRs | 1,710 |
-| Frontend monorepo authored PRs | 1,245 |
-| Frontend monorepo merged PRs | 1,150 |
+| Authored commits | 9,283 |
+| Bootalk-scope commits | 8,855 |
+| Pull requests | 2,504 |
+| Merged PRs | 2,325 |
+| Frontend monorepo authored PRs | 1,409 |
+| Frontend monorepo merged PRs | 1,301 |
 | Peak month | 1,603 commits in 2025-12 |
 | Output multiplier | 21x peak increase from pre-Claude baseline |
 
@@ -80,10 +81,36 @@ Use this order when rewriting public copy:
 5. Used AI agents as a disciplined execution layer, not as a gimmick.
 6. Converted platform leverage into product outcomes: SEO recovery, Sentry
    automation, SemuGPT production handover, and commercial agreement.
+7. Extended the operating model into multi-role field workflows with explicit
+   evidence gates from source through DEV, provider, device, and production.
 
 Avoid making commit count the lead. Commit count is supporting evidence.
 
 ## Case Study Source Material
+
+### Field Operations Platform Productization
+
+Public-safe details:
+
+- Multiple operational roles now share one explicit task lifecycle.
+- Authenticated state changes, readback checks, document review, media handling,
+  scheduling, and recovery form an integrated DEV path.
+- OCR is assistive and reviewable; manual correction and safe fallback remain
+  part of the product design.
+- Source, CI, DEV runtime, provider, physical-device, production, and store
+  evidence are separate proof levels.
+
+What to emphasize:
+
+- Role-specific screens became an auditable operating flow.
+- The outcome verified through 2026-08-09 is integrated DEV operation.
+- Evidence boundaries are part of the engineering result.
+
+What to avoid:
+
+- product, role, provider, endpoint, schema, protocol, or issue identifiers
+- claims of completed production/store rollout or physical-device delivery
+- raw LLM token, cost, session, title, or local-path data
 
 ### SemuGPT Commercialization
 

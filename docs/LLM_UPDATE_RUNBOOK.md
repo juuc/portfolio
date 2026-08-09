@@ -73,13 +73,13 @@ Use commit search totals for each author login and date range:
 gh api --method GET \
   -H "Accept: application/vnd.github.cloak-preview+json" \
   /search/commits \
-  -f q="author:juuc committer-date:2026-06-01..2026-06-15" \
+  -f q="author:juuc committer-date:${START_DATE}..${AS_OF}" \
   --jq '.total_count'
 
 gh api --method GET \
   -H "Accept: application/vnd.github.cloak-preview+json" \
   /search/commits \
-  -f q="author:jwc-bootalk committer-date:2026-06-01..2026-06-15" \
+  -f q="author:jwc-bootalk committer-date:${START_DATE}..${AS_OF}" \
   --jq '.total_count'
 ```
 
@@ -100,7 +100,7 @@ query($q: String!) {
     issueCount
   }
 }' \
-  -F q='type:pr author:juuc created:2026-06-01..2026-06-15' \
+  -F q="type:pr author:juuc created:${START_DATE}..${AS_OF}" \
   --jq '.data.search.issueCount'
 
 gh api graphql \
@@ -110,7 +110,7 @@ query($q: String!) {
     issueCount
   }
 }' \
-  -F q='type:pr author:juuc is:merged created:2026-06-01..2026-06-15' \
+  -F q="type:pr author:juuc is:merged created:${START_DATE}..${AS_OF}" \
   --jq '.data.search.issueCount'
 ```
 
@@ -126,11 +126,37 @@ Use closed ranges for complete months and a partial range for the current month:
 ```text
 2026-03-01..2026-03-31
 2026-04-01..2026-04-30
-2026-06-01..2026-06-15  # partial as of AS_OF
+<current-month>-01..${AS_OF}  # partial through AS_OF
 ```
 
 When GitHub Search secondary limits appear, slow down and query month-by-month.
 Do not replace verified counts with guesses.
+
+### Private LLM Effort Analysis
+
+When local coding-agent usage should inform editorial priority, use `ccusage`
+outside the repository:
+
+```bash
+npx --yes ccusage@latest monthly --all \
+  --since "${START_DATE}" --until "${AS_OF}" \
+  --timezone Asia/Seoul --json
+
+npx --yes ccusage@latest session --all \
+  --since "${START_DATE}" --until "${AS_OF}" \
+  --timezone Asia/Seoul --json
+```
+
+Use session counts, active days, and relative token share only to decide which
+work deserves more narrative space. If project grouping is missing, join only
+session metadata such as working directory; do not inspect prompt or response
+content. Treat per-session totals as cumulative and avoid attributing tokens to
+a narrower time window without event-level reaggregation.
+
+Never commit or publish raw reports, token totals, costs, session IDs or titles,
+prompt content, local paths, or private project names. The public portfolio may
+say that AI-assisted execution is an operating model, but usage telemetry is
+private editorial evidence rather than a vanity metric.
 
 ## 4. Update The Right Files
 
