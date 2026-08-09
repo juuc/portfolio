@@ -1,0 +1,411 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="activity-title activity-description" lang="ko" viewBox="0 0 760 286" width="760" height="286">
+  <title id="activity-title">AI 활동</title>
+  <desc id="activity-description">로컬 사용량 집계에서 상대 강도만 산출한 53주 AI 활동 달력입니다.</desc>
+  <rect x="0.5" y="0.5" width="759" height="285" rx="18" fill="#FFFFFF" stroke="#D0D7DE" />
+  <text x="32" y="35" fill="#1F2328" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="700" text-anchor="start" letter-spacing="1.6">AI 활동</text>
+  <text x="728" y="35" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="600" text-anchor="end" letter-spacing="1.2">로컬 집계</text>
+  <text x="32" y="57" fill="#57606A" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">지속적인 AI 기반 실행</text>
+  <text x="146" y="89" fill="#1F2328" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="21" font-weight="700" text-anchor="start">131</text>
+  <text x="330" y="89" fill="#1F2328" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="21" font-weight="700" text-anchor="start">70</text>
+  <text x="514" y="89" fill="#1F2328" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="21" font-weight="700" text-anchor="start">70</text>
+  <text x="146" y="108" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="8" font-weight="600" text-anchor="start" letter-spacing="0.8">활동 일수</text>
+  <text x="330" y="108" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="8" font-weight="600" text-anchor="start" letter-spacing="0.8">현재 연속</text>
+  <text x="514" y="108" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="8" font-weight="600" text-anchor="start" letter-spacing="0.8">최장 연속</text>
+  <line x1="32" y1="121" x2="728" y2="121" stroke="#D0D7DE" />
+  <text x="146" y="139" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="start">8월</text>
+<text x="190" y="139" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="start">9월</text>
+<text x="234" y="139" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="start">10월</text>
+<text x="278" y="139" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="start">11월</text>
+<text x="333" y="139" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="start">12월</text>
+<text x="377" y="139" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="start">1월</text>
+<text x="421" y="139" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="start">2월</text>
+<text x="465" y="139" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="start">3월</text>
+<text x="520" y="139" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="start">4월</text>
+<text x="564" y="139" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="start">5월</text>
+<text x="619" y="139" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="start">6월</text>
+<text x="663" y="139" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="start">7월</text>
+<text x="707" y="139" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="start">8월</text>
+  <text x="132" y="169" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="end">월</text>
+<text x="132" y="191" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="end">수</text>
+<text x="132" y="213" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="500" text-anchor="end">금</text>
+  <g><title>2025-08-10: 활동 없음</title><rect x="146" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-10" data-level="0" /></g>
+<g><title>2025-08-11: 활동 없음</title><rect x="146" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-11" data-level="0" /></g>
+<g><title>2025-08-12: 활동 없음</title><rect x="146" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-12" data-level="0" /></g>
+<g><title>2025-08-13: 활동 없음</title><rect x="146" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-13" data-level="0" /></g>
+<g><title>2025-08-14: 활동 없음</title><rect x="146" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-14" data-level="0" /></g>
+<g><title>2025-08-15: 활동 없음</title><rect x="146" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-15" data-level="0" /></g>
+<g><title>2025-08-16: 활동 없음</title><rect x="146" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-16" data-level="0" /></g>
+<g><title>2025-08-17: 활동 없음</title><rect x="157" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-17" data-level="0" /></g>
+<g><title>2025-08-18: 활동 없음</title><rect x="157" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-18" data-level="0" /></g>
+<g><title>2025-08-19: 활동 없음</title><rect x="157" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-19" data-level="0" /></g>
+<g><title>2025-08-20: 활동 없음</title><rect x="157" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-20" data-level="0" /></g>
+<g><title>2025-08-21: 활동 없음</title><rect x="157" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-21" data-level="0" /></g>
+<g><title>2025-08-22: 활동 없음</title><rect x="157" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-22" data-level="0" /></g>
+<g><title>2025-08-23: 활동 없음</title><rect x="157" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-23" data-level="0" /></g>
+<g><title>2025-08-24: 활동 없음</title><rect x="168" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-24" data-level="0" /></g>
+<g><title>2025-08-25: 활동 없음</title><rect x="168" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-25" data-level="0" /></g>
+<g><title>2025-08-26: 활동 없음</title><rect x="168" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-26" data-level="0" /></g>
+<g><title>2025-08-27: 활동 없음</title><rect x="168" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-27" data-level="0" /></g>
+<g><title>2025-08-28: 활동 없음</title><rect x="168" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-28" data-level="0" /></g>
+<g><title>2025-08-29: 활동 없음</title><rect x="168" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-29" data-level="0" /></g>
+<g><title>2025-08-30: 활동 없음</title><rect x="168" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-30" data-level="0" /></g>
+<g><title>2025-08-31: 활동 없음</title><rect x="179" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-08-31" data-level="0" /></g>
+<g><title>2025-09-01: 활동 없음</title><rect x="179" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-01" data-level="0" /></g>
+<g><title>2025-09-02: 활동 없음</title><rect x="179" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-02" data-level="0" /></g>
+<g><title>2025-09-03: 활동 없음</title><rect x="179" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-03" data-level="0" /></g>
+<g><title>2025-09-04: 활동 없음</title><rect x="179" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-04" data-level="0" /></g>
+<g><title>2025-09-05: 활동 없음</title><rect x="179" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-05" data-level="0" /></g>
+<g><title>2025-09-06: 활동 없음</title><rect x="179" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-06" data-level="0" /></g>
+<g><title>2025-09-07: 활동 없음</title><rect x="190" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-07" data-level="0" /></g>
+<g><title>2025-09-08: 활동 없음</title><rect x="190" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-08" data-level="0" /></g>
+<g><title>2025-09-09: 활동 없음</title><rect x="190" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-09" data-level="0" /></g>
+<g><title>2025-09-10: 활동 없음</title><rect x="190" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-10" data-level="0" /></g>
+<g><title>2025-09-11: 활동 없음</title><rect x="190" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-11" data-level="0" /></g>
+<g><title>2025-09-12: 활동 없음</title><rect x="190" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-12" data-level="0" /></g>
+<g><title>2025-09-13: 활동 없음</title><rect x="190" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-13" data-level="0" /></g>
+<g><title>2025-09-14: 활동 없음</title><rect x="201" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-14" data-level="0" /></g>
+<g><title>2025-09-15: 활동 없음</title><rect x="201" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-15" data-level="0" /></g>
+<g><title>2025-09-16: 활동 없음</title><rect x="201" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-16" data-level="0" /></g>
+<g><title>2025-09-17: 활동 없음</title><rect x="201" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-17" data-level="0" /></g>
+<g><title>2025-09-18: 활동 없음</title><rect x="201" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-18" data-level="0" /></g>
+<g><title>2025-09-19: 활동 없음</title><rect x="201" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-19" data-level="0" /></g>
+<g><title>2025-09-20: 활동 없음</title><rect x="201" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-20" data-level="0" /></g>
+<g><title>2025-09-21: 활동 없음</title><rect x="212" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-21" data-level="0" /></g>
+<g><title>2025-09-22: 활동 없음</title><rect x="212" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-22" data-level="0" /></g>
+<g><title>2025-09-23: 활동 없음</title><rect x="212" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-23" data-level="0" /></g>
+<g><title>2025-09-24: 집중 활동</title><rect x="212" y="184" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2025-09-24" data-level="2" /></g>
+<g><title>2025-09-25: 활동 없음</title><rect x="212" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-25" data-level="0" /></g>
+<g><title>2025-09-26: 활동 없음</title><rect x="212" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-26" data-level="0" /></g>
+<g><title>2025-09-27: 활동 없음</title><rect x="212" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-27" data-level="0" /></g>
+<g><title>2025-09-28: 활동 없음</title><rect x="223" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-28" data-level="0" /></g>
+<g><title>2025-09-29: 활동 없음</title><rect x="223" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-29" data-level="0" /></g>
+<g><title>2025-09-30: 활동 없음</title><rect x="223" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-09-30" data-level="0" /></g>
+<g><title>2025-10-01: 활동 없음</title><rect x="223" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-01" data-level="0" /></g>
+<g><title>2025-10-02: 활동 없음</title><rect x="223" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-02" data-level="0" /></g>
+<g><title>2025-10-03: 활동 없음</title><rect x="223" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-03" data-level="0" /></g>
+<g><title>2025-10-04: 활동 없음</title><rect x="223" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-04" data-level="0" /></g>
+<g><title>2025-10-05: 활동 없음</title><rect x="234" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-05" data-level="0" /></g>
+<g><title>2025-10-06: 활동 없음</title><rect x="234" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-06" data-level="0" /></g>
+<g><title>2025-10-07: 활동 없음</title><rect x="234" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-07" data-level="0" /></g>
+<g><title>2025-10-08: 활동 없음</title><rect x="234" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-08" data-level="0" /></g>
+<g><title>2025-10-09: 활동 없음</title><rect x="234" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-09" data-level="0" /></g>
+<g><title>2025-10-10: 활동 없음</title><rect x="234" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-10" data-level="0" /></g>
+<g><title>2025-10-11: 활동 없음</title><rect x="234" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-11" data-level="0" /></g>
+<g><title>2025-10-12: 활동 없음</title><rect x="245" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-12" data-level="0" /></g>
+<g><title>2025-10-13: 활동 없음</title><rect x="245" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-13" data-level="0" /></g>
+<g><title>2025-10-14: 활동 없음</title><rect x="245" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-14" data-level="0" /></g>
+<g><title>2025-10-15: 활동 없음</title><rect x="245" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-15" data-level="0" /></g>
+<g><title>2025-10-16: 활동 없음</title><rect x="245" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-16" data-level="0" /></g>
+<g><title>2025-10-17: 활동 없음</title><rect x="245" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-17" data-level="0" /></g>
+<g><title>2025-10-18: 활동 없음</title><rect x="245" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-18" data-level="0" /></g>
+<g><title>2025-10-19: 활동 없음</title><rect x="256" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-19" data-level="0" /></g>
+<g><title>2025-10-20: 활동 없음</title><rect x="256" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-20" data-level="0" /></g>
+<g><title>2025-10-21: 활동 없음</title><rect x="256" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-21" data-level="0" /></g>
+<g><title>2025-10-22: 활동 없음</title><rect x="256" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-22" data-level="0" /></g>
+<g><title>2025-10-23: 활동 없음</title><rect x="256" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-23" data-level="0" /></g>
+<g><title>2025-10-24: 활동 없음</title><rect x="256" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-24" data-level="0" /></g>
+<g><title>2025-10-25: 활동 없음</title><rect x="256" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-25" data-level="0" /></g>
+<g><title>2025-10-26: 활동 없음</title><rect x="267" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-26" data-level="0" /></g>
+<g><title>2025-10-27: 활동 없음</title><rect x="267" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-27" data-level="0" /></g>
+<g><title>2025-10-28: 활동 없음</title><rect x="267" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-28" data-level="0" /></g>
+<g><title>2025-10-29: 활동 없음</title><rect x="267" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-29" data-level="0" /></g>
+<g><title>2025-10-30: 활동 없음</title><rect x="267" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-30" data-level="0" /></g>
+<g><title>2025-10-31: 활동 없음</title><rect x="267" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-10-31" data-level="0" /></g>
+<g><title>2025-11-01: 활동 없음</title><rect x="267" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-01" data-level="0" /></g>
+<g><title>2025-11-02: 활동 없음</title><rect x="278" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-02" data-level="0" /></g>
+<g><title>2025-11-03: 활동 없음</title><rect x="278" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-03" data-level="0" /></g>
+<g><title>2025-11-04: 활동 없음</title><rect x="278" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-04" data-level="0" /></g>
+<g><title>2025-11-05: 활동 없음</title><rect x="278" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-05" data-level="0" /></g>
+<g><title>2025-11-06: 활동 없음</title><rect x="278" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-06" data-level="0" /></g>
+<g><title>2025-11-07: 활동 없음</title><rect x="278" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-07" data-level="0" /></g>
+<g><title>2025-11-08: 활동 없음</title><rect x="278" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-08" data-level="0" /></g>
+<g><title>2025-11-09: 활동 없음</title><rect x="289" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-09" data-level="0" /></g>
+<g><title>2025-11-10: 활동 없음</title><rect x="289" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-10" data-level="0" /></g>
+<g><title>2025-11-11: 활동 없음</title><rect x="289" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-11" data-level="0" /></g>
+<g><title>2025-11-12: 활동 없음</title><rect x="289" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-12" data-level="0" /></g>
+<g><title>2025-11-13: 활동 없음</title><rect x="289" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-13" data-level="0" /></g>
+<g><title>2025-11-14: 활동 없음</title><rect x="289" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-14" data-level="0" /></g>
+<g><title>2025-11-15: 활동 없음</title><rect x="289" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-15" data-level="0" /></g>
+<g><title>2025-11-16: 활동 없음</title><rect x="300" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-16" data-level="0" /></g>
+<g><title>2025-11-17: 활동 없음</title><rect x="300" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-17" data-level="0" /></g>
+<g><title>2025-11-18: 활동 없음</title><rect x="300" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-18" data-level="0" /></g>
+<g><title>2025-11-19: 깊은 활동</title><rect x="300" y="184" width="8" height="8" rx="2" fill="#5C96D1" data-date="2025-11-19" data-level="3" /></g>
+<g><title>2025-11-20: 가벼운 활동</title><rect x="300" y="195" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2025-11-20" data-level="1" /></g>
+<g><title>2025-11-21: 집중 활동</title><rect x="300" y="206" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2025-11-21" data-level="2" /></g>
+<g><title>2025-11-22: 활동 없음</title><rect x="300" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-22" data-level="0" /></g>
+<g><title>2025-11-23: 활동 없음</title><rect x="311" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-11-23" data-level="0" /></g>
+<g><title>2025-11-24: 최고 활동</title><rect x="311" y="162" width="8" height="8" rx="2" fill="#2668A8" data-date="2025-11-24" data-level="4" /></g>
+<g><title>2025-11-25: 최고 활동</title><rect x="311" y="173" width="8" height="8" rx="2" fill="#2668A8" data-date="2025-11-25" data-level="4" /></g>
+<g><title>2025-11-26: 집중 활동</title><rect x="311" y="184" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2025-11-26" data-level="2" /></g>
+<g><title>2025-11-27: 집중 활동</title><rect x="311" y="195" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2025-11-27" data-level="2" /></g>
+<g><title>2025-11-28: 집중 활동</title><rect x="311" y="206" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2025-11-28" data-level="2" /></g>
+<g><title>2025-11-29: 가벼운 활동</title><rect x="311" y="217" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2025-11-29" data-level="1" /></g>
+<g><title>2025-11-30: 가벼운 활동</title><rect x="322" y="151" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2025-11-30" data-level="1" /></g>
+<g><title>2025-12-01: 가벼운 활동</title><rect x="322" y="162" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2025-12-01" data-level="1" /></g>
+<g><title>2025-12-02: 활동 없음</title><rect x="322" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-02" data-level="0" /></g>
+<g><title>2025-12-03: 깊은 활동</title><rect x="322" y="184" width="8" height="8" rx="2" fill="#5C96D1" data-date="2025-12-03" data-level="3" /></g>
+<g><title>2025-12-04: 활동 없음</title><rect x="322" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-04" data-level="0" /></g>
+<g><title>2025-12-05: 활동 없음</title><rect x="322" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-05" data-level="0" /></g>
+<g><title>2025-12-06: 활동 없음</title><rect x="322" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-06" data-level="0" /></g>
+<g><title>2025-12-07: 최고 활동</title><rect x="333" y="151" width="8" height="8" rx="2" fill="#2668A8" data-date="2025-12-07" data-level="4" /></g>
+<g><title>2025-12-08: 집중 활동</title><rect x="333" y="162" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2025-12-08" data-level="2" /></g>
+<g><title>2025-12-09: 집중 활동</title><rect x="333" y="173" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2025-12-09" data-level="2" /></g>
+<g><title>2025-12-10: 활동 없음</title><rect x="333" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-10" data-level="0" /></g>
+<g><title>2025-12-11: 활동 없음</title><rect x="333" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-11" data-level="0" /></g>
+<g><title>2025-12-12: 활동 없음</title><rect x="333" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-12" data-level="0" /></g>
+<g><title>2025-12-13: 활동 없음</title><rect x="333" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-13" data-level="0" /></g>
+<g><title>2025-12-14: 활동 없음</title><rect x="344" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-14" data-level="0" /></g>
+<g><title>2025-12-15: 활동 없음</title><rect x="344" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-15" data-level="0" /></g>
+<g><title>2025-12-16: 활동 없음</title><rect x="344" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-16" data-level="0" /></g>
+<g><title>2025-12-17: 집중 활동</title><rect x="344" y="184" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2025-12-17" data-level="2" /></g>
+<g><title>2025-12-18: 활동 없음</title><rect x="344" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-18" data-level="0" /></g>
+<g><title>2025-12-19: 활동 없음</title><rect x="344" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-19" data-level="0" /></g>
+<g><title>2025-12-20: 활동 없음</title><rect x="344" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-20" data-level="0" /></g>
+<g><title>2025-12-21: 활동 없음</title><rect x="355" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-21" data-level="0" /></g>
+<g><title>2025-12-22: 활동 없음</title><rect x="355" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-22" data-level="0" /></g>
+<g><title>2025-12-23: 활동 없음</title><rect x="355" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-23" data-level="0" /></g>
+<g><title>2025-12-24: 활동 없음</title><rect x="355" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-24" data-level="0" /></g>
+<g><title>2025-12-25: 활동 없음</title><rect x="355" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-25" data-level="0" /></g>
+<g><title>2025-12-26: 활동 없음</title><rect x="355" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-26" data-level="0" /></g>
+<g><title>2025-12-27: 활동 없음</title><rect x="355" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-27" data-level="0" /></g>
+<g><title>2025-12-28: 활동 없음</title><rect x="366" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-28" data-level="0" /></g>
+<g><title>2025-12-29: 활동 없음</title><rect x="366" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-29" data-level="0" /></g>
+<g><title>2025-12-30: 활동 없음</title><rect x="366" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-30" data-level="0" /></g>
+<g><title>2025-12-31: 활동 없음</title><rect x="366" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2025-12-31" data-level="0" /></g>
+<g><title>2026-01-01: 활동 없음</title><rect x="366" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-01" data-level="0" /></g>
+<g><title>2026-01-02: 활동 없음</title><rect x="366" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-02" data-level="0" /></g>
+<g><title>2026-01-03: 집중 활동</title><rect x="366" y="217" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-01-03" data-level="2" /></g>
+<g><title>2026-01-04: 집중 활동</title><rect x="377" y="151" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-01-04" data-level="2" /></g>
+<g><title>2026-01-05: 깊은 활동</title><rect x="377" y="162" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-01-05" data-level="3" /></g>
+<g><title>2026-01-06: 깊은 활동</title><rect x="377" y="173" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-01-06" data-level="3" /></g>
+<g><title>2026-01-07: 집중 활동</title><rect x="377" y="184" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-01-07" data-level="2" /></g>
+<g><title>2026-01-08: 집중 활동</title><rect x="377" y="195" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-01-08" data-level="2" /></g>
+<g><title>2026-01-09: 가벼운 활동</title><rect x="377" y="206" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-01-09" data-level="1" /></g>
+<g><title>2026-01-10: 활동 없음</title><rect x="377" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-10" data-level="0" /></g>
+<g><title>2026-01-11: 활동 없음</title><rect x="388" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-11" data-level="0" /></g>
+<g><title>2026-01-12: 활동 없음</title><rect x="388" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-12" data-level="0" /></g>
+<g><title>2026-01-13: 활동 없음</title><rect x="388" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-13" data-level="0" /></g>
+<g><title>2026-01-14: 활동 없음</title><rect x="388" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-14" data-level="0" /></g>
+<g><title>2026-01-15: 활동 없음</title><rect x="388" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-15" data-level="0" /></g>
+<g><title>2026-01-16: 활동 없음</title><rect x="388" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-16" data-level="0" /></g>
+<g><title>2026-01-17: 활동 없음</title><rect x="388" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-17" data-level="0" /></g>
+<g><title>2026-01-18: 활동 없음</title><rect x="399" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-18" data-level="0" /></g>
+<g><title>2026-01-19: 활동 없음</title><rect x="399" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-19" data-level="0" /></g>
+<g><title>2026-01-20: 활동 없음</title><rect x="399" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-20" data-level="0" /></g>
+<g><title>2026-01-21: 활동 없음</title><rect x="399" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-21" data-level="0" /></g>
+<g><title>2026-01-22: 활동 없음</title><rect x="399" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-22" data-level="0" /></g>
+<g><title>2026-01-23: 활동 없음</title><rect x="399" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-23" data-level="0" /></g>
+<g><title>2026-01-24: 활동 없음</title><rect x="399" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-24" data-level="0" /></g>
+<g><title>2026-01-25: 가벼운 활동</title><rect x="410" y="151" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-01-25" data-level="1" /></g>
+<g><title>2026-01-26: 가벼운 활동</title><rect x="410" y="162" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-01-26" data-level="1" /></g>
+<g><title>2026-01-27: 활동 없음</title><rect x="410" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-27" data-level="0" /></g>
+<g><title>2026-01-28: 활동 없음</title><rect x="410" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-28" data-level="0" /></g>
+<g><title>2026-01-29: 활동 없음</title><rect x="410" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-29" data-level="0" /></g>
+<g><title>2026-01-30: 활동 없음</title><rect x="410" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-30" data-level="0" /></g>
+<g><title>2026-01-31: 활동 없음</title><rect x="410" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-01-31" data-level="0" /></g>
+<g><title>2026-02-01: 활동 없음</title><rect x="421" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-01" data-level="0" /></g>
+<g><title>2026-02-02: 활동 없음</title><rect x="421" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-02" data-level="0" /></g>
+<g><title>2026-02-03: 활동 없음</title><rect x="421" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-03" data-level="0" /></g>
+<g><title>2026-02-04: 활동 없음</title><rect x="421" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-04" data-level="0" /></g>
+<g><title>2026-02-05: 활동 없음</title><rect x="421" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-05" data-level="0" /></g>
+<g><title>2026-02-06: 활동 없음</title><rect x="421" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-06" data-level="0" /></g>
+<g><title>2026-02-07: 활동 없음</title><rect x="421" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-07" data-level="0" /></g>
+<g><title>2026-02-08: 활동 없음</title><rect x="432" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-08" data-level="0" /></g>
+<g><title>2026-02-09: 활동 없음</title><rect x="432" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-09" data-level="0" /></g>
+<g><title>2026-02-10: 활동 없음</title><rect x="432" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-10" data-level="0" /></g>
+<g><title>2026-02-11: 활동 없음</title><rect x="432" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-11" data-level="0" /></g>
+<g><title>2026-02-12: 활동 없음</title><rect x="432" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-12" data-level="0" /></g>
+<g><title>2026-02-13: 가벼운 활동</title><rect x="432" y="206" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-02-13" data-level="1" /></g>
+<g><title>2026-02-14: 가벼운 활동</title><rect x="432" y="217" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-02-14" data-level="1" /></g>
+<g><title>2026-02-15: 가벼운 활동</title><rect x="443" y="151" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-02-15" data-level="1" /></g>
+<g><title>2026-02-16: 활동 없음</title><rect x="443" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-16" data-level="0" /></g>
+<g><title>2026-02-17: 활동 없음</title><rect x="443" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-17" data-level="0" /></g>
+<g><title>2026-02-18: 활동 없음</title><rect x="443" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-18" data-level="0" /></g>
+<g><title>2026-02-19: 가벼운 활동</title><rect x="443" y="195" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-02-19" data-level="1" /></g>
+<g><title>2026-02-20: 가벼운 활동</title><rect x="443" y="206" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-02-20" data-level="1" /></g>
+<g><title>2026-02-21: 활동 없음</title><rect x="443" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-21" data-level="0" /></g>
+<g><title>2026-02-22: 활동 없음</title><rect x="454" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-22" data-level="0" /></g>
+<g><title>2026-02-23: 가벼운 활동</title><rect x="454" y="162" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-02-23" data-level="1" /></g>
+<g><title>2026-02-24: 가벼운 활동</title><rect x="454" y="173" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-02-24" data-level="1" /></g>
+<g><title>2026-02-25: 활동 없음</title><rect x="454" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-02-25" data-level="0" /></g>
+<g><title>2026-02-26: 가벼운 활동</title><rect x="454" y="195" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-02-26" data-level="1" /></g>
+<g><title>2026-02-27: 가벼운 활동</title><rect x="454" y="206" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-02-27" data-level="1" /></g>
+<g><title>2026-02-28: 가벼운 활동</title><rect x="454" y="217" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-02-28" data-level="1" /></g>
+<g><title>2026-03-01: 활동 없음</title><rect x="465" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-01" data-level="0" /></g>
+<g><title>2026-03-02: 활동 없음</title><rect x="465" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-02" data-level="0" /></g>
+<g><title>2026-03-03: 가벼운 활동</title><rect x="465" y="173" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-03-03" data-level="1" /></g>
+<g><title>2026-03-04: 가벼운 활동</title><rect x="465" y="184" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-03-04" data-level="1" /></g>
+<g><title>2026-03-05: 가벼운 활동</title><rect x="465" y="195" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-03-05" data-level="1" /></g>
+<g><title>2026-03-06: 집중 활동</title><rect x="465" y="206" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-03-06" data-level="2" /></g>
+<g><title>2026-03-07: 집중 활동</title><rect x="465" y="217" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-03-07" data-level="2" /></g>
+<g><title>2026-03-08: 활동 없음</title><rect x="476" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-08" data-level="0" /></g>
+<g><title>2026-03-09: 집중 활동</title><rect x="476" y="162" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-03-09" data-level="2" /></g>
+<g><title>2026-03-10: 깊은 활동</title><rect x="476" y="173" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-03-10" data-level="3" /></g>
+<g><title>2026-03-11: 집중 활동</title><rect x="476" y="184" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-03-11" data-level="2" /></g>
+<g><title>2026-03-12: 가벼운 활동</title><rect x="476" y="195" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-03-12" data-level="1" /></g>
+<g><title>2026-03-13: 활동 없음</title><rect x="476" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-13" data-level="0" /></g>
+<g><title>2026-03-14: 활동 없음</title><rect x="476" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-14" data-level="0" /></g>
+<g><title>2026-03-15: 활동 없음</title><rect x="487" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-15" data-level="0" /></g>
+<g><title>2026-03-16: 활동 없음</title><rect x="487" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-16" data-level="0" /></g>
+<g><title>2026-03-17: 활동 없음</title><rect x="487" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-17" data-level="0" /></g>
+<g><title>2026-03-18: 활동 없음</title><rect x="487" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-18" data-level="0" /></g>
+<g><title>2026-03-19: 활동 없음</title><rect x="487" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-19" data-level="0" /></g>
+<g><title>2026-03-20: 활동 없음</title><rect x="487" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-20" data-level="0" /></g>
+<g><title>2026-03-21: 활동 없음</title><rect x="487" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-21" data-level="0" /></g>
+<g><title>2026-03-22: 활동 없음</title><rect x="498" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-22" data-level="0" /></g>
+<g><title>2026-03-23: 활동 없음</title><rect x="498" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-23" data-level="0" /></g>
+<g><title>2026-03-24: 활동 없음</title><rect x="498" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-24" data-level="0" /></g>
+<g><title>2026-03-25: 활동 없음</title><rect x="498" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-25" data-level="0" /></g>
+<g><title>2026-03-26: 활동 없음</title><rect x="498" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-26" data-level="0" /></g>
+<g><title>2026-03-27: 활동 없음</title><rect x="498" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-27" data-level="0" /></g>
+<g><title>2026-03-28: 활동 없음</title><rect x="498" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-28" data-level="0" /></g>
+<g><title>2026-03-29: 활동 없음</title><rect x="509" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-29" data-level="0" /></g>
+<g><title>2026-03-30: 활동 없음</title><rect x="509" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-30" data-level="0" /></g>
+<g><title>2026-03-31: 활동 없음</title><rect x="509" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-03-31" data-level="0" /></g>
+<g><title>2026-04-01: 활동 없음</title><rect x="509" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-01" data-level="0" /></g>
+<g><title>2026-04-02: 활동 없음</title><rect x="509" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-02" data-level="0" /></g>
+<g><title>2026-04-03: 활동 없음</title><rect x="509" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-03" data-level="0" /></g>
+<g><title>2026-04-04: 활동 없음</title><rect x="509" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-04" data-level="0" /></g>
+<g><title>2026-04-05: 활동 없음</title><rect x="520" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-05" data-level="0" /></g>
+<g><title>2026-04-06: 활동 없음</title><rect x="520" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-06" data-level="0" /></g>
+<g><title>2026-04-07: 활동 없음</title><rect x="520" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-07" data-level="0" /></g>
+<g><title>2026-04-08: 활동 없음</title><rect x="520" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-08" data-level="0" /></g>
+<g><title>2026-04-09: 활동 없음</title><rect x="520" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-09" data-level="0" /></g>
+<g><title>2026-04-10: 활동 없음</title><rect x="520" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-10" data-level="0" /></g>
+<g><title>2026-04-11: 활동 없음</title><rect x="520" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-11" data-level="0" /></g>
+<g><title>2026-04-12: 활동 없음</title><rect x="531" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-12" data-level="0" /></g>
+<g><title>2026-04-13: 활동 없음</title><rect x="531" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-13" data-level="0" /></g>
+<g><title>2026-04-14: 활동 없음</title><rect x="531" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-14" data-level="0" /></g>
+<g><title>2026-04-15: 활동 없음</title><rect x="531" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-15" data-level="0" /></g>
+<g><title>2026-04-16: 활동 없음</title><rect x="531" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-16" data-level="0" /></g>
+<g><title>2026-04-17: 활동 없음</title><rect x="531" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-17" data-level="0" /></g>
+<g><title>2026-04-18: 활동 없음</title><rect x="531" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-18" data-level="0" /></g>
+<g><title>2026-04-19: 활동 없음</title><rect x="542" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-19" data-level="0" /></g>
+<g><title>2026-04-20: 활동 없음</title><rect x="542" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-20" data-level="0" /></g>
+<g><title>2026-04-21: 활동 없음</title><rect x="542" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-21" data-level="0" /></g>
+<g><title>2026-04-22: 활동 없음</title><rect x="542" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-22" data-level="0" /></g>
+<g><title>2026-04-23: 가벼운 활동</title><rect x="542" y="195" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-04-23" data-level="1" /></g>
+<g><title>2026-04-24: 가벼운 활동</title><rect x="542" y="206" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-04-24" data-level="1" /></g>
+<g><title>2026-04-25: 활동 없음</title><rect x="542" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-25" data-level="0" /></g>
+<g><title>2026-04-26: 활동 없음</title><rect x="553" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-26" data-level="0" /></g>
+<g><title>2026-04-27: 활동 없음</title><rect x="553" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-27" data-level="0" /></g>
+<g><title>2026-04-28: 활동 없음</title><rect x="553" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-28" data-level="0" /></g>
+<g><title>2026-04-29: 활동 없음</title><rect x="553" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-29" data-level="0" /></g>
+<g><title>2026-04-30: 활동 없음</title><rect x="553" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-04-30" data-level="0" /></g>
+<g><title>2026-05-01: 활동 없음</title><rect x="553" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-01" data-level="0" /></g>
+<g><title>2026-05-02: 활동 없음</title><rect x="553" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-02" data-level="0" /></g>
+<g><title>2026-05-03: 활동 없음</title><rect x="564" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-03" data-level="0" /></g>
+<g><title>2026-05-04: 가벼운 활동</title><rect x="564" y="162" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-05-04" data-level="1" /></g>
+<g><title>2026-05-05: 가벼운 활동</title><rect x="564" y="173" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-05-05" data-level="1" /></g>
+<g><title>2026-05-06: 활동 없음</title><rect x="564" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-06" data-level="0" /></g>
+<g><title>2026-05-07: 활동 없음</title><rect x="564" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-07" data-level="0" /></g>
+<g><title>2026-05-08: 활동 없음</title><rect x="564" y="206" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-08" data-level="0" /></g>
+<g><title>2026-05-09: 활동 없음</title><rect x="564" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-09" data-level="0" /></g>
+<g><title>2026-05-10: 활동 없음</title><rect x="575" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-10" data-level="0" /></g>
+<g><title>2026-05-11: 활동 없음</title><rect x="575" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-11" data-level="0" /></g>
+<g><title>2026-05-12: 활동 없음</title><rect x="575" y="173" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-12" data-level="0" /></g>
+<g><title>2026-05-13: 활동 없음</title><rect x="575" y="184" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-13" data-level="0" /></g>
+<g><title>2026-05-14: 활동 없음</title><rect x="575" y="195" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-14" data-level="0" /></g>
+<g><title>2026-05-15: 가벼운 활동</title><rect x="575" y="206" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-05-15" data-level="1" /></g>
+<g><title>2026-05-16: 활동 없음</title><rect x="575" y="217" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-16" data-level="0" /></g>
+<g><title>2026-05-17: 활동 없음</title><rect x="586" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-17" data-level="0" /></g>
+<g><title>2026-05-18: 집중 활동</title><rect x="586" y="162" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-05-18" data-level="2" /></g>
+<g><title>2026-05-19: 최고 활동</title><rect x="586" y="173" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-05-19" data-level="4" /></g>
+<g><title>2026-05-20: 깊은 활동</title><rect x="586" y="184" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-05-20" data-level="3" /></g>
+<g><title>2026-05-21: 깊은 활동</title><rect x="586" y="195" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-05-21" data-level="3" /></g>
+<g><title>2026-05-22: 집중 활동</title><rect x="586" y="206" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-05-22" data-level="2" /></g>
+<g><title>2026-05-23: 가벼운 활동</title><rect x="586" y="217" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-05-23" data-level="1" /></g>
+<g><title>2026-05-24: 활동 없음</title><rect x="597" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-24" data-level="0" /></g>
+<g><title>2026-05-25: 활동 없음</title><rect x="597" y="162" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-25" data-level="0" /></g>
+<g><title>2026-05-26: 집중 활동</title><rect x="597" y="173" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-05-26" data-level="2" /></g>
+<g><title>2026-05-27: 깊은 활동</title><rect x="597" y="184" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-05-27" data-level="3" /></g>
+<g><title>2026-05-28: 깊은 활동</title><rect x="597" y="195" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-05-28" data-level="3" /></g>
+<g><title>2026-05-29: 깊은 활동</title><rect x="597" y="206" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-05-29" data-level="3" /></g>
+<g><title>2026-05-30: 집중 활동</title><rect x="597" y="217" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-05-30" data-level="2" /></g>
+<g><title>2026-05-31: 활동 없음</title><rect x="608" y="151" width="8" height="8" rx="2" fill="#EBEEF2" data-date="2026-05-31" data-level="0" /></g>
+<g><title>2026-06-01: 깊은 활동</title><rect x="608" y="162" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-06-01" data-level="3" /></g>
+<g><title>2026-06-02: 깊은 활동</title><rect x="608" y="173" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-06-02" data-level="3" /></g>
+<g><title>2026-06-03: 집중 활동</title><rect x="608" y="184" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-06-03" data-level="2" /></g>
+<g><title>2026-06-04: 최고 활동</title><rect x="608" y="195" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-06-04" data-level="4" /></g>
+<g><title>2026-06-05: 깊은 활동</title><rect x="608" y="206" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-06-05" data-level="3" /></g>
+<g><title>2026-06-06: 집중 활동</title><rect x="608" y="217" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-06-06" data-level="2" /></g>
+<g><title>2026-06-07: 집중 활동</title><rect x="619" y="151" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-06-07" data-level="2" /></g>
+<g><title>2026-06-08: 집중 활동</title><rect x="619" y="162" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-06-08" data-level="2" /></g>
+<g><title>2026-06-09: 깊은 활동</title><rect x="619" y="173" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-06-09" data-level="3" /></g>
+<g><title>2026-06-10: 최고 활동</title><rect x="619" y="184" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-06-10" data-level="4" /></g>
+<g><title>2026-06-11: 최고 활동</title><rect x="619" y="195" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-06-11" data-level="4" /></g>
+<g><title>2026-06-12: 집중 활동</title><rect x="619" y="206" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-06-12" data-level="2" /></g>
+<g><title>2026-06-13: 가벼운 활동</title><rect x="619" y="217" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-06-13" data-level="1" /></g>
+<g><title>2026-06-14: 가벼운 활동</title><rect x="630" y="151" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-06-14" data-level="1" /></g>
+<g><title>2026-06-15: 깊은 활동</title><rect x="630" y="162" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-06-15" data-level="3" /></g>
+<g><title>2026-06-16: 깊은 활동</title><rect x="630" y="173" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-06-16" data-level="3" /></g>
+<g><title>2026-06-17: 최고 활동</title><rect x="630" y="184" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-06-17" data-level="4" /></g>
+<g><title>2026-06-18: 깊은 활동</title><rect x="630" y="195" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-06-18" data-level="3" /></g>
+<g><title>2026-06-19: 깊은 활동</title><rect x="630" y="206" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-06-19" data-level="3" /></g>
+<g><title>2026-06-20: 가벼운 활동</title><rect x="630" y="217" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-06-20" data-level="1" /></g>
+<g><title>2026-06-21: 가벼운 활동</title><rect x="641" y="151" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-06-21" data-level="1" /></g>
+<g><title>2026-06-22: 깊은 활동</title><rect x="641" y="162" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-06-22" data-level="3" /></g>
+<g><title>2026-06-23: 최고 활동</title><rect x="641" y="173" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-06-23" data-level="4" /></g>
+<g><title>2026-06-24: 최고 활동</title><rect x="641" y="184" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-06-24" data-level="4" /></g>
+<g><title>2026-06-25: 최고 활동</title><rect x="641" y="195" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-06-25" data-level="4" /></g>
+<g><title>2026-06-26: 깊은 활동</title><rect x="641" y="206" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-06-26" data-level="3" /></g>
+<g><title>2026-06-27: 집중 활동</title><rect x="641" y="217" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-06-27" data-level="2" /></g>
+<g><title>2026-06-28: 집중 활동</title><rect x="652" y="151" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-06-28" data-level="2" /></g>
+<g><title>2026-06-29: 깊은 활동</title><rect x="652" y="162" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-06-29" data-level="3" /></g>
+<g><title>2026-06-30: 최고 활동</title><rect x="652" y="173" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-06-30" data-level="4" /></g>
+<g><title>2026-07-01: 깊은 활동</title><rect x="652" y="184" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-07-01" data-level="3" /></g>
+<g><title>2026-07-02: 집중 활동</title><rect x="652" y="195" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-07-02" data-level="2" /></g>
+<g><title>2026-07-03: 집중 활동</title><rect x="652" y="206" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-07-03" data-level="2" /></g>
+<g><title>2026-07-04: 집중 활동</title><rect x="652" y="217" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-07-04" data-level="2" /></g>
+<g><title>2026-07-05: 가벼운 활동</title><rect x="663" y="151" width="8" height="8" rx="2" fill="#D9E8FA" data-date="2026-07-05" data-level="1" /></g>
+<g><title>2026-07-06: 최고 활동</title><rect x="663" y="162" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-06" data-level="4" /></g>
+<g><title>2026-07-07: 깊은 활동</title><rect x="663" y="173" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-07-07" data-level="3" /></g>
+<g><title>2026-07-08: 깊은 활동</title><rect x="663" y="184" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-07-08" data-level="3" /></g>
+<g><title>2026-07-09: 집중 활동</title><rect x="663" y="195" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-07-09" data-level="2" /></g>
+<g><title>2026-07-10: 집중 활동</title><rect x="663" y="206" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-07-10" data-level="2" /></g>
+<g><title>2026-07-11: 최고 활동</title><rect x="663" y="217" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-11" data-level="4" /></g>
+<g><title>2026-07-12: 최고 활동</title><rect x="674" y="151" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-12" data-level="4" /></g>
+<g><title>2026-07-13: 최고 활동</title><rect x="674" y="162" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-13" data-level="4" /></g>
+<g><title>2026-07-14: 깊은 활동</title><rect x="674" y="173" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-07-14" data-level="3" /></g>
+<g><title>2026-07-15: 최고 활동</title><rect x="674" y="184" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-15" data-level="4" /></g>
+<g><title>2026-07-16: 최고 활동</title><rect x="674" y="195" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-16" data-level="4" /></g>
+<g><title>2026-07-17: 깊은 활동</title><rect x="674" y="206" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-07-17" data-level="3" /></g>
+<g><title>2026-07-18: 깊은 활동</title><rect x="674" y="217" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-07-18" data-level="3" /></g>
+<g><title>2026-07-19: 최고 활동</title><rect x="685" y="151" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-19" data-level="4" /></g>
+<g><title>2026-07-20: 최고 활동</title><rect x="685" y="162" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-20" data-level="4" /></g>
+<g><title>2026-07-21: 최고 활동</title><rect x="685" y="173" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-21" data-level="4" /></g>
+<g><title>2026-07-22: 깊은 활동</title><rect x="685" y="184" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-07-22" data-level="3" /></g>
+<g><title>2026-07-23: 깊은 활동</title><rect x="685" y="195" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-07-23" data-level="3" /></g>
+<g><title>2026-07-24: 최고 활동</title><rect x="685" y="206" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-24" data-level="4" /></g>
+<g><title>2026-07-25: 깊은 활동</title><rect x="685" y="217" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-07-25" data-level="3" /></g>
+<g><title>2026-07-26: 최고 활동</title><rect x="696" y="151" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-26" data-level="4" /></g>
+<g><title>2026-07-27: 최고 활동</title><rect x="696" y="162" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-27" data-level="4" /></g>
+<g><title>2026-07-28: 깊은 활동</title><rect x="696" y="173" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-07-28" data-level="3" /></g>
+<g><title>2026-07-29: 최고 활동</title><rect x="696" y="184" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-29" data-level="4" /></g>
+<g><title>2026-07-30: 최고 활동</title><rect x="696" y="195" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-30" data-level="4" /></g>
+<g><title>2026-07-31: 최고 활동</title><rect x="696" y="206" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-07-31" data-level="4" /></g>
+<g><title>2026-08-01: 깊은 활동</title><rect x="696" y="217" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-08-01" data-level="3" /></g>
+<g><title>2026-08-02: 깊은 활동</title><rect x="707" y="151" width="8" height="8" rx="2" fill="#5C96D1" data-date="2026-08-02" data-level="3" /></g>
+<g><title>2026-08-03: 최고 활동</title><rect x="707" y="162" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-08-03" data-level="4" /></g>
+<g><title>2026-08-04: 최고 활동</title><rect x="707" y="173" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-08-04" data-level="4" /></g>
+<g><title>2026-08-05: 최고 활동</title><rect x="707" y="184" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-08-05" data-level="4" /></g>
+<g><title>2026-08-06: 최고 활동</title><rect x="707" y="195" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-08-06" data-level="4" /></g>
+<g><title>2026-08-07: 최고 활동</title><rect x="707" y="206" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-08-07" data-level="4" /></g>
+<g><title>2026-08-08: 집중 활동</title><rect x="707" y="217" width="8" height="8" rx="2" fill="#9EC5EF" data-date="2026-08-08" data-level="2" /></g>
+<g><title>2026-08-09: 최고 활동</title><rect x="718" y="151" width="8" height="8" rx="2" fill="#2668A8" data-date="2026-08-09" data-level="4" /></g>
+<g><title>2026-08-10</title><rect x="718" y="162" width="8" height="8" rx="2" fill="#F6F8FA" data-date="2026-08-10" data-level="0" /></g>
+<g><title>2026-08-11</title><rect x="718" y="173" width="8" height="8" rx="2" fill="#F6F8FA" data-date="2026-08-11" data-level="0" /></g>
+<g><title>2026-08-12</title><rect x="718" y="184" width="8" height="8" rx="2" fill="#F6F8FA" data-date="2026-08-12" data-level="0" /></g>
+<g><title>2026-08-13</title><rect x="718" y="195" width="8" height="8" rx="2" fill="#F6F8FA" data-date="2026-08-13" data-level="0" /></g>
+<g><title>2026-08-14</title><rect x="718" y="206" width="8" height="8" rx="2" fill="#F6F8FA" data-date="2026-08-14" data-level="0" /></g>
+<g><title>2026-08-15</title><rect x="718" y="217" width="8" height="8" rx="2" fill="#F6F8FA" data-date="2026-08-15" data-level="0" /></g>
+  <text x="603" y="253" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="400" text-anchor="end">낮음</text>
+  <rect x="637" y="245" width="8" height="8" rx="2" fill="#EBEEF2" />
+<rect x="649" y="245" width="8" height="8" rx="2" fill="#D9E8FA" />
+<rect x="661" y="245" width="8" height="8" rx="2" fill="#9EC5EF" />
+<rect x="673" y="245" width="8" height="8" rx="2" fill="#5C96D1" />
+<rect x="685" y="245" width="8" height="8" rx="2" fill="#2668A8" />
+  <text x="705" y="253" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="400" text-anchor="start">높음</text>
+  <text x="32" y="273" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="400" text-anchor="start">2025-08-10 — 2026-08-09</text>
+  <text x="728" y="273" fill="#6E7781" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace" font-size="9" font-weight="400" text-anchor="end">기준 2026-08-09</text>
+</svg>

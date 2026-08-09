@@ -68,6 +68,28 @@ As of 2026-08-09, the portfolio uses GitHub Search API / GraphQL counts for
 When these numbers are refreshed, update `README.md`, `src/data.ts`, overview,
 timeline, and any affected case studies together.
 
+## Public AI Activity Signal
+
+The portfolio intentionally publishes a normalized AI activity calendar as a
+consistency signal. It is generated locally from `ccusage` daily aggregates and
+commits only dates, relative levels `0-4`, active-day count, current streak,
+longest streak, and coverage dates.
+
+The public effort signal is:
+
+```text
+inputTokens + outputTokens + cacheCreationTokens
+```
+
+Cache-read tokens are excluded because repeated context reads can dominate raw
+totals without representing equivalent new effort. Positive days are ranked
+relative to the displayed window; the original token count cannot be recovered
+from a cell level.
+
+This is a narrow exception to the raw-telemetry prohibition. Exact token totals,
+costs, session data, model or agent breakdowns, local paths, prompts, responses,
+and project attribution remain private and must not enter the repository.
+
 ## Narrative Spine
 
 Use this order when rewriting public copy:

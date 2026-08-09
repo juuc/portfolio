@@ -28,6 +28,14 @@ export interface PortfolioData {
   stats: StatItem[]
   career: CareerItem[]
   flagship: FlagshipItem[]
+  aiActivity: {
+    eyebrow: string
+    title: string
+    description: string
+    note: string
+    alt: string
+    regionLabel: string
+  }
   sections: {
     career: string
     flagship: string
@@ -81,6 +89,14 @@ export const DATA: Record<Lang, PortfolioData> = {
       { id: 'sentry-automation', name: 'Autonomous Sentry Ops', metric: 'Alert→PR', impact: 'Production errors became AI-assisted diagnosis and fix PR candidates' },
       { id: 'data-reliability', name: 'Data Reliability', metric: 'Dagster', impact: 'Script crawlers -> scheduled assets/jobs with freshness alerts and recovery gates' },
     ],
+    aiActivity: {
+      eyebrow: 'Local signal',
+      title: 'AI-native operating rhythm',
+      description: 'A year of coding-agent activity, reduced to relative intensity. The pattern shows consistency; raw tokens, costs, and project details stay private.',
+      note: 'Relative intensity only · locally aggregated',
+      alt: '53-week relative AI activity calendar',
+      regionLabel: 'Scrollable AI activity calendar',
+    },
     sections: {
       career: 'Career',
       flagship: 'Impact Case Studies',
@@ -132,6 +148,14 @@ export const DATA: Record<Lang, PortfolioData> = {
       { id: 'sentry-automation', name: '자율 Sentry 운영', metric: 'Alert→PR', impact: '프로덕션 에러를 AI 진단과 수정 PR 후보로 연결' },
       { id: 'data-reliability', name: '데이터 신뢰성', metric: 'Dagster', impact: '스크립트형 크롤러 -> 스케줄형 assets/jobs와 신선도 알림/복구 gate' },
     ],
+    aiActivity: {
+      eyebrow: '로컬 신호',
+      title: 'AI 네이티브 운영 리듬',
+      description: '지난 1년의 코딩 에이전트 활동을 상대 강도로만 나타냈습니다. 꾸준함은 공개하되 원본 토큰, 비용, 프로젝트 정보는 비공개로 유지합니다.',
+      note: '상대 강도만 공개 · 로컬 집계',
+      alt: '53주 상대 AI 활동 달력',
+      regionLabel: '스크롤 가능한 AI 활동 달력',
+    },
     sections: {
       career: '경력',
       flagship: '임팩트 케이스 스터디',

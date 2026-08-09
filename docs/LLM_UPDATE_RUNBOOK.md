@@ -158,6 +158,35 @@ prompt content, local paths, or private project names. The public portfolio may
 say that AI-assisted execution is an operating model, but usage telemetry is
 private editorial evidence rather than a vanity metric.
 
+### Refresh The Public AI Activity Card
+
+The one approved public telemetry surface is the normalized activity calendar.
+It exposes relative levels and streak summaries, never raw usage. Pipe the
+aggregate directly into the renderer so the source JSON does not touch disk:
+
+```bash
+npx --yes ccusage@latest daily --all \
+  --since "${START_DATE}" --until "${AS_OF}" \
+  --timezone Asia/Seoul --json --no-color \
+  | node scripts/generate-ai-activity.mjs \
+      --stdin --as-of "${AS_OF}" --output-dir public/metrics
+```
+
+The expected outputs are:
+
+```text
+public/metrics/ai-activity-dark-en.svg
+public/metrics/ai-activity-dark-ko.svg
+public/metrics/ai-activity-light-en.svg
+public/metrics/ai-activity-light-ko.svg
+```
+
+All four files must have identical `data-date`/`data-level` sequences and 371
+cells. Reject the refresh if an SVG contains exact token totals, costs, session
+or model fields, agent names, local paths, prompts, responses, or project names.
+If collection or rendering fails, preserve the last committed card and continue
+the rest of the portfolio audit with the card refresh reported as failed.
+
 ## 4. Update The Right Files
 
 Most metric refreshes touch these files:
