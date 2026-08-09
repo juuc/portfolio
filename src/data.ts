@@ -74,6 +74,7 @@ export const DATA: Record<Lang, PortfolioData> = {
       { period: '2022.02 — 2025.08', company: 'Intelz / YouBook', type: 'EdTech', role: 'App Developer & Data Manager' },
     ],
     flagship: [
+      { id: 'field-operations-platform', name: 'Field Operations Platform', metric: 'Multi-role DEV', impact: 'Integrated assignment, evidence capture, review, handover, and recovery with explicit proof boundaries' },
       { id: 'semugpt-commercialization', name: 'SemuGPT Commercialization', metric: '2026-05-18', impact: 'Production handover completed and commercial agreement signed' },
       { id: 'platform-rebuild', name: 'Platform Rebuild', metric: '1,409 PRs', impact: 'Post-handover production hardening and rent/lease migration across frontend, backend, and data' },
       { id: 'seo-performance', name: 'SEO & Performance', metric: '20→80', impact: 'CSR/static web → SSR, 48,706 sitemap URLs, Search clicks 3.9x' },
@@ -124,6 +125,7 @@ export const DATA: Record<Lang, PortfolioData> = {
       { period: '2022.02 — 2025.08', company: '인텔즈 / 유북 (YouBook)', type: 'EdTech', role: '앱 개발자 & 데이터 매니저' },
     ],
     flagship: [
+      { id: 'field-operations-platform', name: '현장 운영 플랫폼', metric: '다역할 DEV', impact: '배정, 증빙 수집, 검토, 인계, 복구를 명시적인 증거 경계와 함께 통합' },
       { id: 'semugpt-commercialization', name: '세무GPT 상용화', metric: '2026-05-18', impact: '프로덕션 인수인계 완료 및 상용 계약 체결' },
       { id: 'platform-rebuild', name: '플랫폼 재건', metric: '1,409 PR', impact: '상용 인수인계 이후 프론트엔드, 백엔드, 데이터 전반에서 프로덕션 하드닝과 전월세 마이그레이션 지속' },
       { id: 'seo-performance', name: 'SEO & 성능', metric: '20→80', impact: 'CSR/정적 웹 → SSR, 사이트맵 48,706개 URL, 검색 클릭 3.9배' },

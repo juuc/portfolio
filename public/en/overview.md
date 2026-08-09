@@ -6,6 +6,7 @@ I joined Bootalk as a Data Engineer in March 2025 and expanded into Tech Lead / 
 
 | Before | After |
 |--------|-------|
+| Disconnected role screens and placeholder task state | Integrated field-operations DEV flow with authenticated transitions, evidence review, and recovery gates |
 | Fragmented web/app/admin repositories | Unified frontend monorepo with 1,409 authored PRs |
 | Static or client-rendered pages invisible to search | SSR, dynamic sitemap, 48,706 indexable listing URLs, Search Console clicks 3.9x |
 | PageSpeed around 20 | [PageSpeed 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop) after phased performance work |
@@ -25,25 +26,29 @@ I joined Bootalk as a Data Engineer in March 2025 and expanded into Tech Lead / 
 
 These numbers matter because they show a durable operating model, not a burst of activity. AI-assisted execution, tight review loops, small reversible phases, and production guardrails made a small team capable of sustained platform work across product, platform, and data reliability.
 
-## Five Substantial Outputs
+## Six Substantial Outputs
 
-### 1. SemuGPT Commercialization
+### 1. Field Operations Platform Productization
+
+I connected assignment, evidence capture, review, handover, and recovery across multiple field roles. The outcome through 2026-08-09 is an auditable integrated DEV path, with provider, physical-device, production, and store evidence kept as separate gates.
+
+### 2. SemuGPT Commercialization
 
 I helped move [SemuGPT](https://semugpt.co.kr) from AI product buildout into production operation: entitlement flows, payment behavior, evaluation loops, prompt observability, CI/CD, runbooks, cutover preparation, client handover, and a signed commercial agreement. After handover, the work continued as production polish and safer deployment discipline rather than feature churn.
 
-### 2. Bootalk Platform Rebuild
+### 3. Bootalk Platform Rebuild
 
 After the CTO transition, I owned engineering execution across web, mobile, backend, data, releases, and deployments. The important outcome was not "many repos touched"; it was making a fragile platform shippable by a 4-person team.
 
-### 3. Search And Performance Transformation
+### 4. Search And Performance Transformation
 
 The public web experience moved from a search-invisible CSR/static model to SSR with dynamic sitemaps and structured data. [PageSpeed moved from 20 to 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop), 48K+ listing pages became indexable, and Search Console showed the shift in production: clicks grew 3.9x and impressions 5.6x across complete 3-month windows.
 
-### 4. Autonomous Production Operations
+### 5. Autonomous Production Operations
 
 The Sentry triage bot turned production alerts into AI-assisted diagnosis and fix PRs. This moved error handling from manual on-call effort to a repeatable operating pipeline.
 
-### 5. Data Reliability Recovery
+### 6. Data Reliability Recovery
 
 Data reliability became the strongest theme after the commercial handover. I treated crawler and backend issues as system problems, not one-off fixes: rent/lease migration, cross-surface correctness for search, detail, AI recommendations, and data views, plus preflight gates, orchestration, and monitoring that made freshness and correctness operationally visible.
 
