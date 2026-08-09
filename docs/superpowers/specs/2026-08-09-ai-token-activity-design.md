@@ -143,11 +143,17 @@ node scripts/generate-ai-activity.mjs \
   --input /path/to/ccusage-daily.json \
   --as-of 2026-08-09 \
   --output-dir public/metrics
+
+# Preferred for live collection: raw telemetry never touches disk.
+npx --yes ccusage@latest daily --all --json --timezone Asia/Seoul --no-color \
+  | node scripts/generate-ai-activity.mjs \
+      --stdin --as-of 2026-08-09 --output-dir public/metrics
 ```
 
-The caller owns collection and temporary-file cleanup. This separation makes
-the renderer deterministic and testable without invoking `npx` or accessing
-private logs during a normal build.
+The caller owns collection. File input supports deterministic fixtures and
+manual audits; stdin is the live-refresh path so raw telemetry does not need to
+be persisted. This separation keeps the renderer testable without invoking
+`npx` or accessing private logs during a normal build.
 
 Validation failures are fail-closed:
 
@@ -161,9 +167,10 @@ Validation failures are fail-closed:
 The existing biweekly portfolio automation remains the owner of live data
 collection. Before editing public content it will:
 
-1. Create a temporary directory outside the repository.
-2. Run the latest `ccusage daily --all --json` for the trailing 12-month window.
-3. Run the deterministic SVG generator with the automation's `AS_OF` date.
+1. Run the latest `ccusage daily --all --json` for the trailing 12-month window.
+2. Pipe its JSON directly to the deterministic SVG generator with the
+   automation's `AS_OF` date.
+3. Confirm no raw JSON was created in or outside the repository by this step.
 4. Verify that no raw JSON or prohibited telemetry was added to Git.
 5. Continue through the existing bilingual, security, build, PR, merge, Pages,
    and live-site gates.
