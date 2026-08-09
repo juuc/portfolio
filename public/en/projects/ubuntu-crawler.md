@@ -58,9 +58,9 @@ Comprehensive real estate data collection system for the Korean market — crawl
 
 **Problem:** Users looking for new apartments needed presale information. Reconstruction project data was incomplete — some complexes were filtered out due to strict database constraints.
 
-**Solution:** Built presale data collection with weekly scheduling (Monday 19:00 KST), standalone dry run scripts for testing, and safe database operations (DELETE instead of TRUNCATE for transaction safety). Presale data was **fully refreshed weekly** by Jan 2026. Fixed crawler to also collect reconstruction (재건축) complexes by adjusting the property type filter. Identified and documented stored procedure filtering constraints that caused reconstruction data visibility issues.
+**Solution:** Built presale data collection with weekly scheduling (Monday 19:00 KST), standalone dry run scripts for testing, and safe database operations (DELETE instead of TRUNCATE for transaction safety). A January 2026 operational check verified a complete scheduled refresh at that point in time. Fixed the collection filter to include reconstruction complexes and documented downstream visibility constraints.
 
-**Impact:** Bootalk users get timely presale and reconstruction information for decision-making. Complete presale data updated weekly.
+**Impact:** Turned presale and reconstruction collection into a scheduled, observable data operation. Current freshness remains something to verify from run and downstream data evidence, not assume from the schedule alone.
 
 **Key PRs:**
 - `feat: enable weekly presale data schedule at Monday 19:00 KST`

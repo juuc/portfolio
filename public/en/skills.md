@@ -5,11 +5,12 @@
 | Area | Tools | Output |
 |------|-------|--------|
 | Web | React, Next.js, TypeScript, Tailwind, GraphQL | SSR migration, 48,706 sitemap URLs, PageSpeed 20 -> 80 |
-| Mobile | React Native, Expo, EAS Update | Managed workflow migration, OTA releases, store-release discipline |
+| Mobile | React Native, Expo, EAS Update, device automation | Multi-role flows, evidence-gated QA, OTA and store-release discipline |
 | Backend | Kotlin, Spring, serverless functions, REST APIs | Production hardening, entitlement/payment flows, batch optimization |
 | Data | Python, Dagster, notebooks, government/open data APIs | Real-estate pipelines, crawler recovery, freshness monitoring |
-| Infrastructure | GCP Cloud Run, AWS, GitHub Actions, Docker | SSR hosting, CI/CD, self-hosted runner work, deployment cleanup |
-| Observability | Sentry, Telegram reporting, runbooks | Error monitoring, AI triage, production feedback loops |
+| Infrastructure | Terraform, cloud identity, GCP Cloud Run, AWS, GitHub Actions, Docker | Reproducible environments, least-privilege delivery paths, CI/CD, deployment cleanup |
+| Observability | Sentry, structured OCR telemetry, reporting, runbooks | Error triage, reviewable document processing, production feedback loops |
+| Release evidence | Source/CI checks, DEV readback, provider receipts, device verification | Kept code, runtime, delivery, device, and production claims independently testable |
 
 ## AI Engineering
 

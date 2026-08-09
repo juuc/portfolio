@@ -28,7 +28,7 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 
 **Solution:** Led a phase-based type migration across web, app, and admin modules. Systematically replaced `any` types with proper TypeScript interfaces and used AI-assisted parallel execution to keep the campaign moving without destabilizing releases.
 
-**Results:**
+**Results (campaign snapshot captured during the 2025-12 to 2026-01 migration; not remeasured on 2026-08-09):**
 | Module | Before | After | Coverage |
 |--------|--------|-------|----------|
 | App | 122 `any` | **0** (100% ANY-FREE) | **99.19%** |

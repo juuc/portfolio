@@ -5,11 +5,12 @@
 | 영역 | 도구 | 산출물 |
 |------|------|--------|
 | Web | React, Next.js, TypeScript, Tailwind, GraphQL | SSR 전환, 사이트맵 48,706개 URL, PageSpeed 20 -> 80 |
-| Mobile | React Native, Expo, EAS Update | managed workflow 전환, OTA 릴리스, 스토어 릴리스 규율 |
+| Mobile | React Native, Expo, EAS Update, 기기 자동화 | 다역할 흐름, 증거 기반 QA, OTA·스토어 릴리스 규율 |
 | Backend | Kotlin, Spring, serverless functions, REST APIs | 프로덕션 하드닝, 권한/결제 흐름, 배치 최적화 |
 | Data | Python, Dagster, notebooks, 공공/오픈 데이터 API | 부동산 데이터 파이프라인, 크롤러 복구, 신선도 모니터링 |
-| Infrastructure | GCP Cloud Run, AWS, GitHub Actions, Docker | SSR 호스팅, CI/CD, self-hosted runner, 배포 정리 |
-| Observability | Sentry, Telegram reporting, runbooks | 에러 모니터링, AI 분석, 프로덕션 피드백 루프 |
+| Infrastructure | Terraform, cloud identity, GCP Cloud Run, AWS, GitHub Actions, Docker | 재현 가능한 환경, 최소 권한 배포 경로, CI/CD, 배포 정리 |
+| Observability | Sentry, 구조화된 OCR telemetry, reporting, runbooks | 에러 분석, 검토 가능한 문서 처리, 프로덕션 피드백 루프 |
+| Release evidence | 소스/CI 검사, DEV readback, provider receipt, 기기 검증 | 코드, 런타임, 전달, 기기, 프로덕션 주장을 각각 독립적으로 검증 |
 
 ## AI Engineering
 
