@@ -16,6 +16,18 @@ I rebuild fragile product platforms into systems that ship. At Bootalk, I moved 
 | **Production operations automated** | Sentry alert -> AI diagnosis -> fix PR pipeline for production issues |
 | **AI-native execution scaled** | Fresh GitHub Search API / GraphQL counts as of 2026-08-09: 9,283 authored commits, 2,504 PRs, 2,325 merged PRs |
 
+## AI Activity
+
+Relative activity derived locally from coding-agent usage. The pattern is public; raw tokens, costs, sessions, and project details remain private.
+
+<a href="https://juuc.github.io/portfolio/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./public/metrics/ai-activity-dark-en.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./public/metrics/ai-activity-light-en.svg" />
+    <img src="./public/metrics/ai-activity-light-en.svg" alt="53-week relative AI activity calendar" width="760" />
+  </picture>
+</a>
+
 ## Case Studies
 
 | Case | Why It Matters |
@@ -50,6 +62,18 @@ I rebuild fragile product platforms into systems that ship. At Bootalk, I moved 
 | **검색/성능 전환** | CSR/정적 웹 -> SSR, 사이트맵 5개 -> 48,706개 URL, [PageSpeed 20 -> 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop), Search Console 클릭 3.9배·노출 5.6배 |
 | **프로덕션 운영 자동화** | Sentry 알림 -> AI 진단 -> 수정 PR 생성 파이프라인 |
 | **AI 기반 실행력 확장** | 2026-08-09 기준 최신 GitHub Search API / GraphQL 집계: 작성 커밋 9,283건, PR 2,504건, 머지 PR 2,325건 |
+
+### AI 활동
+
+코딩 에이전트 사용량을 로컬에서 상대 강도로 변환했습니다. 활동 패턴만 공개하며 원본 토큰, 비용, 세션, 프로젝트 정보는 비공개로 유지합니다.
+
+<a href="https://juuc.github.io/portfolio/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./public/metrics/ai-activity-dark-ko.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./public/metrics/ai-activity-light-ko.svg" />
+    <img src="./public/metrics/ai-activity-light-ko.svg" alt="53주 상대 AI 활동 달력" width="760" />
+  </picture>
+</a>
 
 ### 케이스 스터디
 

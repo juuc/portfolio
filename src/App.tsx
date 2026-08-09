@@ -2,6 +2,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom'
 import { LangProvider } from './context/LangContext'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
+import AIActivity from './components/AIActivity'
 import Projects from './components/Projects'
 import Timeline from './components/Timeline'
 import Skills from './components/Skills'
@@ -11,6 +12,7 @@ function Home() {
   return (
     <>
       <Hero />
+      <AIActivity />
       <Projects />
       <Timeline />
       <Skills />
