@@ -51,15 +51,15 @@ outputs:
 
 ## Headline Metrics
 
-As of 2026-08-09, the portfolio uses GitHub Search API / GraphQL counts for
+As of 2026-08-10, the portfolio uses GitHub Search API / GraphQL counts for
 `juuc` and `jwc-bootalk`:
 
 | Metric | Value |
 |--------|-------|
-| Authored commits | 9,283 |
-| Bootalk-scope commits | 8,855 |
-| Pull requests | 2,504 |
-| Merged PRs | 2,325 |
+| Authored commits | 9,308 |
+| Bootalk-scope commits | 8,877 |
+| Pull requests | 2,518 |
+| Merged PRs | 2,341 |
 | Frontend monorepo authored PRs | 1,409 |
 | Frontend monorepo merged PRs | 1,301 |
 | Peak month | 1,603 commits in 2025-12 |

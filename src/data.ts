@@ -72,9 +72,9 @@ export const DATA: Record<Lang, PortfolioData> = {
     education: 'Seoul National University — Civil & Environmental Engineering (2025.07)',
     intro: 'I rebuild fragile product platforms into shippable systems: multi-role field operations, SemuGPT commercialization, 48K+ indexable pages, and AI-operated production workflows.',
     stats: [
-      { value: '9,283', label: 'Commits' },
-      { value: '2,504', label: 'Pull Requests' },
-      { value: '2,325', label: 'Merged PRs' },
+      { value: '9,308', label: 'Commits' },
+      { value: '2,518', label: 'Pull Requests' },
+      { value: '2,341', label: 'Merged PRs' },
       { value: '4+', label: 'Years' },
     ],
     career: [
@@ -131,9 +131,9 @@ export const DATA: Record<Lang, PortfolioData> = {
     education: '서울대학교 — 토목공학과 (2025.07 졸업)',
     intro: '취약한 제품 플랫폼을 배포 가능한 시스템으로 재건합니다: 다역할 현장 운영, 세무GPT 상용화, 48K+ 색인 페이지, AI 기반 프로덕션 운영.',
     stats: [
-      { value: '9,283', label: '커밋' },
-      { value: '2,504', label: 'PR' },
-      { value: '2,325', label: '머지 PR' },
+      { value: '9,308', label: '커밋' },
+      { value: '2,518', label: 'PR' },
+      { value: '2,341', label: '머지 PR' },
       { value: '4+', label: '년차' },
     ],
     career: [
