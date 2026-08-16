@@ -11,10 +11,10 @@ I rebuild fragile product platforms into systems that ship. At Bootalk, I moved 
 | **Multi-role field operations integrated** | Connected assignment, evidence capture, review, and handover into an auditable DEV workflow with explicit release-evidence boundaries |
 | **Commercial AI product delivered** | [SemuGPT](https://semugpt.co.kr) reached production handover and a signed commercial agreement on 2026-05-18 |
 | **Platform rebuilt after CTO transition** | Led a 4-person engineering team across web, mobile, backend, data, releases, and deployments |
-| **Frontend operating system unified** | 3 repos -> 1 monorepo; 1,409 authored PRs and 1,301 merged PRs in the frontend monorepo |
+| **Frontend operating system unified** | 3 repos -> 1 monorepo; 1,417 authored PRs and 1,310 merged PRs in the frontend monorepo |
 | **Search and performance unlocked** | CSR/static web -> SSR, sitemap 5 -> 48,706 URLs, [PageSpeed 20 -> 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop), Search Console clicks 3.9x and impressions 5.6x |
 | **Production operations automated** | Sentry alert -> AI diagnosis -> fix PR pipeline for production issues |
-| **AI-native execution scaled** | Fresh GitHub Search API / GraphQL counts as of 2026-08-10: 9,308 authored commits, 2,518 PRs, 2,341 merged PRs |
+| **AI-native execution scaled** | Fresh GitHub Search API / GraphQL counts as of 2026-08-16: 10,408 authored commits, 2,720 PRs, 2,532 merged PRs |
 
 ## AI Activity
 
@@ -58,10 +58,10 @@ Relative activity derived locally from coding-agent usage. The pattern is public
 | **다역할 현장 운영 통합** | 배정, 증빙 수집, 검토, 인계를 추적 가능한 DEV 워크플로우로 연결하고 릴리스 증거 경계를 명시 |
 | **상용 AI 제품 인수인계** | [세무GPT](https://semugpt.co.kr) 프로덕션 인수인계 및 2026-05-18 상용 계약 체결 |
 | **CTO 전환 이후 플랫폼 재건** | 4인 개발팀을 이끌며 웹, 앱, 백엔드, 데이터, 배포 전반 소유 |
-| **프론트엔드 운영체계 통합** | 3개 레포 -> 1개 모노레포; 프론트엔드 모노레포 작성 PR 1,409건, 머지 PR 1,301건 |
+| **프론트엔드 운영체계 통합** | 3개 레포 -> 1개 모노레포; 프론트엔드 모노레포 작성 PR 1,417건, 머지 PR 1,310건 |
 | **검색/성능 전환** | CSR/정적 웹 -> SSR, 사이트맵 5개 -> 48,706개 URL, [PageSpeed 20 -> 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop), Search Console 클릭 3.9배·노출 5.6배 |
 | **프로덕션 운영 자동화** | Sentry 알림 -> AI 진단 -> 수정 PR 생성 파이프라인 |
-| **AI 기반 실행력 확장** | 2026-08-10 기준 최신 GitHub Search API / GraphQL 집계: 작성 커밋 9,308건, PR 2,518건, 머지 PR 2,341건 |
+| **AI 기반 실행력 확장** | 2026-08-16 기준 최신 GitHub Search API / GraphQL 집계: 작성 커밋 10,408건, PR 2,720건, 머지 PR 2,532건 |
 
 ### AI 활동
 

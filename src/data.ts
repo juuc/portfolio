@@ -72,9 +72,9 @@ export const DATA: Record<Lang, PortfolioData> = {
     education: 'Seoul National University — Civil & Environmental Engineering (2025.07)',
     intro: 'I rebuild fragile product platforms into shippable systems: multi-role field operations, SemuGPT commercialization, 48K+ indexable pages, and AI-operated production workflows.',
     stats: [
-      { value: '9,308', label: 'Commits' },
-      { value: '2,518', label: 'Pull Requests' },
-      { value: '2,341', label: 'Merged PRs' },
+      { value: '10,408', label: 'Commits' },
+      { value: '2,720', label: 'Pull Requests' },
+      { value: '2,532', label: 'Merged PRs' },
       { value: '4+', label: 'Years' },
     ],
     career: [
@@ -84,7 +84,7 @@ export const DATA: Record<Lang, PortfolioData> = {
     flagship: [
       { id: 'field-operations-platform', name: 'Field Operations Platform', metric: 'Multi-role DEV', impact: 'Integrated assignment, evidence capture, review, handover, and recovery with explicit proof boundaries' },
       { id: 'semugpt-commercialization', name: 'SemuGPT Commercialization', metric: '2026-05-18', impact: 'Production handover completed and commercial agreement signed' },
-      { id: 'platform-rebuild', name: 'Platform Rebuild', metric: '1,409 PRs', impact: 'Post-handover production hardening and rent/lease migration across frontend, backend, and data' },
+      { id: 'platform-rebuild', name: 'Platform Rebuild', metric: '1,417 PRs', impact: 'Post-handover production hardening and rent/lease migration across frontend, backend, and data' },
       { id: 'seo-performance', name: 'SEO & Performance', metric: '20→80', impact: 'CSR/static web → SSR, 48,706 sitemap URLs, Search clicks 3.9x' },
       { id: 'sentry-automation', name: 'Autonomous Sentry Ops', metric: 'Alert→PR', impact: 'Production errors became AI-assisted diagnosis and fix PR candidates' },
       { id: 'data-reliability', name: 'Data Reliability', metric: 'Dagster', impact: 'Script crawlers -> scheduled assets/jobs with freshness alerts and recovery gates' },
@@ -131,9 +131,9 @@ export const DATA: Record<Lang, PortfolioData> = {
     education: '서울대학교 — 토목공학과 (2025.07 졸업)',
     intro: '취약한 제품 플랫폼을 배포 가능한 시스템으로 재건합니다: 다역할 현장 운영, 세무GPT 상용화, 48K+ 색인 페이지, AI 기반 프로덕션 운영.',
     stats: [
-      { value: '9,308', label: '커밋' },
-      { value: '2,518', label: 'PR' },
-      { value: '2,341', label: '머지 PR' },
+      { value: '10,408', label: '커밋' },
+      { value: '2,720', label: 'PR' },
+      { value: '2,532', label: '머지 PR' },
       { value: '4+', label: '년차' },
     ],
     career: [
@@ -143,7 +143,7 @@ export const DATA: Record<Lang, PortfolioData> = {
     flagship: [
       { id: 'field-operations-platform', name: '현장 운영 플랫폼', metric: '다역할 DEV', impact: '배정, 증빙 수집, 검토, 인계, 복구를 명시적인 증거 경계와 함께 통합' },
       { id: 'semugpt-commercialization', name: '세무GPT 상용화', metric: '2026-05-18', impact: '프로덕션 인수인계 완료 및 상용 계약 체결' },
-      { id: 'platform-rebuild', name: '플랫폼 재건', metric: '1,409 PR', impact: '상용 인수인계 이후 프론트엔드, 백엔드, 데이터 전반에서 프로덕션 하드닝과 전월세 마이그레이션 지속' },
+      { id: 'platform-rebuild', name: '플랫폼 재건', metric: '1,417 PR', impact: '상용 인수인계 이후 프론트엔드, 백엔드, 데이터 전반에서 프로덕션 하드닝과 전월세 마이그레이션 지속' },
       { id: 'seo-performance', name: 'SEO & 성능', metric: '20→80', impact: 'CSR/정적 웹 → SSR, 사이트맵 48,706개 URL, 검색 클릭 3.9배' },
       { id: 'sentry-automation', name: '자율 Sentry 운영', metric: 'Alert→PR', impact: '프로덕션 에러를 AI 진단과 수정 PR 후보로 연결' },
       { id: 'data-reliability', name: '데이터 신뢰성', metric: 'Dagster', impact: '스크립트형 크롤러 -> 스케줄형 assets/jobs와 신선도 알림/복구 gate' },

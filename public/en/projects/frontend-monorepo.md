@@ -15,8 +15,8 @@ The central frontend monorepo unifying all client-facing applications for Bootal
 
 | Metric | Value |
 |--------|-------|
-| Authored PRs | 1,409 |
-| Merged PRs | 1,301 |
+| Authored PRs | 1,417 |
+| Merged PRs | 1,310 |
 | Scope | Web, app, admin, partner webviews, shared packages |
 | Stack | TypeScript, CSS, HTML, JavaScript |
 

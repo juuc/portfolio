@@ -7,7 +7,7 @@ I joined Bootalk as a Data Engineer in March 2025 and expanded into Tech Lead / 
 | Before | After |
 |--------|-------|
 | Disconnected role screens and placeholder task state | Integrated field-operations DEV flow with authenticated transitions, evidence review, and recovery gates |
-| Fragmented web/app/admin repositories | Unified frontend monorepo with 1,409 authored PRs |
+| Fragmented web/app/admin repositories | Unified frontend monorepo with 1,417 authored PRs |
 | Static or client-rendered pages invisible to search | SSR, dynamic sitemap, 48,706 indexable listing URLs, Search Console clicks 3.9x |
 | PageSpeed around 20 | [PageSpeed 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop) after phased performance work |
 | Manual production error triage | Sentry alert -> AI diagnosis -> fix PR pipeline |
@@ -16,9 +16,9 @@ I joined Bootalk as a Data Engineer in March 2025 and expanded into Tech Lead / 
 
 ## Proof Points
 
-- Fresh GitHub Search API / GraphQL counts as of **2026-08-10** show **9,308** authored commits and **2,518** PRs.
-- **8,877** authored commits were in company-scope repositories, with **2,341** merged PRs overall.
-- The frontend monorepo accounts for **1,409** authored PRs and **1,301** merged PRs.
+- Fresh GitHub Search API / GraphQL counts as of **2026-08-16** show **10,408** authored commits and **2,720** PRs.
+- **9,976** authored commits were in company-scope repositories, with **2,532** merged PRs overall.
+- The frontend monorepo accounts for **1,417** authored PRs and **1,310** merged PRs.
 - Peak monthly output reached **1,603 commits** in **December 2025**, about **21x** the refreshed baseline.
 - **48,706** sitemap URLs generated after SSR/SEO migration.
 - Search Console complete-quarter comparison showed **3.9x** clicks, **5.6x** impressions, and average position moving from **9.0 to 5.4**.

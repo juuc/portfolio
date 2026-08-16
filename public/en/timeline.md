@@ -19,20 +19,20 @@
 | 2026-05-18 | SemuGPT client handover completed; commercial agreement signed | Converted the AI product into a delivered commercial outcome |
 | 2026-06 | Rent/lease migration and cross-surface data correctness hardening | Extended the post-handover focus from shipping features to protecting user trust across search, detail, AI recommendation, and data surfaces |
 | 2026-07 | Evidence-gated mobile operations and cross-surface contract hardening | Connected authentication, real-time interaction, document/media handling, and offline recovery to release evidence; standardized scheduling across web, mobile, backend, and legacy data without silently changing historical meaning |
-| 2026-08 | Multi-role field operations reached an integrated DEV path | Connected assignment, evidence capture, review, handover, and recovery while keeping provider, device, production, and store proof as separate gates |
+| 2026-08 | Evidence-gated field-operations hardening continued | Recent work concentrated on field operations and release evidence; source/review throughput remains separate from DEV, provider, device, production, and store proof |
 
 ## Activity Context
 
-Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-08-10** show:
+Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-08-16** show:
 
 | Metric | Value |
 |--------|-------|
-| Authored commits | **9,308** |
-| Company-scope commits | **8,877** |
-| Pull requests | **2,518** |
-| Merged PRs | **2,341** |
-| Frontend monorepo authored PRs | **1,409** |
-| Frontend monorepo merged PRs | **1,301** |
+| Authored commits | **10,408** |
+| Company-scope commits | **9,976** |
+| Pull requests | **2,720** |
+| Merged PRs | **2,532** |
+| Frontend monorepo authored PRs | **1,417** |
+| Frontend monorepo merged PRs | **1,310** |
 | Peak month | **1,603 commits** in December 2025 |
 | Output multiplier | **About 21x** from the refreshed baseline |
 
@@ -55,6 +55,6 @@ Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-08-10**
 | 2026-03 | 1,004 | 167 | 146 |
 | 2026-04 | 930 | 205 | 194 |
 | 2026-05 | 926 | 316 | 292 |
-| 2026-06 | 380 | 305 | 280 |
-| 2026-07 | 143 | 294 | 289 |
-| 2026-08 | 94 | 189 | 176 *(partial through 2026-08-10)* |
+| 2026-06 | 581 | 305 | 280 |
+| 2026-07 | 701 | 294 | 289 |
+| 2026-08 | 435 | 391 | 367 *(partial through 2026-08-16)* |
