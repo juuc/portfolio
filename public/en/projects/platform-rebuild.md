@@ -25,11 +25,11 @@ As of 2026-08-09, that operating surface was carrying four newer proof points at
 
 ## Evidence
 
-GitHub activity counts below are current through 2026-08-16. The operating proof above remains dated 2026-08-09.
+GitHub activity counts below are current through 2026-08-30. The operating proof above remains dated 2026-08-09; later activity continued hardening but does not by itself extend the DEV, provider, device, production, or store evidence boundary.
 
 | Metric | Value |
 |--------|-------|
-| Frontend monorepo authored PRs | **1,417** |
-| GitHub-verified authored commits | **10,408** |
-| Merged PRs | **2,532** |
+| Frontend monorepo authored PRs | **1,424** |
+| GitHub-verified authored commits | **10,443** |
+| Merged PRs | **2,733** |
 | Peak monthly output | **1,603 commits in 2025-12** |
