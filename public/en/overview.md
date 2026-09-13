@@ -7,7 +7,7 @@ I joined Bootalk as a Data Engineer in March 2025 and expanded into Tech Lead / 
 | Before | After |
 |--------|-------|
 | Disconnected role screens and placeholder task state | Integrated field-operations DEV flow with authenticated transitions, evidence review, and recovery gates |
-| Fragmented web/app/admin repositories | Unified frontend monorepo with 1,424 authored PRs |
+| Fragmented web/app/admin repositories | Unified frontend monorepo with 1,467 authored PRs |
 | Static or client-rendered pages invisible to search | SSR, dynamic sitemap, 48,706 indexable listing URLs, Search Console clicks 3.9x |
 | PageSpeed around 20 | [PageSpeed 80](https://pagespeed.web.dev/analysis/https-bootalk-co-kr/4jic9i7it6?form_factor=desktop) after phased performance work |
 | Manual production error triage | Sentry alert -> AI diagnosis -> fix PR pipeline |
@@ -16,10 +16,10 @@ I joined Bootalk as a Data Engineer in March 2025 and expanded into Tech Lead / 
 
 ## Proof Points
 
-- Fresh GitHub Search API / GraphQL counts as of **2026-08-30** show **10,443** authored commits and **2,945** PRs.
-- **10,008** authored commits were in company-scope repositories, with **2,733** merged PRs overall.
-- The frontend monorepo accounts for **1,424** authored PRs and **1,319** merged PRs.
-- Peak monthly output reached **1,603 commits** in **December 2025**, about **21x** the refreshed baseline.
+- Fresh GitHub Search API / GraphQL counts as of **2026-09-13** show **12,066** authored commits and **3,281** PRs.
+- **11,514** authored commits were in company-scope repositories, with **3,052** merged PRs overall.
+- The frontend monorepo accounts for **1,467** authored PRs and **1,360** merged PRs.
+- Peak monthly output reached **1,646 commits** in **August 2026**, about **21x** the refreshed baseline.
 - **48,706** sitemap URLs generated after SSR/SEO migration.
 - Search Console complete-quarter comparison showed **3.9x** clicks, **5.6x** impressions, and average position moving from **9.0 to 5.4**.
 - **2026-05-18** [SemuGPT](https://semugpt.co.kr) production handover completed and commercial agreement signed.

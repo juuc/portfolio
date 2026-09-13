@@ -83,11 +83,11 @@ As the app developer, I owned the bridge between the web platform and native app
 
 The skills built at Intelz directly enabled what I did at Bootalk:
 
-| Intelz (2022–2025) | → | Bootalk (2025–2026, as of 2026-08-30) |
+| Intelz (2022–2025) | → | Bootalk (2025–2026, as of 2026-09-13) |
 |---------------------|---|----------------------------------------|
 | Selenium/Python crawlers | → | Observable ETL operations and data reliability ownership |
 | RN → Expo migration | → | Faster mobile modernization and release stabilization |
 | 4-person team member | → | 4-person team leader |
 | In-app payments (iamport) | → | Productionized payment and entitlement flows (SemuGPT) |
 | GPT-4 chatbot integration | → | AI products and AI-operated engineering workflows |
-| 368 commits / 3.5 years | → | 10,008 company-scope commits / 18 months, with a peak month about 21x above the refreshed baseline |
+| 368 commits / 3.5 years | → | 11,514 company-scope commits / 18 months, with a peak month about 21x above the refreshed baseline |

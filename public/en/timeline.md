@@ -20,20 +20,21 @@
 | 2026-06 | Rent/lease migration and cross-surface data correctness hardening | Extended the post-handover focus from shipping features to protecting user trust across search, detail, AI recommendation, and data surfaces |
 | 2026-07 | Evidence-gated mobile operations and cross-surface contract hardening | Connected authentication, real-time interaction, document/media handling, and offline recovery to release evidence; standardized scheduling across web, mobile, backend, and legacy data without silently changing historical meaning |
 | 2026-08 | Evidence-gated field-operations and runtime hardening continued | Recent work concentrated on field operations, app/runtime reliability, and release evidence; source/review throughput remains separate from DEV, provider, device, production, and store proof |
+| 2026-09 | Reliability and evidence gates continued across product and data operations | Recent work emphasized incident coverage, crawler recovery, and explicit acceptance checks; production and store completion remain separate proof levels |
 
 ## Activity Context
 
-Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-08-30** show:
+Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-09-13** show:
 
 | Metric | Value |
 |--------|-------|
-| Authored commits | **10,443** |
-| Company-scope commits | **10,008** |
-| Pull requests | **2,945** |
-| Merged PRs | **2,733** |
-| Frontend monorepo authored PRs | **1,424** |
-| Frontend monorepo merged PRs | **1,319** |
-| Peak month | **1,603 commits** in December 2025 |
+| Authored commits | **12,066** |
+| Company-scope commits | **11,514** |
+| Pull requests | **3,281** |
+| Merged PRs | **3,052** |
+| Frontend monorepo authored PRs | **1,467** |
+| Frontend monorepo merged PRs | **1,360** |
+| Peak month | **1,646 commits** in August 2026 |
 | Output multiplier | **About 21x** from the refreshed baseline |
 
 ## Monthly Activity
@@ -55,6 +56,7 @@ Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-08-30**
 | 2026-03 | 1,004 | 167 | 146 |
 | 2026-04 | 930 | 205 | 194 |
 | 2026-05 | 926 | 316 | 292 |
-| 2026-06 | 581 | 305 | 280 |
-| 2026-07 | 701 | 294 | 289 |
-| 2026-08 | 470 | 616 | 568 *(partial through 2026-08-30)* |
+| 2026-06 | 582 | 305 | 281 |
+| 2026-07 | 704 | 294 | 289 |
+| 2026-08 | 1,646 | 622 | 577 |
+| 2026-09 | 443 | 330 | 309 *(partial through 2026-09-13)* |
