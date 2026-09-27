@@ -188,19 +188,23 @@ function renderText({ x, y, value, size, weight = 400, fill, family = 'sans', an
 function monthLabels(model, copy, colors) {
   const labels = []
   let previousMonth = null
+  let previousLabelWeek = Number.NEGATIVE_INFINITY
   for (let week = 0; week < 53; week += 1) {
     const date = parseIsoDate(model.cells[week * 7].date)
     const month = date.getUTCMonth()
     if (week === 0 || month !== previousMonth) {
-      labels.push(renderText({
-        x: 146 + week * 11,
-        y: 139,
-        value: copy.months[month],
-        size: 9,
-        weight: 500,
-        fill: colors.faint,
-        family: 'mono',
-      }))
+      if (week - previousLabelWeek >= 2) {
+        labels.push(renderText({
+          x: 146 + week * 11,
+          y: 139,
+          value: copy.months[month],
+          size: 9,
+          weight: 500,
+          fill: colors.faint,
+          family: 'mono',
+        }))
+        previousLabelWeek = week
+      }
     }
     previousMonth = month
   }
