@@ -62,3 +62,15 @@ test('renderActivityAssets emits bilingual theme variants without raw telemetry'
   assert.match(assets.get('ai-activity-light-en.svg'), /#FFFFFF/)
   assert.match(assets.get('ai-activity-dark-en.svg'), /#121216/)
 })
+
+test('renderActivityAssets avoids adjacent month labels at the 53-week boundary', () => {
+  const assets = renderActivityAssets({ daily: fixtureRows }, '2026-09-27')
+
+  for (const svg of assets.values()) {
+    const monthLabelPositions = [...svg.matchAll(/<text x="(\d+)" y="139"/g)]
+      .map((match) => Number(match[1]))
+    for (let index = 1; index < monthLabelPositions.length; index += 1) {
+      assert.ok(monthLabelPositions[index] - monthLabelPositions[index - 1] >= 22)
+    }
+  }
+})
