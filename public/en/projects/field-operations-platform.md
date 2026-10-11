@@ -22,4 +22,4 @@ The product moved from a navigable concept to an integrated DEV operating path t
 
 ## Evidence Boundary
 
-Source, CI, and integrated DEV transitions were validated through 2026-08-09. GitHub activity through 2026-09-27 continued evidence-gated workflow work, but this case study does not extend that verified boundary or claim completed production or store rollout, physical-device notification display, or final provider-specific OCR quality. Those remain separate release gates.
+Source, CI, and integrated DEV transitions were validated through 2026-08-09. GitHub activity through 2026-10-11 covered evidence-gated workflows, data reliability, AI product work, and web/mobile operations across multiple repositories. This confirms source and review activity only; it does not extend that verified boundary or claim completed production or store rollout, physical-device notification display, or final provider-specific OCR quality. Those remain separate release gates.
