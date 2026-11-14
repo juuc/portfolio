@@ -24,17 +24,17 @@
 
 ## Activity Context
 
-Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-11-01** show:
+Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-11-15** show:
 
 | Metric | Value |
 |--------|-------|
-| Authored commits | **13,006** |
-| Company-scope commits | **12,242** |
-| Pull requests | **4,102** |
-| Merged PRs | **3,797** |
-| Frontend monorepo authored PRs | **1,699** |
-| Frontend monorepo merged PRs | **1,570** |
-| Peak month | **1,646 commits** in August 2026 |
+| Authored commits | **14,566** |
+| Company-scope commits | **13,772** |
+| Pull requests | **4,396** |
+| Merged PRs | **4,073** |
+| Frontend monorepo authored PRs | **1,811** |
+| Frontend monorepo merged PRs | **1,680** |
+| Peak month | **1,650 commits** in August 2026 |
 | Output multiplier | **About 21x** from the refreshed baseline |
 
 ## Monthly Activity
@@ -57,8 +57,8 @@ Fresh GitHub Search API commit counts and GraphQL PR counts as of **2026-11-01**
 | 2026-04 | 930 | 205 | 194 |
 | 2026-05 | 926 | 316 | 292 |
 | 2026-06 | 582 | 305 | 281 |
-| 2026-07 | 704 | 294 | 289 |
-| 2026-08 | 1,646 | 622 | 578 |
-| 2026-09 | 850 | 651 | 594 |
-| 2026-10 | 533 | 500 | 459 |
-| 2026-11 | 0 | 0 | 0 *(partial through 2026-11-01)* |
+| 2026-07 | 705 | 294 | 289 |
+| 2026-08 | 1,650 | 622 | 578 |
+| 2026-09 | 1,009 | 651 | 599 |
+| 2026-10 | 1,074 | 500 | 464 |
+| 2026-11 | 855 | 294 | 266 *(partial through 2026-11-15)* |
